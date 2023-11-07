@@ -12,15 +12,15 @@ public:
         int win = 0; 
         while(!q.empty()){
             int fight = q.front(); 
-            
+            q.pop(); 
             if(curr_ele > fight){
-                q.pop();
+                //q.pop();
                 q.push(fight); 
                 //curr_ele = fight; 
                 win++; 
             }
             else{
-                q.pop(); 
+                //q.pop(); 
                 q.push(curr_ele); 
                 curr_ele = fight; 
                 win = 1; 
