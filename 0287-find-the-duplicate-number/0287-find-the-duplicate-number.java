@@ -1,11 +1,11 @@
 class Solution {
     public int findDuplicate(int[] nums) {
         int left = 1; 
-        int high = 0; 
+        int high = nums.length; 
         int duplicate = -1; 
-        for(int n : nums) high = Math.max(n,high); 
+        //for(int n : nums) high = Math.max(n,high); 
 
-        while(left < high){
+        while(left <= high){
             int mid = left + (high - left) / 2; 
             int cnt = 0; 
 
