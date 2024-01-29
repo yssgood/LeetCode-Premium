@@ -1,44 +1,40 @@
 class Solution {
 public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
-        vector<vector<pair<int,int>>> adj(n); 
-
+        vector<vector<pair<int,int>>> graph(n); 
+        int INF = 987654321; 
         for(vector<int>& v : flights){
-            int from = v[0], to = v[1], price = v[2]; 
-            adj[from].push_back({to,price}); 
+            int node = v[0], dest = v[1], dist = v[2]; 
+            graph[node].push_back({dest,dist}); 
         }
-
-        vector<int> nodeInfo(n, INT_MAX); 
-        nodeInfo[src] = 0; 
-        //priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> pq; 
         priority_queue<vector<int>> pq; 
-        pq.push({0,src,k+1}); 
-
+        vector<int> distance(n,INF); 
+        distance[src] = 0;
+        pq.push({0,src,k+1}); //distance, curr_node, number of stops 
+        
         while(!pq.empty()){
-            int size = pq.size(); 
+            int size = pq.size();
             for(int i = 0; i < size; i++){
-                
                 vector<int> first = pq.top(); 
-                pq.pop(); 
-
-                int dist = first[0]; 
-                int node = first[1]; 
-                int steps = first[2]; 
-
-                if(steps > 0){
-                    for(pair<int,int>& p : adj[node]){
+                pq.pop();
+                
+                int dist = first[0], curr_node = first[1], stops = first[2]; 
+                
+                if(stops > 0){
+                    for(pair<int,int>& p : graph[curr_node]){
                         int dest = p.first, weights = p.second; 
-                        if(nodeInfo[node] + weights < nodeInfo[dest]){
-                            nodeInfo[dest] = nodeInfo[node] + weights; 
-                            int newDist = nodeInfo[dest]; 
-                            pq.push({newDist,dest,steps-1}); 
+                        if(distance[curr_node] + weights < distance[dest]){
+                            distance[dest] = distance[curr_node] + weights;
+                            int newDist = distance[dest]; 
+                            pq.push({newDist,dest,stops-1}); 
                         }
                     }
                 }
-
             }
         }
-        if(nodeInfo[dst] != INT_MAX) return nodeInfo[dst]; 
+        
+        if(distance[dst] != INF) return distance[dst]; 
+        
         return -1; 
     }
 };
