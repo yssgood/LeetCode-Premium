@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-cost-to-connect-sticks">1167. Minimum Cost to Connect Sticks</a></h2><h3>Medium</h3><hr><p>You have some number of sticks with positive integer lengths. These lengths are given as an array&nbsp;<code>sticks</code>, where&nbsp;<code>sticks[i]</code>&nbsp;is the length of the&nbsp;<code>i<sup>th</sup></code>&nbsp;stick.</p>
+<h2><a href="https://leetcode.com/problems/minimum-cost-to-connect-sticks/">1167. Minimum Cost to Connect Sticks</a></h2><h3>Medium</h3><hr><div><p>You have some number of sticks with positive integer lengths. These lengths are given as an array&nbsp;<code>sticks</code>, where&nbsp;<code>sticks[i]</code>&nbsp;is the length of the&nbsp;<code>i<sup>th</sup></code>&nbsp;stick.</p>
 
 <p>You can connect any two sticks of lengths <code>x</code> and <code>y</code> into one stick&nbsp;by paying a cost of <code>x + y</code>. You must connect&nbsp;all the sticks until there is only one stick remaining.</p>
 
@@ -7,8 +7,7 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre>
-<strong>Input:</strong> sticks = [2,4,3]
+<pre><strong>Input:</strong> sticks = [2,4,3]
 <strong>Output:</strong> 14
 <strong>Explanation:</strong>&nbsp;You start with sticks = [2,4,3].
 1. Combine sticks 2 and 3 for a cost of 2 + 3 = 5. Now you have sticks = [5,4].
@@ -18,8 +17,7 @@ There is only one stick left, so you are done. The total cost is 5 + 9 = 14.
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre>
-<strong>Input:</strong> sticks = [1,8,3,5]
+<pre><strong>Input:</strong> sticks = [1,8,3,5]
 <strong>Output:</strong> 30
 <strong>Explanation:</strong> You start with sticks = [1,8,3,5].
 1. Combine sticks 1 and 3 for a cost of 1 + 3 = 4. Now you have sticks = [4,8,5].
@@ -30,10 +28,9 @@ There is only one stick left, so you are done. The total cost is 4 + 9 + 17 = 30
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre>
-<strong>Input:</strong> sticks = [5]
+<pre><strong>Input:</strong> sticks = [5]
 <strong>Output:</strong> 0
-<strong>Explanation:</strong> There is only one stick, so you don&#39;t need to do anything. The total cost is 0.
+<strong>Explanation:</strong> There is only one stick, so you don't need to do anything. The total cost is 0.
 </pre>
 
 <p>&nbsp;</p>
@@ -43,3 +40,4 @@ There is only one stick left, so you are done. The total cost is 4 + 9 + 17 = 30
 	<li><code><span>1 &lt;= sticks.length &lt;= 10<sup>4</sup></span></code></li>
 	<li><code><span>1 &lt;= sticks[i] &lt;= 10<sup>4</sup></span></code></li>
 </ul>
+</div>
