@@ -1,46 +1,34 @@
 class Solution {
 public:
     int numKLenSubstrNoRepeats(string s, int k) {
-        // We can reuse the condition from the first approach
-        // as for k > 26, there can be no substrings with only unique characters
-        if (k > 26)
-            return 0;
+        map<char,int> hashMap; 
+        int answer = 0, start = 0, end = 0; 
         
-        int answer = 0;
-        int n = s.size();
-        
-        // Initializing the left and right pointers
-        int left = 0, right = 0;
-        // Initializing an empty frequency array
-        int freq[26] = {0};
-        
-        while (right < n) {
+        while(end < s.length()){
+            if(hashMap.count(s[end])){
+                //do something 
+                while(start <= hashMap[s[end]]){
+                    hashMap.erase(s[start]); 
+                    start++; 
+                }
+                //start = hashMap[s[end]]; 
+                //start++; 
+                hashMap[s[end]] = end; 
+                //cout << end << ' ' << start << ' ' << endl; 
+            } else{
+                hashMap[s[end]] = end; 
+            }
 
-            // Add the current character in the frequency array
-            freq[s[right] - 'a']++;
-            
-            // If the current character appears more than once in the frequency array
-            // keep contracting the window and removing characters from the
-            // frequency array till the frequency of the current character becomes 1.
-            while (freq[s[right] - 'a'] > 1) {
-                freq[s[left] - 'a']--;
-                left++;
-            }
-            
-            // Check if the length of the current unique substring is equal to k
-            if (right - left + 1 == k) {
+            if(end - start + 1 == k){
+                //cout << end << ' ' << start << ' ' << endl; 
                 answer++;
-                
-                // Contract the window and remove the leftmost character from the
-                // frequency array
-                freq[s[left] - 'a']--;
-                left++;
+                hashMap.erase(s[start]);  
+                start++; 
             }
-            
-            // Expand the window
-            right++;
+
+            end++; 
         }
-        
-        return answer;
+
+        return answer; 
     }
 };
