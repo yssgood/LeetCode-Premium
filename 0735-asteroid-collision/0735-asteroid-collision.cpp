@@ -1,29 +1,29 @@
 class Solution {
 public:
     vector<int> asteroidCollision(vector<int>& asteroids) {
-        vector<int> answer;  
+        vector<int> answer; 
         stack<int> numStack; 
-        bool flag = true; 
-        for(int i = 0; i < asteroids.size(); i++){
-            int currRock = asteroids[i]; 
-            while(!numStack.empty() && flag){
-                int prevRock = numStack.top(); 
-                if(currRock < 0 && prevRock > 0){
-                    int absCurr = abs(currRock), absPrev = abs(prevRock); 
-                    if(absCurr > absPrev){
-                        numStack.pop(); 
-                    } else{
-                        flag = false; 
-                        if(absCurr == absPrev) numStack.pop(); 
-                        break; 
-                    }
+        bool popChance = false; 
+        for(int& n : asteroids){
+            int currRock = n; 
+            popChance = false; 
+            while(!numStack.empty() && numStack.top() > 0 && currRock < 0){
+                int absCurr = abs(currRock); 
+                int prevRock = abs(numStack.top()); 
+
+                if(absCurr > prevRock){
+                    numStack.pop(); 
                 } else{
+                    if(absCurr == prevRock){
+                        numStack.pop(); 
+                    }
+                    popChance = true; 
                     break; 
                 }
             }
+
             numStack.push(currRock); 
-            if(!flag) numStack.pop(); 
-            flag = true; 
+            if(popChance) numStack.pop(); 
         }
 
         while(!numStack.empty()){
