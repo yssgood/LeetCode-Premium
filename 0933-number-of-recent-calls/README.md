@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/number-of-recent-calls">933. Number of Recent Calls</a></h2><h3>Easy</h3><hr><p>You have a <code>RecentCounter</code> class which counts the number of recent requests within a certain time frame.</p>
+<h2><a href="https://leetcode.com/problems/number-of-recent-calls/">933. Number of Recent Calls</a></h2><h3>Easy</h3><hr><div><p>You have a <code>RecentCounter</code> class which counts the number of recent requests within a certain time frame.</p>
 
 <p>Implement the <code>RecentCounter</code> class:</p>
 
@@ -12,9 +12,8 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre>
-<strong>Input</strong>
-[&quot;RecentCounter&quot;, &quot;ping&quot;, &quot;ping&quot;, &quot;ping&quot;, &quot;ping&quot;]
+<pre><strong>Input</strong>
+["RecentCounter", "ping", "ping", "ping", "ping"]
 [[], [1], [100], [3001], [3002]]
 <strong>Output</strong>
 [null, 1, 2, 3, 3]
@@ -35,3 +34,4 @@ recentCounter.ping(3002);  // requests = [1, <u>100</u>, <u>3001</u>, <u>3002</u
 	<li>Each test case will call <code>ping</code> with <strong>strictly increasing</strong> values of <code>t</code>.</li>
 	<li>At most <code>10<sup>4</sup></code> calls will be made to <code>ping</code>.</li>
 </ul>
+</div>
