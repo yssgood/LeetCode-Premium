@@ -8,21 +8,10 @@ struct NodeCompare{
     bool operator()(Node& a, Node& b){
         if(a.distance != b.distance){
             return a.distance > b.distance; 
-        }
-        else{
-            if(a.windex != b.windex){
-                return a.windex > b.windex; 
-            }
-            else{
-                return a.bindex > b.bindex; 
-            }
-        }
-        // if(a.distance != b.distance){
-        //     return a.distance > b.distance; 
-        // } else if(a.distance == b.distance){
-        //     return a.windex > b.windex; 
-        // } 
-        // return a.bindex > b.bindex; 
+        } else if(a.windex != b.windex){
+            return a.windex > b.windex; 
+        } 
+        return a.bindex > b.bindex; 
     }
 };
 public:
