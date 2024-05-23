@@ -1,31 +1,43 @@
 class Solution {
 public:
     int compress(vector<char>& chars) {
-        string res = "";
-        int left = 0, right = 0; 
-        char currChar = chars[0], nextChar = chars[0];
-        while(right < chars.size()){
-            nextChar = chars[right]; 
-            
+        int start = 0, end = 0; 
+        string answer = ""; 
+        char currChar = chars[start];
+        while(end < chars.size()){
+            char nextChar = chars[end]; 
+
             if(nextChar != currChar){
-                res += currChar; 
-                if(right - left > 1) res += to_string(right - left); 
-                currChar = nextChar; 
-                left = right; 
+                int len = end - start; 
+                while(chars[start] == currChar){
+                    start++; 
+                }
+                
+                if(len > 1){
+                    answer = answer + currChar + to_string(len); 
+                } else{
+                    answer += currChar; 
+                    
+                }
+                currChar = chars[start]; 
             }
 
-            right++; 
+
+            if(end == chars.size()-1){
+                int len = end - start + 1; 
+                if(len > 1){
+                    answer = answer + currChar + to_string(len); 
+                } else{
+                    answer += currChar; 
+                }
+            }
+            end++; 
+        }
+        chars = {}; 
+        for(char& c : answer){
+            chars.push_back(c); 
         }
 
-
-        res += chars[left]; 
-        if(right - left > 1) res += to_string(right - left); 
-
-        for(int i = 0; i < res.length(); i++){
-            chars[i] = res[i]; 
-        }
-
-
-        return res.length(); 
+        return chars.size();
     }
 };
