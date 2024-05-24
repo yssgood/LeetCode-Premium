@@ -1,24 +1,29 @@
 class Solution {
 public:
     int shortestWay(string source, string target) {
-        int left = 0, right = 0; 
-        int answer = 0;  
-        bool flag = false; 
+        int sourceP = 0, targetP = 0; 
+        int answer = 0; 
 
-        while(right < target.length()){
-            left = 0; 
-            while(left < source.length()){
-                if(source[left] == target[right]){
-                    left++;
-                    right++; 
+        while(targetP < target.length()){
+            bool flag = false; 
+            //cout << target[targetP] << ' '; 
+            while(sourceP < source.length()){
+                if(source[sourceP] == target[targetP]){
                     flag = true; 
+                    sourceP++;
+                    targetP++; 
                 } else{
-                    left++; 
+                    sourceP++; 
                 }
             }
-            if(!flag) return -1; 
-            answer ++; 
-            flag = false; 
+
+            if(sourceP >= source.length()){
+                if(!flag) return -1; 
+                sourceP = 0; 
+            }
+
+            //targetP++; 
+            answer++; 
         }
 
         return answer; 
