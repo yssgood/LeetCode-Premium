@@ -30,11 +30,7 @@ public:
         maxH = grid.size();
         maxW = grid[0].size();
         
-        for(int i=0; i<303; i++){
-            for(int j=0; j<303; j++){
-                visited[i][j] = 0;
-            }
-        }
+        memset(visited,0,sizeof(visited)); 
         
         for(int i=0; i<grid.size(); i++){
             for(int j=0; j<grid[i].size(); j++){
