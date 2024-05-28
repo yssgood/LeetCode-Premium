@@ -1,32 +1,35 @@
 class Solution {
 public:
-    void dfs(vector<vector<int>>& adj, vector<bool>& visited, int node){
+    bool visited[100001]; 
+    void dfs(vector<vector<int>>& adj, int node, int& answer){
         visited[node] = true; 
-        for(int& next : adj[node]){
-            if(!visited[next])
-            {
-                dfs(adj,visited,next); 
-            } 
+        for(int n : adj[node]){
+            if(!visited[n]){
+                answer--; 
+                dfs(adj,n,answer); 
+            }
         }
     }
     int makeConnected(int n, vector<vector<int>>& connections) {
-        if(connections.size() < n-1) return -1; 
+        int size = connections.size(); 
+        if(n - size > 1) return -1; 
+        memset(visited,false,sizeof(visited)); 
+        
         vector<vector<int>> adj(n); 
-        vector<bool> visited(n,false); 
         for(vector<int>& v : connections){
             int from = v[0], to = v[1]; 
             adj[from].push_back(to); 
             adj[to].push_back(from); 
         }
-        int redundant = 0; 
+
+        int answer = n-1; 
+
         for(int i = 0; i < n; i++){
             if(!visited[i]){
-                redundant++; 
-                dfs(adj,visited,i); 
+                dfs(adj,i,answer); 
             }
         }
 
-
-        return redundant - 1; 
+        return answer; 
     }
 };
