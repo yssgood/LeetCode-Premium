@@ -6,7 +6,7 @@ public:
         int top = 0, left = 0, right = matrix[0].size()-1, bottom = matrix.size()-1; 
         int dir = 0; 
 
-        while(top <= bottom && left <= right){
+        while(answer.size() < matrix.size() * matrix[0].size()){
             if(dir == 0){ //to the right 
                 for(int i = left; i <= right; i++){
                     answer.push_back(matrix[top][i]); 
