@@ -15,7 +15,7 @@ public:
         vector<vector<int>> adj(numCourses); 
         for(vector<int>& v : prerequisites){
             int to = v[0], from = v[1]; 
-            adj[to].push_back(from); 
+            adj[from].push_back(to); 
         }
 
         for(int i = 0; i < numCourses; i++){
