@@ -1,19 +1,22 @@
 class Solution {
 public:
     int maxOperations(vector<int>& nums, int k) {
-        map<int,int> hashMap; 
+        sort(nums.begin(), nums.end()); 
+        int left = 0, right = nums.size()-1; 
         int answer = 0; 
-        for(int i = 0; i < nums.size(); i++){
-            int target = k - nums[i]; 
-            if(hashMap.count(target)){
-                answer++; 
-                hashMap[target]--; 
-                if(hashMap[target] == 0) hashMap.erase(target); 
-                continue; 
-            }
-            hashMap[nums[i]]++; 
-        }
+        while(left < right){
+            int sum = nums[left] + nums[right]; 
 
+            if(sum > k){
+                right--; 
+            } else if(sum < k){
+                left++; 
+            } else{
+                left++;
+                right--;
+                answer++; 
+            }
+        }
         return answer; 
     }
 };
