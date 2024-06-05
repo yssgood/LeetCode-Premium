@@ -3,14 +3,17 @@ public:
     int maxOperations(vector<int>& nums, int k) {
         map<int,int> hashMap; 
         int answer = 0; 
-        for(int n : nums){
-            if(hashMap.count(k - n)){
+        for(int i = 0; i < nums.size(); i++){
+            int target = k - nums[i]; 
+            if(hashMap.count(target)){
                 answer++; 
-                if(--hashMap[k-n] <= 0) hashMap.erase(k - n); 
-            } else{
-                hashMap[n]++; 
+                hashMap[target]--; 
+                if(hashMap[target] == 0) hashMap.erase(target); 
+                continue; 
             }
+            hashMap[nums[i]]++; 
         }
+
         return answer; 
     }
 };
