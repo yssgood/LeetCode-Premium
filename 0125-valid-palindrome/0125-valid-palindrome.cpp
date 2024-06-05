@@ -1,20 +1,16 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-        string convert = ""; 
-
-        for(char& c : s){
+        int start = 0, end = s.length()-1; 
+        while(start < end){
             
-            if(isalpha(c) || isdigit(c)){
-                c = isupper(c) ? tolower(c) : c; 
-                convert += c; 
-            }
+            while(start < end && !isalnum(s[start])) start++; 
+            while(start < end && !isalnum(s[end])) end--; 
+
+            if(tolower(s[start]) != tolower(s[end])) return false; 
+            start++;
+            end--; 
         }
-
-        //cout << convert << ' '; 
-        string copy = convert; 
-        reverse(copy.begin(), copy.end()); 
-
-        return convert == copy; 
+        return true; 
     }
 };
