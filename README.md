@@ -29,10 +29,12 @@
 | ------- |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0424-longest-repeating-character-replacement](https://github.com/yssgood/LeetCode-Premium/tree/master/0424-longest-repeating-character-replacement) |
+| [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/yssgood/LeetCode-Premium/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 # Sliding Window
 |  |
 | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/yssgood/LeetCode-Premium/tree/master/0424-longest-repeating-character-replacement) |
+| [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/yssgood/LeetCode-Premium/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 # Backtracking
 |  |
 | ------- |
