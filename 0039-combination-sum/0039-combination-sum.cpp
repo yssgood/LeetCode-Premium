@@ -1,27 +1,26 @@
 class Solution {
-vector<vector<int>> answer; 
 public:
-    void dfs(vector<int>& container, vector<int>& candidates, int target, int sum, int index){
-        if(sum > target || index >= candidates.size()) return; 
-
-        if(sum == target){
-            answer.push_back(container); 
+    vector<vector<int>> answer; 
+    void dfs(vector<int>& candidates, int& target, vector<int>& container, int index){
+        if(target <= 0){
+            if(target == 0){
+                answer.push_back(container); 
+            }
             return; 
         }
 
         for(int i = index; i < candidates.size(); i++){
-            sum += candidates[i]; 
             container.push_back(candidates[i]); 
-            dfs(container, candidates, target, sum, i); 
-            sum -= candidates[i]; 
+            target -= candidates[i];
+            dfs(candidates, target, container, i); 
             container.pop_back(); 
+            target += candidates[i]; 
         }
     }
-public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         vector<int> container; 
-        dfs(container, candidates, target, 0,0);
 
+        dfs(candidates,target,container,0); 
 
         return answer; 
     }
