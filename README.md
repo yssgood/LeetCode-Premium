@@ -10,6 +10,7 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
+| [0039-combination-sum](https://github.com/yssgood/LeetCode-Premium/tree/master/0039-combination-sum) |
 # Two Pointers
 |  |
 | ------- |
@@ -30,3 +31,7 @@
 |  |
 | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/yssgood/LeetCode-Premium/tree/master/0424-longest-repeating-character-replacement) |
+# Backtracking
+|  |
+| ------- |
+| [0039-combination-sum](https://github.com/yssgood/LeetCode-Premium/tree/master/0039-combination-sum) |
