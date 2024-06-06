@@ -11,6 +11,7 @@
 | ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
 | [0039-combination-sum](https://github.com/yssgood/LeetCode-Premium/tree/master/0039-combination-sum) |
+| [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 # Two Pointers
 |  |
 | ------- |
@@ -26,6 +27,7 @@
 # String
 |  |
 | ------- |
+| [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0424-longest-repeating-character-replacement](https://github.com/yssgood/LeetCode-Premium/tree/master/0424-longest-repeating-character-replacement) |
 # Sliding Window
 |  |
@@ -35,3 +37,8 @@
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/yssgood/LeetCode-Premium/tree/master/0039-combination-sum) |
+| [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
+# Matrix
+|  |
+| ------- |
+| [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
