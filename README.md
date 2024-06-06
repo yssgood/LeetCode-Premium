@@ -10,6 +10,7 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0039-combination-sum](https://github.com/yssgood/LeetCode-Premium/tree/master/0039-combination-sum) |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [1046-max-consecutive-ones-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/1046-max-consecutive-ones-iii) |
@@ -49,6 +50,7 @@
 # Binary Search
 |  |
 | ------- |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [1046-max-consecutive-ones-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/1046-max-consecutive-ones-iii) |
 # Prefix Sum
 |  |
