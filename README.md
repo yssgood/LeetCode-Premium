@@ -14,6 +14,7 @@
 | [0039-combination-sum](https://github.com/yssgood/LeetCode-Premium/tree/master/0039-combination-sum) |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [1046-max-consecutive-ones-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/1046-max-consecutive-ones-iii) |
+| [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/yssgood/LeetCode-Premium/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 # Two Pointers
 |  |
 | ------- |
@@ -22,10 +23,12 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
+| [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/yssgood/LeetCode-Premium/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 # Hash Table
 |  |
 | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/yssgood/LeetCode-Premium/tree/master/0424-longest-repeating-character-replacement) |
+| [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/yssgood/LeetCode-Premium/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 # String
 |  |
 | ------- |
@@ -56,3 +59,7 @@
 |  |
 | ------- |
 | [1046-max-consecutive-ones-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/1046-max-consecutive-ones-iii) |
+# Sorting
+|  |
+| ------- |
+| [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/yssgood/LeetCode-Premium/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
