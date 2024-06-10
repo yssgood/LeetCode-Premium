@@ -1,23 +1,26 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
+        map<char,int> hashMap; 
         int start = 0, end = 0; 
-        unordered_map<char,int> hashMap;  
         int answer = 0; 
-
         while(end < s.length()){
-            hashMap[s[end]]++; 
-
-            while(hashMap[s[end]] > 1){ //문제 상황 제시 (ex : 중복이 발생한 경우, 포인터 옮기기)
-                answer = max(answer, end - start); 
+            if(hashMap.count(s[end])){
+                while(s[start] != s[end]){
+                    hashMap[s[start]]--; 
+                    if(hashMap[s[start]] == 0) hashMap.erase(s[start]); 
+                    start++; 
+                }
                 hashMap[s[start]]--; 
+                if(hashMap[s[start]] == 0) hashMap.erase(s[start]); 
                 start++; 
             }
-
+            
+            hashMap[s[end]]++; 
             answer = max(answer, end - start + 1); 
-            end++; 
-
+            end++;
         }
-        return answer;  
+
+        return answer; 
     }
 };
