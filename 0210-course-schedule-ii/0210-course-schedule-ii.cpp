@@ -1,41 +1,39 @@
 class Solution {
 public:
     int visited[2001]; 
-    stack<int> stack; 
+    stack<int> nodeStack; 
     bool dfs(vector<vector<int>>& adj, int node){
-        if(visited[node] == 1) return false; //not yet completed  
-        if(visited[node] == 2) return true; //completed
-        visited[node] = 1; //in progress 
+        if(visited[node] == 1) return false; 
+        if(visited[node] == 2) return true; //중복으로 탐색하는 것을 방지 
+        visited[node] = 1; 
+
         for(int next : adj[node]){
             if(!dfs(adj,next)) return false; 
         }
 
-        visited[node] = 2; //complete
-        stack.push(node); 
+        visited[node] = 2; 
+        nodeStack.push(node); 
         return true; 
     }
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        vector<int> answer; 
-        // if(prerequisites.empty()){
-        //     for(int i = 0; i < numCourses; i++){
-        //         answer.push_back(i);         
-        //     }
-        // }
+        if(numCourses == 1) return {0}; 
         vector<vector<int>> adj(numCourses); 
-        for(vector<int>& v : prerequisites){
-            int to = v[0], from = v[1]; 
+        for(vector<int>& p : prerequisites){
+            int to = p[0], from = p[1]; 
             adj[from].push_back(to); 
         }
+
         for(int i = 0; i < numCourses; i++){
-            if(visited[i] == 0 && !dfs(adj,i)){
-                return {}; 
-            }
+            if(visited[i] == 0 && !dfs(adj,i)) return {}; 
         }
 
-        while(!stack.empty()){
-            answer.push_back(stack.top());  
-            stack.pop(); 
+        vector<int> res; 
+
+        while(!nodeStack.empty()){
+            res.push_back(nodeStack.top()); 
+            nodeStack.pop(); 
         }
-        return answer; 
+
+        return res; 
     }
 };
