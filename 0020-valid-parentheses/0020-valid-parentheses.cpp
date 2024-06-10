@@ -1,20 +1,25 @@
 class Solution {
 public:
     bool isValid(string s) {
-        stack<char> stack; 
-        map<char,char> hashMap = {{')', '('}, {'}', '{'}, {']', '['}};
+        stack<char> charStack; 
+        map<char,char> hashMap = {{')' , '('}, {'}' , '{'}, {']' , '['}}; 
         for(char& c : s){
             if(c == '(' || c == '[' || c == '{'){
-                stack.push(c); 
+                charStack.push(c); 
             } else{
-                if(stack.empty()) return false; 
+                char lastOpen = ' '; 
+                if(!charStack.empty()){
+                    lastOpen = charStack.top();
+                }
 
-                char top = stack.top();
-                stack.pop(); 
-
-                if(top != hashMap[c]) return false; 
+                if(lastOpen == hashMap[c]){
+                    charStack.pop(); 
+                } else{
+                    return false; 
+                }
             }
         }
-        return stack.empty(); 
+
+        return charStack.empty(); 
     }
 };
