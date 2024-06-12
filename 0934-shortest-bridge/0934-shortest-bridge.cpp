@@ -1,74 +1,64 @@
 class Solution {
-    vector<pair<int,int>> dir = {{0,1},{0,-1},{1,0},{-1,0}}; 
+public:
     bool visited[101][101]; 
-public: 
     void dfs(vector<vector<int>>& grid, int i, int j){
         if(i < 0 || j < 0 || i >= grid.size() || j >= grid[0].size() || grid[i][j] != 1) return; 
 
-        grid[i][j] = 2; 
-
-        dfs(grid,i+1,j); 
-        dfs(grid,i-1,j);
+        grid[i][j]  = 2; 
+        dfs(grid, i + 1, j);
+        dfs(grid, i - 1, j);
         dfs(grid,i,j+1);
         dfs(grid,i,j-1); 
     }
+    vector<pair<int,int>> dir = {{0,1},{0,-1},{1,0},{-1,0}}; 
+    int shortestBridge(vector<vector<int>>& grid) {
+        bool flag = false; 
+        for(int i = 0; i < grid.size(); i++){
+            for(int j = 0; j < grid[0].size(); j++){
+                if(grid[i][j] == 1){
+                    dfs(grid,i,j);
+                    flag = true;
+                    break; 
+                }
+            }
+            if(flag) break; 
+        }
 
-public:
-    int bfs(vector<vector<int>>& grid, int i, int j){
-        queue<vector<int>> q; 
-        q.push({i,j,0}); 
-        //vector<vector<bool>> visited(grid.size(),vector<bool>(grid[0].size(),false)); 
-
-        visited[i][j] = true; 
+        queue<vector<int>> q;
+        for(int i = 0; i < grid.size(); i++){
+            for(int j = 0; j < grid[0].size(); j++){
+                if(grid[i][j] == 1){
+                    q.push({i,j,0}); 
+                }
+            }
+        }
 
         while(!q.empty()){
-            int size = q.size(); 
+            int size = q.size();
             for(int i = 0; i < size; i++){
-                vector<int> first = q.front();
+                vector<int> curr = q.front();
                 q.pop(); 
 
-                int x = first[0], y = first[1], dist = first[2]; 
-                if(grid[x][y] == 2){
-                    return dist -1; 
-                }
+                int x = curr[0], y = curr[1], flips = curr[2]; 
 
                 for(pair<int,int>& p : dir){
                     int nX = x + p.first; 
                     int nY = y + p.second; 
 
-                    if(nX < 0 || nX >= grid.size() || nY < 0 || nY >= grid[0].size() || grid[nX][nY] == 1 || visited[nX][nY]) continue; 
+                    if(nX < 0 || nY < 0 || nX >= grid.size() || nY >= grid[0].size()) continue; 
 
-                    visited[nX][nY] = true; 
-                    q.push({nX,nY,dist+1}); 
-                }
-            }
-        }
-        return INT_MAX; 
-    }
-public:
-    int shortestBridge(vector<vector<int>>& grid) {
-        bool flag = true; 
-        int answer = INT_MAX; 
-        for(int i = 0; i < grid.size(); i++){
-            for(int j = 0; j < grid[0].size(); j++){
-                if(grid[i][j] == 1){
-                    dfs(grid,i,j); 
-                    flag = false; 
-                    break; 
-                }
-            }
-            if(!flag) break; 
-        }
-        for(int i = 0; i < grid.size(); i++){
-            for(int j = 0; j < grid[i].size(); j++){
-                memset(visited,false,sizeof(visited)); 
-                if(grid[i][j] == 1){
-                    answer = min(answer,bfs(grid,i,j)); 
+                    //cout << nX << ' ' << nY << endl; 
+                    if(grid[nX][nY] == 2){
+                        return flips; 
+                    } else if(grid[nX][nY] == 0){
+                        grid[nX][nY] = 1; 
+                        q.push({nX,nY,flips+1});  
+                    }
                 }
             }
         }
 
-
-        return answer; 
+        return -1; 
+        
     }
 };
