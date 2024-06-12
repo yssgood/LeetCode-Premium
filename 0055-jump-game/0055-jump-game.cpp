@@ -1,33 +1,30 @@
 class Solution {
 public:
-    bool visited[10001]; 
     bool canJump(vector<int>& nums) {
-        queue<int> q;
-        q.push(0); 
-        visited[0] = true; 
-
+        vector<bool> visited(nums.size(), false); 
+        queue<int> q; 
+        q.push(0);  
 
         while(!q.empty()){
-            int size = q.size();
+            int size = q.size(); 
             for(int i = 0; i < size; i++){
-                int curr_index = q.front();
+                int curr = q.front(); 
                 q.pop(); 
 
-                if(curr_index == nums.size()-1) return true; 
+                if(curr >= nums.size()-1) return true; 
 
-                for(int i = 1; i <= nums[curr_index]; i++){
-                    int new_index = curr_index + i; 
+                for(int i = 1; i <= nums[curr]; i++){
+                    int nCurr = curr + i; 
 
-                    if(new_index == nums.size()-1) return true; 
+                    if(nCurr >= nums.size()-1) return true; 
 
-                    if(new_index < nums.size() && nums[new_index] != 0 && !visited[new_index]){
-                        q.push(new_index);
-                        visited[new_index] = true; 
+                    if(!visited[nCurr]){
+                        visited[nCurr] = true; 
+                        q.push({nCurr}); 
                     }
                 }
             }
         }
-
         return false; 
     }
 };
