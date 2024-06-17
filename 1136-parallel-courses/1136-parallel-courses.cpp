@@ -1,39 +1,39 @@
 class Solution {
 public:
-    int minimumSemesters(int N, vector<vector<int>>& relations) {
-        vector<int> inCount(N + 1, 0);  // or indegree
-        vector<vector<int>> graph(N + 1);
-        for (auto& relation : relations) {
-            graph[relation[0]].push_back(relation[1]);
-            inCount[relation[1]]++;
-        }
-        int step = 0;
-        int studiedCount = 0;
-        vector<int> bfsQueue;
-        for (int node = 1; node < N + 1; node++) {
-            if (inCount[node] == 0) {
-                bfsQueue.push_back(node);
-            }
-        }
-        // start learning with BFS
-        while (!bfsQueue.empty()) {
-            // start new semester
-            step++;
-            vector<int> nextQueue;
-            for (auto& node : bfsQueue) {
-                studiedCount++;
-                for (auto& endNode : graph[node]) {
-                    inCount[endNode]--;
-                    // if all prerequisite courses learned
-                    if (inCount[endNode] == 0) {
-                        nextQueue.push_back(endNode);
-                    }
-                }
-            }
-            bfsQueue = nextQueue;
+    int minimumSemesters(int n, vector<vector<int>>& relations) {
+        vector<vector<int>> adj(n+1); 
+        vector<int> indegree(n+1); 
+        for(vector<int>& v : relations){
+            int from = v[0], to = v[1]; 
+            adj[from].push_back(to); 
+            indegree[to]++; 
         }
 
-        // check if learn all courses
-        return studiedCount == N ? step : -1;
+        queue<int> q; 
+        for(int i = 1; i <= n; i++){
+            if(indegree[i] == 0){
+                q.push(i); 
+            }
+        }
+
+        int time = 0; 
+        int nodes = 0; 
+        while(!q.empty()){
+            int size = q.size();
+            time++; 
+            for(int i = 0; i < size; i++){
+                int node = q.front();
+                q.pop(); 
+                nodes++; 
+                for(int next : adj[node]){
+                    indegree[next]--; 
+                    if(indegree[next] == 0){
+                        q.push(next); 
+                    }
+                }
+            } 
+        }
+        //cout << nodes << ' ' << time; 
+        return nodes == n ? time : -1; 
     }
 };
