@@ -12,6 +12,7 @@
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0039-combination-sum](https://github.com/yssgood/LeetCode-Premium/tree/master/0039-combination-sum) |
+| [0055-jump-game](https://github.com/yssgood/LeetCode-Premium/tree/master/0055-jump-game) |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [1046-max-consecutive-ones-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/1046-max-consecutive-ones-iii) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/yssgood/LeetCode-Premium/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
@@ -23,6 +24,7 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
+| [0055-jump-game](https://github.com/yssgood/LeetCode-Premium/tree/master/0055-jump-game) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/yssgood/LeetCode-Premium/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 # Hash Table
 |  |
@@ -63,3 +65,7 @@
 |  |
 | ------- |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/yssgood/LeetCode-Premium/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
+# Dynamic Programming
+|  |
+| ------- |
+| [0055-jump-game](https://github.com/yssgood/LeetCode-Premium/tree/master/0055-jump-game) |
