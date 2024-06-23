@@ -20,11 +20,13 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
+| [1051-shortest-way-to-form-string](https://github.com/yssgood/LeetCode-Premium/tree/master/1051-shortest-way-to-form-string) |
 # Greedy
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
 | [0055-jump-game](https://github.com/yssgood/LeetCode-Premium/tree/master/0055-jump-game) |
+| [1051-shortest-way-to-form-string](https://github.com/yssgood/LeetCode-Premium/tree/master/1051-shortest-way-to-form-string) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/yssgood/LeetCode-Premium/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 # Hash Table
 |  |
@@ -36,6 +38,7 @@
 | ------- |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0424-longest-repeating-character-replacement](https://github.com/yssgood/LeetCode-Premium/tree/master/0424-longest-repeating-character-replacement) |
+| [1051-shortest-way-to-form-string](https://github.com/yssgood/LeetCode-Premium/tree/master/1051-shortest-way-to-form-string) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/yssgood/LeetCode-Premium/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 # Sliding Window
 |  |
