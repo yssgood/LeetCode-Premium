@@ -1,20 +1,21 @@
 class Solution {
 public:
     int findLonelyPixel(vector<vector<char>>& picture) {
-        map<int,int> rowMap, colMap; 
-        int answer = 0; 
+        unordered_map<int,int> rowMap, colMap; 
         for(int i = 0; i < picture.size(); i++){
-            for(int j = 0; j < picture[0].size(); j++){
+            for(int j = 0; j < picture[i].size(); j++){
                 if(picture[i][j] == 'B'){
-                    rowMap[i]++; 
+                    rowMap[i]++;
                     colMap[j]++; 
                 }
             }
         }
-
+        int answer = 0; 
         for(int i = 0; i < picture.size(); i++){
-            for(int j = 0; j < picture[0].size(); j++){
-                if(picture[i][j] == 'B' && (rowMap[i] == 1) && (colMap[j] == 1)) answer++; 
+            for(int j = 0; j < picture[i].size(); j++){
+                if(picture[i][j] == 'B' && rowMap[i] == 1 && colMap[j] == 1){
+                    answer++; 
+                }
             }
         }
         return answer; 
