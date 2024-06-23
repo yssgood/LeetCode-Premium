@@ -1,20 +1,25 @@
 class Solution {
 public:
     int missingNumber(vector<int>& arr) {
-        int min_element = INT_MAX; 
-        for(int i = 0; i < arr.size()-1; i++){
-            min_element = min(min_element, abs(arr[i+1] - arr[i])); 
-        }
+        //first and last elements are not removed 
+        //[5, 7, 9, 11, 15] 
+        //[15,13,12]
 
+        int n = arr.size(); 
+        int diff = (arr.back() - arr.front()) / n; 
 
-        for(int i = 0; i < arr.size()-1; i++){
-            if(abs(arr[i+1] - arr[i]) > min_element){
-                if(arr[i+1] - arr[i] < 0){
-                    return arr[i] + min_element * -1; 
-                }
-                return arr[i] + min_element; 
+        int left = 0, right = arr.size()-1; 
+        int front = arr[0]; 
+
+        while(left < right){
+            int mid = (right + left) / 2; 
+            if(arr[mid] == front + (mid * diff)){
+                left = mid + 1; 
+            } else{
+                right = mid; 
             }
         }
-        return arr[1] - arr[0]; 
+
+        return front + left * diff; 
     }
 };
