@@ -1,27 +1,32 @@
 class Solution {
 public:
     int shortestWay(string source, string target) {
-        if(source == target) return 0; 
-        int t = 0;
-        int count = 0; 
+        //if(source.length() > target.length()) return -1; 
         
-        while(t < target.length()){
-            int s = 0; 
-            bool flag = false;
-            while(s < source.length() && t < target.length()){
-                if(source[s] == target[t]){
+        int start = 0, end = 0; 
+        int answer = 0; 
+        
+        while(end < target.length()){
+            
+            bool flag = false; 
+            while(start < source.length()){
+                if(source[start] == target[end]){
                     flag = true; 
-                    s++; t++; 
+                    end++; 
                 }
-                else{
-                    s++; 
-                }
+                start++; 
             }
-            if(flag == true) count++; 
-            else return -1; 
+
+            //cout << start << ' ' << flag << endl; 
+            if(!flag) return -1; 
+            if(start >= source.length() - 1){
+                start = 0; 
+            }
+            answer++; 
+            
         }
-        if(t == target.length()) return count;
-        return -1;  
         
+        
+        return answer; 
     }
 };
