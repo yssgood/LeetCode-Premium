@@ -1,21 +1,15 @@
 class Solution {
 public:
     int maxOperations(vector<int>& nums, int k) {
-        sort(nums.begin(), nums.end()); 
-        int left = 0, right = nums.size()-1; 
-        int answer = 0; 
-        while(left < right){
-            int sum = nums[left] + nums[right]; 
-
-            if(sum > k){
-                right--; 
-            } else if(sum < k){
-                left++; 
-            } else{
-                left++;
-                right--;
-                answer++; 
+        map<int,int> hashMap; 
+        int answer =0; 
+        for(int i = 0; i < nums.size(); i++){
+            if(hashMap[k - nums[i]] > 0){
+                answer++;
+                hashMap[k- nums[i]]--; 
+                continue; 
             }
+            hashMap[nums[i]]++; 
         }
         return answer; 
     }
