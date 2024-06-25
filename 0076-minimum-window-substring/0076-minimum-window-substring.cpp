@@ -1,12 +1,12 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        if (s.empty() || t.empty() || s.length() < t.length()) {
-            return "";
-        }
+        // if (s.empty() || t.empty() || s.length() < t.length()) {
+        //     return "";
+        // }
         int check = t.length(); 
-        //unordered_map<char,int> hashMap; 
-        vector<int> hashMap(128, 0); 
+        unordered_map<char,int> hashMap; 
+        //vector<int> hashMap(128, 0); 
         for(char& c : t) hashMap[c]++; 
 
         int start = 0, end = 0; 
