@@ -1,13 +1,13 @@
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        if(prerequisites.empty()){
-            vector<int> answer; 
-            for(int i = numCourses-1; i >= 0; i--){
-                answer.push_back(i); 
-            }
-            return answer; 
-        }
+        // if(prerequisites.empty()){
+        //     vector<int> answer; 
+        //     for(int i = numCourses-1; i >= 0; i--){
+        //         answer.push_back(i); 
+        //     }
+        //     return answer; 
+        // }
         vector<int> inStack(numCourses,0); 
         vector<vector<int>> adj(numCourses); 
         for(vector<int>& v : prerequisites){
