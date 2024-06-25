@@ -1,39 +1,52 @@
 class Solution {
 public:
-    int visited[2001]; 
-    stack<int> nodeStack; 
-    bool dfs(vector<vector<int>>& adj, int node){
-        if(visited[node] == 1) return false; 
-        if(visited[node] == 2) return true; //중복으로 탐색하는 것을 방지 
-        visited[node] = 1; 
-
-        for(int next : adj[node]){
-            if(!dfs(adj,next)) return false; 
-        }
-
-        visited[node] = 2; 
-        nodeStack.push(node); 
-        return true; 
-    }
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        if(numCourses == 1) return {0}; 
+        if(prerequisites.empty()){
+            vector<int> answer; 
+            for(int i = numCourses-1; i >= 0; i--){
+                answer.push_back(i); 
+            }
+            return answer; 
+        }
+        vector<int> inStack(numCourses,0); 
         vector<vector<int>> adj(numCourses); 
-        for(vector<int>& p : prerequisites){
-            int to = p[0], from = p[1]; 
+        for(vector<int>& v : prerequisites){
+            int to = v[0], from = v[1]; 
             adj[from].push_back(to); 
+            inStack[to]++; 
         }
 
+        vector<int> answer; 
+        int currCourse = 0; 
+        queue<int> q; 
         for(int i = 0; i < numCourses; i++){
-            if(visited[i] == 0 && !dfs(adj,i)) return {}; 
+            if(inStack[i] == 0){
+                q.push(i); 
+            }
         }
 
-        vector<int> res; 
-
-        while(!nodeStack.empty()){
-            res.push_back(nodeStack.top()); 
-            nodeStack.pop(); 
+        while(!q.empty()){
+            int size = q.size(); 
+            //currCourse++; 
+            for(int i = 0; i < size; i++){
+                int currNode = q.front(); 
+                q.pop(); 
+                currCourse++; 
+                answer.push_back(currNode); 
+                for(int nextCourse : adj[currNode]){
+                    inStack[nextCourse]--; 
+                    if(inStack[nextCourse] == 0){
+                        q.push(nextCourse); 
+                    }
+                }
+            }
         }
 
-        return res; 
+        //cout << currCourse; 
+        if(currCourse != numCourses) return {}; 
+        
+        return answer; 
     }
 };
+
+
