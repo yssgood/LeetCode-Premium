@@ -15,7 +15,7 @@ public:
         while(end < s.length()){
             //요구 사항 확인 
             //check -= hashMap.count(s[end]) ? 1 : 0; 
-            if(hashMap[s[end++]]-- > 0){
+            if(hashMap[s[end]]-- > 0){
                 check--; 
                 //hashMap[s[end]]--;
             }
@@ -23,10 +23,10 @@ public:
             //범위 조정 
             while(check == 0){
                 //cout << end << ' ' << start << ' ' << answer.length() << endl; 
-                if(end - start  < minLen){
+                if(end - start +1 < minLen){
                     //answer = s.substr(start, end - start); 
                     startIndex = start;  
-                    minLen = end - start; 
+                    minLen = end - start + 1; 
                 }
 
                 //check += hashMap.count(s[start]) ? 1 : 0; 
@@ -43,7 +43,7 @@ public:
 
 
             //범위 증가 
-            //end++; 
+            end++; 
         }
         
         return minLen == INT_MAX ? "" : s.substr(startIndex, minLen); 
