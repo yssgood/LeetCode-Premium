@@ -1,31 +1,48 @@
 class Solution {
-public: 
-    bool dfs(vector<vector<int>>& graph, int node, vector<int>& visited){
-        if(visited[node]){
-            return visited[node] == 1; 
-        }
-
-        visited[node] = -1; 
-
-        for(int n : graph[node]){
-            if(!dfs(graph,n,visited)){
-                return false; 
-            }
-        }
-
-        visited[node] = 1; 
-
-        return true; 
-    }
 public:
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
-        vector<int> visited(graph.size(),false); 
-        vector<int> answer;  
-        for(int i = 0; i < graph.size(); i++){
-            if(dfs(graph,i,visited)){
-                answer.push_back(i); 
+        int n = graph.size();
+        vector<int> indegree(n);
+        vector<vector<int>> adj(n);
+
+        for (int i = 0; i < n; i++) {
+            for (auto node : graph[i]) {
+                adj[node].push_back(i);
+                indegree[i]++;
             }
         }
-        return answer; 
+
+        queue<int> q;
+        // Push all the nodes with indegree zero in the queue.
+        for (int i = 0; i < n; i++) {
+            if (indegree[i] == 0) {
+                //cout << i << endl; 
+                q.push(i);
+            }
+        }
+
+        vector<bool> safe(n);
+        while (!q.empty()) {
+            int node = q.front();
+            q.pop();
+            safe[node] = true;
+
+            for (auto& neighbor : adj[node]) {
+                // Delete the edge "node -> neighbor".
+                indegree[neighbor]--;
+                if (indegree[neighbor] == 0) {
+                    //cout << neightbor << endl; 
+                    q.push(neighbor);
+                }
+            }
+        }
+
+        vector<int> safeNodes;
+        for(int i = 0; i < n; i++) {
+            if(safe[i]) {
+                safeNodes.push_back(i);
+            }
+        }
+        return safeNodes;
     }
 };
