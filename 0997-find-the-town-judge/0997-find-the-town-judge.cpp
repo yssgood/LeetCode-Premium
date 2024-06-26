@@ -1,7 +1,7 @@
 class Solution {
 public:
     int findJudge(int n, vector<vector<int>>& trust) {
-        if(trust.empty()) return 1; 
+        if(trust.empty()) return n == 1 ? 1 : -1; 
 
         vector<pair<int,int>> check(n+1); 
         for(vector<int>& v : trust){
