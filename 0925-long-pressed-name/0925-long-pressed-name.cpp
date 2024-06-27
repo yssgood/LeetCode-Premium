@@ -1,23 +1,19 @@
 class Solution {
 public:
     bool isLongPressedName(string name, string typed) {
-        int start = 0, end = 0; 
-        while(start < name.length() || end < typed.length()){
-            if(name[start] != typed[end]){
-                //cout << start << ' ' << end << endl; 
-                return false; 
+        int p1 = 0, p2 = 0; 
+        while(p1 < name.length() || p2 < typed.length()){
+            if(name[p1] != typed[p2]) return false; 
+
+            int compare = name[p1]; 
+            p1++; 
+            p2++; 
+
+            if(name[p1] != typed[p2]){ //in a long pressed zone 
+                while(p2 < typed.length() && typed[p2] == compare) p2++; 
             }
 
-            char curr = name[start]; 
-            start++; 
-            end++; 
-            //while(end < typed.length() && typed[end] != name[start]) end++; 
-            if(name[start] != typed[end]){
-                while(end < typed.length() && typed[end] == curr) end++; 
-            }
-            
         }
-        
         return true; 
     }
 };
