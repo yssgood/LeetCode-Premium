@@ -33,6 +33,6 @@ public:
             part[i] = (part[i-1] + full[i - 2]) % MOD; 
         }
 
-        return static_cast<int>(full[n]);
+        return full[n]; 
     }
 };
