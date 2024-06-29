@@ -17,22 +17,22 @@ class Solution {
 public:
     int numTilings(int n) {
         int MOD = 1'000'000'007;
-        // handle base case scenarios
-        if (n <= 2) {  
-            return n;
+        if(n <= 2){
+            return n; 
         }
-        // f[k]: number of ways to "fully cover a board" of width k
-        long f[1001];
-        // p[k]: number of ways to "partially cover a board" of width k
-        long p[1001];
-        // initialize f and p with results for the base case scenarios
-        f[1] = 1;
-        f[2] = 2;
-        p[2] = 1;
-        for (int k = 3; k < n + 1; ++k) {
-            f[k] = (f[k - 1] + f[k - 2] + 2 * p[k - 1]) % MOD;
-            p[k] = (p[k - 1] + f[k - 2]) % MOD; 
+
+        long full[1001]; 
+        long part[1001]; 
+
+        full[1] = 1; 
+        full[2] = 2; 
+        part[2] = 1; 
+
+        for(int i = 3; i < n + 1; ++i){
+            full[i] = (full[i-1] + full[i-2] + 2 * part[i - 1]) % MOD; 
+            part[i] = (part[i-1] + full[i - 2]) % MOD; 
         }
-        return static_cast<int>(f[n]);
+
+        return static_cast<int>(full[n]);
     }
 };
