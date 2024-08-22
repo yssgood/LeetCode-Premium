@@ -4,15 +4,15 @@ public:
         vector<int> answer; 
         int top = 0, left = 0, right = matrix[0].size()-1, bottom = matrix.size()-1; 
         int dir = 0; 
-
-        while(answer.size() < (matrix[0].size() * matrix.size())){
+        while(answer.size() < (matrix.size() * matrix[0].size())){
+            
             if(dir == 0){
                 for(int i = left; i <= right; i++){
                     answer.push_back(matrix[top][i]); 
                 }
-                top++; 
+                top++;
                 dir = 1; 
-            } else if (dir == 1){
+            } else if(dir == 1){
                 for(int i = top; i <= bottom; i++){
                     answer.push_back(matrix[i][right]); 
                 }
@@ -28,7 +28,7 @@ public:
                 for(int i = bottom; i >= top; i--){
                     answer.push_back(matrix[i][left]); 
                 }
-                left++; 
+                left++;
                 dir = 0; 
             }
         }
