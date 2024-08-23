@@ -1,37 +1,34 @@
 class Solution {
 public:
     int minDays(vector<int>& bloomDay, int m, int k) {
-        long long n = bloomDay.size(); 
-        if((long long)m * (long long)k > n) return -1; 
-
+        int curr_max = *max_element(bloomDay.begin(), bloomDay.end()); 
         int right = *max_element(bloomDay.begin(), bloomDay.end()); 
         int left = 0; 
+
         while(left <= right){
             int mid = (right + left) / 2; 
 
-            int tmpM = 0, tmpK = k;  
+            int cnt = 0;  
+            int res = 0; 
             for(int i = 0; i < bloomDay.size(); i++){
-                int flower = bloomDay[i]; 
-
-                if(flower <= mid){
-                    tmpK--; 
-                    if(tmpK == 0){
-                        tmpM++; 
-                        tmpK = k; 
+                if(bloomDay[i] <= mid){
+                    cnt++; 
+                    if(cnt == k){
+                        res++; 
+                        cnt = 0; 
                     }
                 } else{
-                    tmpK = k; 
+                    cnt = 0; 
                 }
             }
 
-            if(tmpM >= m){
-                right = mid-1; 
+            if(res >= m){
+                right = mid - 1; 
             } else{
                 left = mid + 1; 
             }
         }
 
-       
-        return left; 
+        return left > curr_max ? -1 : left; 
     }
 };
