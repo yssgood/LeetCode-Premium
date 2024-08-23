@@ -37,7 +37,7 @@ public:
             }
         }
 
-        cout << left; 
+        //cout << left; 
         return false; 
     }
 };
