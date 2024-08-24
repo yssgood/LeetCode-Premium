@@ -1,52 +1,43 @@
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        // if(prerequisites.empty()){
-        //     vector<int> answer; 
-        //     for(int i = numCourses-1; i >= 0; i--){
-        //         answer.push_back(i); 
-        //     }
-        //     return answer; 
-        // }
-        vector<int> inStack(numCourses,0); 
+        vector<int> answer; 
+        vector<int> inward(numCourses,0); 
+        queue<int> q; 
         vector<vector<int>> adj(numCourses); 
+
         for(vector<int>& v : prerequisites){
-            int to = v[0], from = v[1]; 
+            int from = v[1], to = v[0]; 
+            inward[to]++; 
             adj[from].push_back(to); 
-            inStack[to]++; 
         }
 
-        vector<int> answer; 
-        int currCourse = 0; 
-        queue<int> q; 
         for(int i = 0; i < numCourses; i++){
-            if(inStack[i] == 0){
-                q.push(i); 
-            }
+            if(inward[i] == 0) q.push(i);  
         }
+
+        if(q.empty()) return {}; 
+
+        int visitedCourse = 0; 
 
         while(!q.empty()){
             int size = q.size(); 
-            //currCourse++; 
             for(int i = 0; i < size; i++){
                 int currNode = q.front(); 
                 q.pop(); 
-                currCourse++; 
                 answer.push_back(currNode); 
-                for(int nextCourse : adj[currNode]){
-                    inStack[nextCourse]--; 
-                    if(inStack[nextCourse] == 0){
-                        q.push(nextCourse); 
+                visitedCourse++; 
+                for(int next : adj[currNode]){
+                    inward[next]--; 
+                    if(inward[next] <= 0){
+                        q.push(next); 
                     }
                 }
             }
         }
 
-        //cout << currCourse; 
-        if(currCourse != numCourses) return {}; 
-        
+        if(visitedCourse != numCourses) return {}; 
+
         return answer; 
     }
 };
-
-
