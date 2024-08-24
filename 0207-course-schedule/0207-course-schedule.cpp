@@ -1,31 +1,42 @@
 class Solution {
 public:
-    int visited[2001]; 
-    bool dfs(vector<vector<int>>& adj, int node){
-        if(visited[node] == 1) return false; //I'm still traversing and still visited this node 
-        if(visited[node] == 2) return true; //finished traversing 
-
-
-        visited[node] = 1; //still traversing 
-
-        for(int next : adj[node]){
-            if(!dfs(adj , next)) return false; //if I find cycle, just return 
-        }
-
-        visited[node] = 2;  
-
-        return true; //end of traversal  
-    }
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<int> inward(numCourses,0); 
+        vector<bool> visited(numCourses,false); 
         vector<vector<int>> adj(numCourses); 
-        for(vector<int>& p : prerequisites){
-            int to = p[0], from = p[1];  
+        for(vector<int>& v : prerequisites){
+            int to = v[0], from = v[1]; 
+            inward[to]++; 
             adj[from].push_back(to); 
         }
 
+        queue<int> q; 
         for(int i = 0; i < numCourses; i++){
-            if(visited[i] == 0 && !dfs(adj,i)) return false; 
+            if(inward[i] == 0) q.push(i); 
         }
+
+        if(q.empty()) return false; //there is a cycle 
+
+        while(!q.empty()){
+            int size = q.size(); 
+            for(int i = 0; i < size; i++){
+                int node = q.front(); 
+                q.pop(); 
+                visited[node] = true; 
+                for(int next : adj[node]){
+                    inward[next]--; 
+                    if(inward[next] <= 0){
+                        q.push(next); 
+                    }
+                }
+            }
+        }
+
+        for(int i = 0; i < numCourses; i++){
+            if(!visited[i]) return false; 
+        }
+
         return true; 
+
     }
 };
