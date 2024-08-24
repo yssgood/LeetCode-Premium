@@ -1,21 +1,34 @@
 class Solution {
 public:
+    map<int,int> hashMap; 
     vector<int> answer; 
-    void dfs(vector<vector<int>>& adj, int kill){
-        answer.push_back(kill); 
-        for(int next : adj[kill]){
+    void dfs(vector<vector<int>>& adj, int hashNode){
+        answer.push_back(hashNode); 
+        for(int next : adj[hashNode]){
             dfs(adj,next); 
         }
     }
     vector<int> killProcess(vector<int>& pid, vector<int>& ppid, int kill) {
-        int node_num = *max_element(pid.begin(), pid.end()); 
-        vector<vector<int>> adj(node_num + 1); 
+        
+        
         for(int i = 0; i < pid.size(); i++){
-            if(ppid[i] == 0) continue; //root 
-            adj[ppid[i]].push_back(pid[i]); 
+            hashMap[pid[i]] = i; 
         }
 
-        dfs(adj,kill);
+        vector<vector<int>> adj(pid.size()+1); 
+        hashMap[0] = pid.size(); 
+        for(int i = 0; i < pid.size(); i++){
+            //if(ppid[i] == 0) continue; 
+            int to = hashMap[pid[i]];
+            int from = hashMap[ppid[i]]; 
+            adj[from].push_back(to); 
+        }
+        
+        dfs(adj,hashMap[kill]); 
+
+        for(int i = 0; i < answer.size(); i++){
+            answer[i] = pid[answer[i]]; 
+        }
 
         return answer; 
     }
