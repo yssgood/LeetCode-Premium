@@ -1,8 +1,8 @@
 class Solution {
 public:
-    int visited[10001]; 
+    int visited[100001]; 
     bool dfs(vector<vector<int>>& adj, int source, int destination){
-        if(visited[source] == 1) return false; 
+        if(visited[source] == 1) return false;  //found a cycle 
         if(visited[source] == 2) return true; 
         visited[source] = 1; 
         for(int next : adj[source]){
