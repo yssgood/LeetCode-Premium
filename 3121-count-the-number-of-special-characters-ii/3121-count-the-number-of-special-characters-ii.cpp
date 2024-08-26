@@ -1,27 +1,29 @@
 class Solution {
 public:
     int numberOfSpecialChars(string word) {
-        map<char,pair<int,int>> hashMap; 
-        map<char,int> banned; 
         int count = 0; 
-
-        for(int i = 0; i < word.size(); i++){
-            if(isupper(word[i]) && hashMap.count(tolower(word[i]))){
-                if(hashMap[tolower(word[i])].second == -1) count++; 
-                hashMap[tolower(word[i])].first = i; 
-                hashMap[tolower(word[i])].second = 1; 
-            } 
-
-            if(islower(word[i])){
-                if(hashMap[word[i]].second > 0 && i > hashMap[word[i]].first){
-                    if(!banned.count(word[i])) count--; 
-                    banned[word[i]]++; 
-                } else{
-                    hashMap[word[i]].first = i; 
-                    hashMap[word[i]].second = -1; 
-                }
+        map<char,pair<int,bool>> hashMap; 
+        map<char,int> keepTrack; 
+        for(char& c : word){
+            if(islower(c)){
+                hashMap[c].first++; 
+                hashMap[c].second = true; 
             }
         }
+
+        for(char& c : word){
+            if(isupper(c)){
+                char find = tolower(c); 
+                if(hashMap[find].second){
+                    if(keepTrack[find] == hashMap[find].first) count++;
+                    //cout << find << endl; 
+                    hashMap[find].second = false; 
+                }
+            } else if(islower(c)){
+                keepTrack[c]++; 
+            }
+        }
+
         return count; 
     }
 };
