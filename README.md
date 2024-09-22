@@ -77,5 +77,14 @@
 ## String
 |  |
 | ------- |
+| [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 | [3451-string-compression-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/3451-string-compression-iii) |
+## Hash Table
+|  |
+| ------- |
+| [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
+## Sliding Window
+|  |
+| ------- |
+| [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 <!---LeetCode Topics End-->
