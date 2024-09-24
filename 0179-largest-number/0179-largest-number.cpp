@@ -11,13 +11,10 @@ public:
         for(int n : nums){
             answer += to_string(n); 
         }
-        int index = 0; 
-        for(index = 0; index < answer.length()-1; index++){
-            if(answer[index] != '0') break;
-        }
+        
 
-        //cout << index; 
+        if(answer[0] == '0') return "0"; 
 
-        return answer.substr(index); 
+        return answer; 
     }
 };
