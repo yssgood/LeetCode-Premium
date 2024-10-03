@@ -4,7 +4,7 @@ public:
         int row = matrix.size()-1; 
         int col = 0; 
         
-        while(row >= 0 && col < matrix[0].size()-1){
+        while(row >= 0 && col < matrix[0].size()){
             
             if(matrix[row][col] > target){
                 row--; 
