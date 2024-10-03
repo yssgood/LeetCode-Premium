@@ -4,22 +4,27 @@
 class Solution {
 public:
     int findCelebrity(int n) {
-        vector<pair<int,int>> knowMap(n); 
-
+        int celeb = 0; 
+        cout << n; 
         for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
-                if(i == j) continue; 
-
-                if(knows(i,j)){
-                    knowMap[i].first++; 
-                    knowMap[j].second++; 
-                }
+            if(i == celeb) continue; 
+            if(knows(celeb, i)){
+                celeb = i; 
             }
         }
 
-        for(int i = 0; i < knowMap.size(); i++){
-            if(knowMap[i].first == 0 && knowMap[i].second == n - 1) return i; 
+        //cout << celeb; 
+
+        for(int i = 0; i < n; i++){
+            if(i == celeb) continue; 
+            if(knows(celeb,i) || !knows(i,celeb)){
+                return -1; 
+            }
         }
-        return -1; 
+
+        return celeb; 
     }
 };
+
+//[[1,0],
+// [0,1]]
