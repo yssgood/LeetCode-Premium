@@ -20,21 +20,25 @@ class Solution {
         }
 
         if(q.isEmpty()) return -1; 
-        int term = 0; 
+        int term = 0;  
+        int node = 0; 
         while(!q.isEmpty()){
             int size = q.size();
             term++;  
             for(int i = 0; i < size; i++){
                 int curr = q.poll(); 
+                node++; 
                 for(int nextNode : adj.get(curr)){
                     inDegree[nextNode]--;
-                    if(inDegree[nextNode] <= 0){
+                    if(inDegree[nextNode] == 0){
                         q.offer(nextNode); 
                     }
                 }
             }
         }
 
-        return term; 
+        return node == n ? term : -1; 
+
+        //return term == 0 ? -1 : term + 1; 
     }
 }
