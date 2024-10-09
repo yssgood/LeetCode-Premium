@@ -1,30 +1,25 @@
 class Solution {
 public:
     bool isOneEditDistance(string s, string t) {
-        if(s.empty() && t.empty()) return false; 
-        //if(s == t) return true; 
-
-        if(s.length() == t.length()){
-            for(int i = 0; i < s.length(); i++){
-                if(s[i] != t[i]){
-                    return (s.substr(i+1) == t.substr(i+1)); 
-                }
-            }
-        } else if(s.length() < t.length()){
-            for(int i = 0; i < s.length(); i++){
-                if(s[i] != t[i]){ //insert 
-                    return (s.substr(i) == t.substr(i+1)); 
-                }
-            }
-            return t.length() - s.length() == 1; 
-        } else{
-            for(int i = 0; i < t.length(); i++){
-                if(t[i] != s[i]){
-                    return (s.substr(i+1) == t.substr(i)); 
-                }
-            }
+        if(s.empty() && t.empty() || s == t) return false; 
+        if(s.length() > t.length()){
+            string tmp = s; 
+            s = t;
+            t = tmp; 
         }
 
-        return s.length() - t.length() == 1; 
+        //cout << (s.length() + 1 == t.length()); 
+        if(t.length() - s.length() > 1) return false; 
+
+        for(int i = 0; i < s.length(); i++){
+
+            if(s[i] != t[i]){
+                //cout << s.substr(i,1) << ' ' << t.substr(i+1); 
+                if(s.length() == t.length()) return s.substr(i+1) == t.substr(i+1); 
+                return (s.substr(i) == t.substr(i+1)); //deleting this character equals s 
+            }
+        }
+        
+        return s.length() + 1 == t.length(); 
     }
 };
