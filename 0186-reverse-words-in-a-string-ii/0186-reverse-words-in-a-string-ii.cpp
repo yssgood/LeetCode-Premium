@@ -1,35 +1,24 @@
 class Solution {
 public:
     void reverseWords(vector<char>& s) {
+        reverse(s.begin(), s.end()); 
         int start = 0, end = 0; 
         while(end < s.size()){
-            if(s[end] == ' '){
-                int tmpEnd = end - 1; 
+            if(isalnum(s[end])){
+                start = end; 
+                while(end < s.size() && isalnum(s[end])){
+                    end++; 
+                }
                 
-                while(start < tmpEnd){
-                    //cout << s[start] << ' ' << s[tmpEnd]; 
-                    swap(s[start], s[tmpEnd]); 
-                    start++; 
-                    tmpEnd--; 
-                }
+                int tmp = end-1; 
 
-                start = end + 1; 
-
-            }
-
-            if(end == s.size()-1){
-                int tmpEnd = end; 
-
-                while(start < tmpEnd){
-                    swap(s[start], s[tmpEnd]); 
+                while(start < tmp){
+                    swap(s[start], s[tmp]);
                     start++;
-                    tmpEnd--; 
+                    tmp--;  
                 }
             }
-
             end++; 
         }
-
-        reverse(s.begin(), s.end()); 
     }
 };
