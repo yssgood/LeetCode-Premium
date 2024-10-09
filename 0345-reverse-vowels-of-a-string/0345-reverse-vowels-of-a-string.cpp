@@ -1,26 +1,21 @@
 class Solution {
 public:
     string reverseVowels(string s) {
+        set<char> hashSet = {'a','e','i','o','u','A','E','I','O','U'}; 
         int start = 0, end = s.length()-1; 
-        map<char,int> hashMap = {{'a',1}, {'e',1}, {'o',1}, {'u',1}, {'i',1}}; 
         while(start < end){
-            bool a = hashMap.count(tolower(s[start])); 
-            bool b = hashMap.count(tolower(s[end]));
+            char a = tolower(s[start]);
+            char b = tolower(s[end]);
 
-            if(a && b){
-                swap(s[start], s[end]); 
-                start++; 
-                end--; 
-            } else if(!a && !b){
-                start++;
-                end--; 
-            } else if(a && !b){
-                end--;  
-            } else{
-                start++; 
-            }
+            while(start < end && !hashSet.count(s[start])) start++;
+            while(start < end && !hashSet.count(s[end])) end--; 
 
+
+            swap(s[start], s[end]);
+            start++;
+            end--; 
         }
+
         return s; 
     }
 };
