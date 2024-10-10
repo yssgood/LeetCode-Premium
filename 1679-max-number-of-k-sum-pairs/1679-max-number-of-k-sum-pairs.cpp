@@ -1,19 +1,19 @@
 class Solution {
 public:
     int maxOperations(vector<int>& nums, int k) {
-        sort(nums.begin(), nums.end()); 
-        int left = 0, right = nums.size()-1; 
+        sort(nums.begin(), nums.end());
+        int start = 0; 
+        int end = nums.size()-1; 
         int answer = 0; 
-        while(left < right){
-            int sum = nums[left] + nums[right]; 
-
+        while(start < end){
+            int sum = nums[start] + nums[end]; 
             if(sum > k){
-                right--; 
+                end--; 
             } else if(sum < k){
-                left++; 
+                start++; 
             } else{
-                left++;
-                right--;
+                start++;
+                end--; 
                 answer++; 
             }
         }
