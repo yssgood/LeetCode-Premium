@@ -1,23 +1,34 @@
 class Solution {
 public:
     int numKLenSubstrNoRepeats(string s, int k) {
-        int start = 0, end = 0; 
-        int answer = 0;  
-        unordered_map<char,int> hashMap; 
+        map<char,int> hashMap; 
+        int answer = 0, start = 0, end = 0; 
+        
         while(end < s.length()){
-            hashMap[s[end]]++; 
-            while(hashMap[s[end]] > 1){
-                hashMap[s[start]]--;
-                start++; 
+            if(hashMap.count(s[end])){
+                //do something 
+                while(start <= hashMap[s[end]]){
+                    hashMap.erase(s[start]); 
+                    start++; 
+                }
+                //start = hashMap[s[end]]; 
+                //start++; 
+                hashMap[s[end]] = end; 
+                //cout << end << ' ' << start << ' ' << endl; 
+            } else{
+                hashMap[s[end]] = end; 
             }
 
             if(end - start + 1 == k){
-                answer++; 
-                hashMap[s[start]]--;
+                //cout << end << ' ' << start << ' ' << endl; 
+                answer++;
+                hashMap.erase(s[start]);  
                 start++; 
             }
+
             end++; 
         }
+
         return answer; 
     }
 };
