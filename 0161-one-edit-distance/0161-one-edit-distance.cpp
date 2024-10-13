@@ -1,25 +1,25 @@
 class Solution {
 public:
     bool isOneEditDistance(string s, string t) {
-        if(s.empty() && t.empty() || s == t) return false; 
-        if(s.length() > t.length()){
-            string tmp = s; 
-            s = t;
-            t = tmp; 
-        }
+        if(s.empty() && t.empty()) return false; 
+        int len = min(s.length(), t.length()); 
 
-        //cout << (s.length() + 1 == t.length()); 
-        if(t.length() - s.length() > 1) return false; 
-
-        for(int i = 0; i < s.length(); i++){
-
+        for(int i = 0; i < len; i++){
             if(s[i] != t[i]){
-                //cout << s.substr(i,1) << ' ' << t.substr(i+1); 
-                if(s.length() == t.length()) return s.substr(i+1) == t.substr(i+1); 
-                return (s.substr(i) == t.substr(i+1)); //deleting this character equals s 
+                if(s.length() == t.length()){
+                    return (s.substr(i + 1) == t.substr(i + 1)); 
+                } 
+                if(s.length() < t.length()){
+                    return (t.substr(i+1) == s.substr(i)); 
+                }
+                if(s.length() > t.length()){
+                    return (s.substr(i+1) == t.substr(i)); 
+                }
             }
         }
-        
-        return s.length() + 1 == t.length(); 
+        if(s.length() > t.length()){
+            return (t.length() + 1 == s.length()); //insert 
+        }
+        return (s.length() + 1 == t.length()); //insert
     }
 };
