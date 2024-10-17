@@ -13,8 +13,7 @@ class Solution {
     }
     public List<String> letterCombinations(String digits) {
         if(digits.isEmpty()){
-            List<String> ret = new ArrayList<>();
-            return ret; 
+            return Collections.emptyList(); 
         }
         List<String> answer = new ArrayList<>(); 
         Map<Character, List<Character>> hashMap = new HashMap<>() {{
