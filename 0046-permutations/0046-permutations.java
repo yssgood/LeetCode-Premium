@@ -1,5 +1,6 @@
 class Solution {
-    void dfs(int[] nums, List<List<Integer>> answer, List<Integer> container,boolean[] visited){
+    boolean[] visited = new boolean[11]; 
+    public void dfs(List<List<Integer>> answer, List<Integer> container, int[] nums){
         if(container.size() >= nums.length){
             answer.add(new ArrayList<>(container)); 
             return; 
@@ -9,17 +10,18 @@ class Solution {
             if(!visited[i]){
                 visited[i] = true; 
                 container.add(nums[i]); 
-                dfs(nums,answer,container,visited); 
-                container.remove(container.size()-1); 
+                dfs(answer, container, nums);
                 visited[i] = false; 
+                container.removeLast(); 
             }
         }
     }
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> answer = new ArrayList<>(); 
         List<Integer> container = new ArrayList<>(); 
-        boolean[] visited = new boolean[nums.length]; 
-        dfs(nums,answer,container,visited);
+
+        dfs(answer, container, nums); 
+
         return answer; 
     }
 }
