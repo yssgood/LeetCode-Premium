@@ -95,4 +95,8 @@
 |  |
 | ------- |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
+## Math
+|  |
+| ------- |
+| [1069-confusing-number](https://github.com/yssgood/LeetCode-Premium/tree/master/1069-confusing-number) |
 <!---LeetCode Topics End-->
