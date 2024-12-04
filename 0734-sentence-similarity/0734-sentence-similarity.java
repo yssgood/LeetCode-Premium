@@ -1,30 +1,26 @@
 class Solution {
-public
-    boolean areSentencesSimilar(String[] sentence1, String[] sentence2,List<List<String>> similarPairs) {
-        if (sentence1.length != sentence2.length) {
-            return false;
-        }
-        Map<String, Set<String>> wordToSimilarWords = new HashMap<>();
-        for (List<String> pair : similarPairs) {
-            wordToSimilarWords.computeIfAbsent(pair.get(0), value->new HashSet<String>())
-                .add(pair.get(1));
-            wordToSimilarWords.computeIfAbsent(pair.get(1), value->new HashSet<String>())
-                .add(pair.get(0));
-        }
-
-        for (int i = 0; i < sentence1.length; i++) {
-            // If the words are equal, continue.
-            if (sentence1[i].equals(sentence2[i])) {
-                continue;
-            }
-            // If the words form a similar pair, continue.
-            if (wordToSimilarWords.containsKey(sentence1[i]) &&
-                wordToSimilarWords.get(sentence1[i]).contains(sentence2[i])) {
-                continue;
-            }
-            return false;
+    public boolean areSentencesSimilar(String[] sentence1, String[] sentence2, List<List<String>> similarPairs) {
+        if(sentence1.length != sentence2.length) return false; 
+        HashMap<String,Set<String>> hashMap = new HashMap<>(); 
+        for(List<String> ls : similarPairs){
+            hashMap.putIfAbsent(ls.get(0), new HashSet<>());
+            hashMap.putIfAbsent(ls.get(1), new HashSet<>());
+            
+            // 관계 추가
+            hashMap.get(ls.get(0)).add(ls.get(1));
+            hashMap.get(ls.get(1)).add(ls.get(0));
         }
 
-        return true;
+        for(int i = 0; i < sentence1.length; i++){
+            String word1 = sentence1[i];
+            String word2 = sentence2[i];
+            
+            // 같거나 유사한 경우만 허용
+            if (!word1.equals(word2) && (!hashMap.containsKey(word1) || !hashMap.get(word1).contains(word2))) {
+                return false;
+            }
+        }
+
+        return true; 
     }
 }
