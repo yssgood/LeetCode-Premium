@@ -86,6 +86,7 @@
 |  |
 | ------- |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
+| [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 ## Sliding Window
 |  |
 | ------- |
@@ -96,6 +97,7 @@
 | ------- |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
+| [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
 ## Greedy
 |  |
