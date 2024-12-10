@@ -92,6 +92,7 @@
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
+| [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 | [1123-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/master/1123-single-row-keyboard) |
@@ -105,6 +106,7 @@
 | ------- |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
+| [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
@@ -131,4 +133,8 @@
 |  |
 | ------- |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
+## Matrix
+|  |
+| ------- |
+| [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 <!---LeetCode Topics End-->
