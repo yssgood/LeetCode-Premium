@@ -111,6 +111,7 @@
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
+| [3632-button-with-longest-push-time](https://github.com/yssgood/LeetCode-Premium/tree/master/3632-button-with-longest-push-time) |
 ## Greedy
 |  |
 | ------- |
