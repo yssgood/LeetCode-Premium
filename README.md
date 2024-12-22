@@ -82,6 +82,7 @@
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
+| [0345-reverse-vowels-of-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0345-reverse-vowels-of-a-string) |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [1123-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/master/1123-single-row-keyboard) |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
@@ -126,6 +127,7 @@
 | ------- |
 | [0161-one-edit-distance](https://github.com/yssgood/LeetCode-Premium/tree/master/0161-one-edit-distance) |
 | [0186-reverse-words-in-a-string-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0186-reverse-words-in-a-string-ii) |
+| [0345-reverse-vowels-of-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0345-reverse-vowels-of-a-string) |
 ## Dynamic Programming
 |  |
 | ------- |
