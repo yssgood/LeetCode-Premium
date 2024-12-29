@@ -86,6 +86,7 @@
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [1123-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/master/1123-single-row-keyboard) |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
+| [1894-merge-strings-alternately](https://github.com/yssgood/LeetCode-Premium/tree/master/1894-merge-strings-alternately) |
 | [3451-string-compression-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/3451-string-compression-iii) |
 ## Hash Table
 |  |
@@ -128,6 +129,7 @@
 | [0161-one-edit-distance](https://github.com/yssgood/LeetCode-Premium/tree/master/0161-one-edit-distance) |
 | [0186-reverse-words-in-a-string-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0186-reverse-words-in-a-string-ii) |
 | [0345-reverse-vowels-of-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0345-reverse-vowels-of-a-string) |
+| [1894-merge-strings-alternately](https://github.com/yssgood/LeetCode-Premium/tree/master/1894-merge-strings-alternately) |
 ## Dynamic Programming
 |  |
 | ------- |
