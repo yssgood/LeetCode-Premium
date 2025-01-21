@@ -77,6 +77,7 @@
 ## String
 |  |
 | ------- |
+| [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0161-one-edit-distance](https://github.com/yssgood/LeetCode-Premium/tree/master/0161-one-edit-distance) |
 | [0186-reverse-words-in-a-string-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0186-reverse-words-in-a-string-ii) |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
@@ -108,6 +109,7 @@
 ## Array
 |  |
 | ------- |
+| [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
@@ -146,6 +148,7 @@
 ## Matrix
 |  |
 | ------- |
+| [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 ## Sorting
 |  |
@@ -159,4 +162,12 @@
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+## Backtracking
+|  |
+| ------- |
+| [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
+## Depth-First Search
+|  |
+| ------- |
+| [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
