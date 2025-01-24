@@ -115,6 +115,7 @@
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
+| [0252-meeting-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0252-meeting-rooms) |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
@@ -158,6 +159,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0252-meeting-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0252-meeting-rooms) |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 ## Counting
 |  |
