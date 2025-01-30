@@ -191,6 +191,7 @@
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
+| [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -198,6 +199,7 @@
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
+| [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 ## Union Find
 |  |
 | ------- |
@@ -209,6 +211,7 @@
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
+| [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 ## Divide and Conquer
 |  |
 | ------- |
