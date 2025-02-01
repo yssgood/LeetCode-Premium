@@ -4,27 +4,21 @@
 class Solution {
 public:
     int findCelebrity(int n) {
-        int celeb = 0; 
-        cout << n; 
+        int candidate = 0; 
         for(int i = 0; i < n; i++){
-            if(i == celeb) continue; 
-            if(knows(celeb, i)){
-                celeb = i; 
+            if(i == candidate) continue; 
+
+            if(knows(candidate,i)){
+                candidate = i; 
             }
         }
 
-        //cout << celeb; 
-
         for(int i = 0; i < n; i++){
-            if(i == celeb) continue; 
-            if(knows(celeb,i) || !knows(i,celeb)){
-                return -1; 
-            }
+            if(i == candidate) continue; 
+
+            if(knows(candidate,i) || !knows(i,candidate)) return -1; 
         }
 
-        return celeb; 
+        return candidate; 
     }
 };
-
-//[[1,0],
-// [0,1]]
