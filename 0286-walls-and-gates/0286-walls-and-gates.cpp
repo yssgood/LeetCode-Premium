@@ -1,13 +1,11 @@
 class Solution {
 public:
-    vector<pair<int,int>> dir = {{0,1},{0,-1},{1,0},{-1,0}}; 
+    vector<vector<int>> dir = {{0,1},{0,-1},{1,0},{-1,0}}; 
     void wallsAndGates(vector<vector<int>>& rooms) {
-       queue<vector<int>> q; 
+        queue<vector<int>> q; 
         for(int i = 0; i < rooms.size(); i++){
             for(int j = 0; j < rooms[i].size(); j++){
-                if(rooms[i][j] == 0){
-                    q.push({i,j,0}); 
-                }
+                if(rooms[i][j] == 0) q.push({i,j,0}); 
             }
         }
 
@@ -19,11 +17,11 @@ public:
 
                 int x = curr[0], y = curr[1], dist = curr[2]; 
 
-                for(pair<int,int>& p : dir){
-                    int nX = x + p.first; 
-                    int nY = y + p.second; 
+                for(vector<int>& d : dir){
+                    int nX = x + d[0]; 
+                    int nY = y + d[1]; 
 
-                    if(nX < 0 || nY < 0 || nX >= rooms.size() || nY >= rooms[0].size() || rooms[nX][nY] == -1)  continue; 
+                    if(nX < 0 || nY < 0 || nX >= rooms.size()|| nY >= rooms[0].size() || rooms[nX][nY] == -1) continue; 
 
                     if(rooms[nX][nY] > dist + 1){
                         rooms[nX][nY] = dist + 1; 
