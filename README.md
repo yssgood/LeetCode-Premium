@@ -119,6 +119,7 @@
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/yssgood/LeetCode-Premium/tree/master/0162-find-peak-element) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0189-rotate-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0189-rotate-array) |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0252-meeting-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0252-meeting-rooms) |
 | [0283-move-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/master/0283-move-zeroes) |
@@ -147,6 +148,7 @@
 ## Math
 |  |
 | ------- |
+| [0189-rotate-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0189-rotate-array) |
 | [1069-confusing-number](https://github.com/yssgood/LeetCode-Premium/tree/master/1069-confusing-number) |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
 ## Two Pointers
@@ -158,6 +160,7 @@
 | [0161-one-edit-distance](https://github.com/yssgood/LeetCode-Premium/tree/master/0161-one-edit-distance) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0186-reverse-words-in-a-string-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0186-reverse-words-in-a-string-ii) |
+| [0189-rotate-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0189-rotate-array) |
 | [0277-find-the-celebrity](https://github.com/yssgood/LeetCode-Premium/tree/master/0277-find-the-celebrity) |
 | [0283-move-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/master/0283-move-zeroes) |
 | [0345-reverse-vowels-of-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0345-reverse-vowels-of-a-string) |
