@@ -77,6 +77,7 @@
 ## String
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/yssgood/LeetCode-Premium/tree/master/0014-longest-common-prefix) |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0161-one-edit-distance](https://github.com/yssgood/LeetCode-Premium/tree/master/0161-one-edit-distance) |
 | [0186-reverse-words-in-a-string-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0186-reverse-words-in-a-string-ii) |
@@ -262,4 +263,8 @@
 |  |
 | ------- |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/yssgood/LeetCode-Premium/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
