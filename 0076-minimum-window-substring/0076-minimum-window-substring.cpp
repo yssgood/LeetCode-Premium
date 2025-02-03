@@ -1,41 +1,38 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        int start = 0, end = 0; 
         string answer = ""; 
-        unordered_map<char,int> hashMap; 
-        for(char& c : t) hashMap[c]++; 
-
-        int count = 0;
-        int tmpStart = 0; 
-        int minLength = INT_MAX; 
+        map<char,int> hashMap; 
+        for(char c : t) hashMap[c]++; 
+        int start = 0, end = 0; 
+        int min_len = INT_MAX, min_start = 0; 
+        int count = 0; 
         while(end < s.length()){
-            if(hashMap[s[end]]-- > 0){
-                //hashMap[s[end]]--;
+            char curr = s[end]; 
+            if(hashMap[s[end]] > 0){
                 count++; 
             }
+            hashMap[s[end]]--; 
 
             while(count >= t.length()){
- 
-                if(end - start + 1 < minLength){
-                    tmpStart = start; 
-                    minLength = end - start + 1; 
+                if(end - start + 1 < min_len){
+                    min_len = end - start + 1; 
+                    min_start = start; 
                 }
-
-                if(hashMap[s[start++]]++ == 0){
+                // if(tMap.count(s[start])){
+                //     tMap[s[start]]++; 
+                //     count--; 
+                // }
+                if(hashMap[s[start]]++ == 0){
                     count--; 
                 }
-
-                // if(hashMap.count(s[start])){
-                //     count--; 
-                //     hashMap[s[start]]++; 
-                // }
-                // start++; 
+                start++; 
             }
 
             end++; 
         }
 
-        return minLength == INT_MAX ? "" : s.substr(tmpStart, minLength); 
+
+        return min_len == INT_MAX ? "" : s.substr(min_start, min_len); 
     }
 };
