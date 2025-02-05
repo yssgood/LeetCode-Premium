@@ -124,6 +124,7 @@
 | [0033-search-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0033-search-in-rotated-sorted-array) |
 | [0053-maximum-subarray](https://github.com/yssgood/LeetCode-Premium/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/yssgood/LeetCode-Premium/tree/master/0055-jump-game) |
+| [0056-merge-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0056-merge-intervals) |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/master/0128-longest-consecutive-sequence) |
@@ -207,6 +208,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0056-merge-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0056-merge-intervals) |
 | [0252-meeting-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0252-meeting-rooms) |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
