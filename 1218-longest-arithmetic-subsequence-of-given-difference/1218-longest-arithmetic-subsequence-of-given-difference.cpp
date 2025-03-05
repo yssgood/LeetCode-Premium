@@ -1,20 +1,20 @@
 class Solution {
 public:
     int longestSubsequence(vector<int>& arr, int difference) {
-        if(arr.size() <= 1) return 1; 
-        map<int,int> hashMap; 
-        int max_ =  1; 
-        for(int i = 0; i < arr.size(); i++){
+        int n = arr.size(); 
+        if(n <= 1) return 1; 
+        
+        map<int,int> dp; 
+        int max_ = 1; 
+        for(int i = 0; i < n; i++){
             int target = arr[i] - difference; 
-            if(hashMap.count(target)){
-                hashMap[arr[i]] = max(hashMap[arr[i]], 1 + hashMap[target]); 
-                max_ = max(max_, hashMap[arr[i]]); 
+            if(dp.count(target)){
+                dp[arr[i]] = dp[target] + 1; 
+                max_ = max(max_,dp[arr[i]]); 
             } else{
-                hashMap[arr[i]] = max(1,hashMap[arr[i]]); 
+                dp[arr[i]] = 1; 
             }
-            //max_ = max(max_, hashMap[arr[i]]); 
         }
-
         return max_; 
     }
 };
