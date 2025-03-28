@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/rank-teams-by-votes/">1366. Rank Teams by Votes</a></h2><h3>Medium</h3><hr><div><p>In a special ranking system, each voter gives a rank from highest to lowest to all teams participating in the competition.</p>
+<h2><a href="https://leetcode.com/problems/rank-teams-by-votes/">1366. Rank Teams by Votes</a></h2><h3>Medium</h3><hr><p>In a special ranking system, each voter gives a rank from highest to lowest to all teams participating in the competition.</p>
 
 <p>The ordering of teams is decided by who received the most position-one votes. If two or more teams tie in the first position, we consider the second position to resolve the conflict, if they tie again, we continue this process until the ties are resolved. If two or more teams are still tied after considering all positions, we rank them alphabetically based on their team letter.</p>
 
@@ -9,8 +9,9 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> votes = ["ABC","ACB","ABC","ACB","ACB"]
-<strong>Output:</strong> "ACB"
+<pre>
+<strong>Input:</strong> votes = [&quot;ABC&quot;,&quot;ACB&quot;,&quot;ABC&quot;,&quot;ACB&quot;,&quot;ACB&quot;]
+<strong>Output:</strong> &quot;ACB&quot;
 <strong>Explanation:</strong> 
 Team A was ranked first place by 5 voters. No other team was voted as first place, so team A is the first team.
 Team B was ranked second by 2 voters and ranked third by 3 voters.
@@ -20,16 +21,18 @@ As most of the voters ranked C second, team C is the second team, and team B is 
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> votes = ["WXYZ","XYZW"]
-<strong>Output:</strong> "XWYZ"
+<pre>
+<strong>Input:</strong> votes = [&quot;WXYZ&quot;,&quot;XYZW&quot;]
+<strong>Output:</strong> &quot;XWYZ&quot;
 <strong>Explanation:</strong>
 X is the winner due to the tie-breaking rule. X has the same votes as W for the first position, but X has one vote in the second position, while W does not have any votes in the second position. 
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre><strong>Input:</strong> votes = ["ZMNAGUEDSJYLBOPHRQICWFXTVK"]
-<strong>Output:</strong> "ZMNAGUEDSJYLBOPHRQICWFXTVK"
+<pre>
+<strong>Input:</strong> votes = [&quot;ZMNAGUEDSJYLBOPHRQICWFXTVK&quot;]
+<strong>Output:</strong> &quot;ZMNAGUEDSJYLBOPHRQICWFXTVK&quot;
 <strong>Explanation:</strong> Only one voter, so their votes are used for the ranking.
 </pre>
 
@@ -44,4 +47,3 @@ X is the winner due to the tie-breaking rule. X has the same votes as W for the 
 	<li>All characters of <code>votes[i]</code> are unique.</li>
 	<li>All the characters that occur in <code>votes[0]</code> <strong>also occur</strong> in <code>votes[j]</code> where <code>1 &lt;= j &lt; votes.length</code>.</li>
 </ul>
-</div>
