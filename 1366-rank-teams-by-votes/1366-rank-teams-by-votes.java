@@ -1,37 +1,42 @@
 class Solution {
     public String rankTeams(String[] votes) {
         Map<Character,int[]> hashMap = new HashMap<>(); 
-        List<Character> lst = new LinkedList<>(); 
-        for(char c : votes[0].toCharArray()){
-            //hashMap[c] = new int[votes[0].length()]; 
-            hashMap.put(c, new int[votes[0].length()]);
-            lst.add(c); 
+        for(int i = 0; i < votes[0].length(); i++){
+            hashMap.put(votes[0].charAt(i), new int[votes[0].length()]);
         }
-        
+
         for(String s : votes){
             for(int i = 0; i < s.length(); i++){
-                hashMap.get(s.charAt(i))[i]++; 
+                // int[] vec = hashMap.get(s.charAt(i)); 
+                // vec[i]++; 
+                // hashMap.put(s.charAt(i), vec); 
+                hashMap.computeIfAbsent(s.charAt(i), k -> new int[votes[0].length()])[i]++; 
             }
         }
-        
 
-        Collections.sort(lst,(a,b)->{
-            for(int i = 0; i < hashMap.get(a).length; i++){
-                if(hashMap.get(a)[i] > hashMap.get(b)[i]){
-                    return -1; 
-                }
-                else if(hashMap.get(a)[i] < hashMap.get(b)[i]){
-                    return hashMap.get(b)[i] - hashMap.get(a)[i]; 
+        String first = votes[0]; 
+        char[] tmp = first.toCharArray(); 
+        List<Character> lst = new ArrayList<>(); 
+        for(char c : tmp) lst.add(c); 
+        
+        Collections.sort(lst,(a,b) -> {
+            int[] arrA = hashMap.get(a); 
+            int[] arrB = hashMap.get(b); 
+
+            for(int i = 0; i < arrA.length; i++){
+                if(arrA[i] != arrB[i]){
+                    return arrB[i] - arrA[i]; 
                 }
             }
-            return a.compareTo(b); 
+
+            return a - b; 
         });
-        
-        StringBuilder answer = new StringBuilder(); 
-        for(Character c : lst){
-            answer.append(c); 
-        }
-        
-        return answer.toString(); 
+
+
+        StringBuilder sb = new StringBuilder(); 
+        for(char c : lst) sb.append(c); 
+
+
+        return sb.toString(); 
     }
 }
