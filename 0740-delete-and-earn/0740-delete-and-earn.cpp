@@ -1,20 +1,15 @@
 class Solution {
 public:
     int deleteAndEarn(vector<int>& nums) {
-        if(nums.size() <= 1) return nums[0]; 
-
-        int max_ele = *max_element(nums.begin(),nums.end()); 
-        vector<int> dp(max_ele + 1, 0); 
-        map<int,int> hashMap; 
-        for(int n : nums) hashMap[n] += n; 
-
-        //3 1 
-        dp[1] = hashMap[1]; 
-
-        for(int i = 2; i <= max_ele; i++){
-            dp[i] = max(dp[i - 2] + hashMap[i], dp[i-1]);
+        //2 3 4 5
+        vector<int> dp(10001);
+        for(int n : nums) dp[n] += n; 
+        int max_ = dp[1]; 
+        for(int i = 2; i < dp.size(); i++){
+            dp[i] = max(dp[i-1], dp[i-2] + dp[i]); 
+            max_ = max(max_, dp[i]); 
         }
-        
-        return dp[max_ele]; 
+
+        return max_; 
     }
 };
