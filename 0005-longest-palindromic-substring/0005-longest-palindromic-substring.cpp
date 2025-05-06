@@ -1,46 +1,37 @@
 class Solution {
 public:
     string longestPalindrome(string s) {
-        //babad 
-        //baba -> longestPalindrome(0,n-1)
-        //abad -> longestPalindrome(1,n); 
-        //aba -> longestPalindrome(0+1,n-1); 
+        if(s.length() <= 1) return s.substr(0,1); 
+        
+        int n = s.length(); 
+        int index = 0, max_len = 1; 
+        vector<vector<bool>> dp(n,vector<bool>(n,false)); 
 
-        //b a b a d 
-        //1 1 1 1 1 
-
-        //2 2 1 2 2
-        int m = s.length(); 
-        vector<vector<bool>> dp(m,vector<bool>(m,0)); 
-        vector<int> answer = {0,0}; 
-        for(int i = 0; i < m; i++){
+        for(int i = 0; i < n; i++){
             dp[i][i] = true; 
         }
 
-        //c b b d 
-        //1 1 1 1 
-        
-        for(int i = 0; i < m - 1; i++){
+        for(int i = 0; i < n - 1; i++){
             if(s[i] == s[i+1]){
                 dp[i][i+1] = true; 
-                answer = {i,i+1}; 
+                max_len = 2; 
+                index = i; 
             }
         }
 
-        for(int diff = 2; diff < m; diff++){
-            for(int i = 0; i < m - diff; i++){
-                int j = i + diff; 
+        for(int length = 2; length < n; length++){
+            for(int i = 0; i < n - length; i++){
+                int j = i + length;
                 if(s[i] == s[j] && dp[i+1][j-1]){
                     dp[i][j] = true; 
-                    answer = {i,j}; 
+                    if(j - i + 1 > max_len){
+                        max_len = j - i + 1; 
+                        index = i; 
+                    }
                 }
             }
         }
 
-        int i = answer[0]; 
-        int j = answer[1]; 
-
-        return s.substr(i,j-i+1); 
-
+        return s.substr(index, max_len); 
     }
 };
