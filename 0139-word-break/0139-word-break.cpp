@@ -1,24 +1,22 @@
 class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
-        int n = s.length(); 
-        vector<bool> dp(n); 
+        int n = s.length();
+        vector<bool> dp(n,false); 
 
-        for(int i = 0; i < s.length(); i++){
-            for(string word : wordDict){
-                if(i < word.length() -1){
-                    continue; 
-                }
+        for(int i = 0; i < n; i++){
+            for(string& ss : wordDict){
+                if(i < ss.length() - 1) continue; 
 
-                if(i == word.length()-1 || dp[i - word.length()]){
-                    if(s.substr(i - word.length() + 1, word.length()) == word){
-                        dp[i] = true;
+                if(i == ss.length() -1 || dp[i - ss.length()]){
+                    if(s.substr(i - ss.length() + 1, ss.length()) == ss){
+                        dp[i] = true; 
                         break; 
                     }
                 }
             }
         }
 
-        return dp[s.length()-1]; 
+        return dp[n-1]; 
     }
 };
