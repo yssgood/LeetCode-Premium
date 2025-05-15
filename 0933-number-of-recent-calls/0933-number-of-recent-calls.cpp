@@ -6,12 +6,10 @@ public:
     }
     
     int ping(int t) {
-        int lower = t - 3000; 
-        while(!q.empty() && lower > q.front()){
+        q.push(t); 
+        while(t - q.front() > 3000){
             q.pop(); 
         }
-
-        q.push(t); 
         return q.size(); 
     }
 };
