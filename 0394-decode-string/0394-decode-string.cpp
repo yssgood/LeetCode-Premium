@@ -1,43 +1,41 @@
 class Solution {
 public:
     string decodeString(string s) {
-        stack<char> stack; 
+        stack<char> charStack; 
         for(int i = 0; i < s.length(); i++){
-            char currChar = s[i]; 
-            if(currChar == ']'){
+            if(s[i] == ']'){
                 string tmp = ""; 
-                while(stack.top() != '['){
-                    tmp += stack.top(); 
-                    stack.pop(); 
+                while(!charStack.empty() && charStack.top() != '['){
+                    tmp += charStack.top(); 
+                    charStack.pop(); 
                 }
-                stack.pop(); 
-                string numTmp = ""; 
-                while(!stack.empty() && isdigit(stack.top())){
-                    numTmp += stack.top(); 
-                    stack.pop(); 
+                charStack.pop(); 
+                string num = ""; 
+                while(!charStack.empty() && isdigit(charStack.top())){
+                    num += charStack.top();
+                    charStack.pop(); 
                 }
-                reverse(numTmp.begin(), numTmp.end()); 
-                int num = stoi(numTmp); 
-                string add = ""; 
-                while(num--){
-                    add += tmp; 
-                }
-                
-                reverse(add.begin(), add.end()); 
-                for(char& c : add) stack.push(c); 
-
+                reverse(num.begin(),num.end()); 
+                reverse(tmp.begin(),tmp.end()); 
+                string res = ""; 
+                int n = stoi(num); 
+                for(int i = 0; i < n; i++) res += tmp; 
+                //cout << res << endl; 
+                for(char& c : res) charStack.push(c); 
             } else{
-                stack.push(currChar); 
+                charStack.push(s[i]); 
             }
         }
 
-        string res; 
-        while(!stack.empty()){
-            res += stack.top(); 
-            stack.pop(); 
+        string answer = ""; 
+
+        while(!charStack.empty()){
+            answer += charStack.top();
+            charStack.pop(); 
         }
 
-        reverse(res.begin(), res.end());
-        return res; 
+        reverse(answer.begin(),answer.end()); 
+
+        return answer; 
     }
 };
