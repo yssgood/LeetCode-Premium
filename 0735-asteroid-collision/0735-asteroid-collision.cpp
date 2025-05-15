@@ -2,36 +2,33 @@ class Solution {
 public:
     vector<int> asteroidCollision(vector<int>& asteroids) {
         vector<int> answer; 
-        stack<int> numStack; 
-        bool popChance = false; 
-        for(int& n : asteroids){
-            int currRock = n; 
-            popChance = false; 
-            while(!numStack.empty() && numStack.top() > 0 && currRock < 0){
-                int absCurr = abs(currRock); 
-                int prevRock = abs(numStack.top()); 
-
-                if(absCurr > prevRock){
-                    numStack.pop(); 
-                } else{
-                    if(absCurr == prevRock){
-                        numStack.pop(); 
+        stack<int> stack;  
+        for(int n : asteroids){
+            
+            if(n < 0){
+                int curr = abs(n); 
+                bool exploaded = false; 
+                while(!stack.empty() && stack.top() > 0){
+                    if(stack.top() >= curr){
+                        exploaded = true;
+                        if(stack.top() == curr) stack.pop(); 
+                        break; 
                     }
-                    popChance = true; 
-                    break; 
+                    stack.pop(); 
                 }
+
+                if(exploaded) continue; 
             }
-
-            numStack.push(currRock); 
-            if(popChance) numStack.pop(); 
+            stack.push(n); 
         }
 
-        while(!numStack.empty()){
-            answer.push_back(numStack.top()); 
-            numStack.pop(); 
+        while(!stack.empty()){
+            answer.push_back(stack.top()); 
+            stack.pop(); 
         }
 
-        reverse(answer.begin(),answer.end()); 
+
+        reverse(answer.begin(),answer.end());  
 
         return answer; 
     }
