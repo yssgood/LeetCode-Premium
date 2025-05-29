@@ -3,7 +3,7 @@ public:
     int numSquares(int n) {
         if(n <= 1) return 1; 
 
-        vector<int> dp(n+1,INT_MAX); 
+        vector<int> dp(n+1, INT_MAX); 
         dp[1] = 1; 
 
         for(int i = 2; i <= n; i++){
@@ -12,7 +12,7 @@ public:
                     dp[i] = 1;
                     break; 
                 } else{
-                    dp[i] = min(dp[i], dp[i - j * j] + 1);
+                    dp[i] = min(dp[i], dp[i - j*j] + 1);
                 }
             }
         }
