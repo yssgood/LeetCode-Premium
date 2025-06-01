@@ -1,18 +1,20 @@
 class Solution {
 public:
+    int memo[1001]; 
     int minCostClimbingStairs(vector<int>& cost) {
-        if(cost.size() <= 2) return min(cost[0],cost[1]); 
+        memset(memo,-1,sizeof(memo)); 
+        return min(solution(cost,cost.size()-1), solution(cost,cost.size()-2)); 
+    }
 
-        int n = cost.size(); 
-        vector<int> dp(n+1); 
+    int solution(vector<int>& cost,int index){
+        if(index <= 1) return cost[index]; 
 
-        dp[0] = cost[0];
-        dp[1] = cost[1]; 
+        int& ret = memo[index];
+        if(ret > -1) return memo[index]; 
 
-        for(int i = 2; i < n; i++){
-            dp[i] = min(dp[i-1],dp[i-2]) + cost[i]; 
-        }
 
-        return min(dp[n-1], dp[n-2]); 
+        ret = min(solution(cost,index-1), solution(cost,index-2)) + cost[index]; 
+
+        return ret; 
     }
 };
