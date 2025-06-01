@@ -1,15 +1,19 @@
 class Solution {
 public:
+    int memo[46];
     int climbStairs(int n) {
-        if(n < 2) return 1; 
+        memset(memo,-1,sizeof(memo)); 
+        return solution(n); 
+    }
 
-        vector<int> dp(n+1); 
-        dp[1] = 1; 
-        dp[2] = 2; 
+    int solution(int n){
+        if(n <= 1) return 1; 
 
-        for(int i = 3; i <= n; i++){
-            dp[i] = dp[i-2] + dp[i-1]; 
-        }
-        return dp[n]; 
+        int& ret = memo[n]; 
+        if(ret > -1) return memo[n]; 
+
+        ret = solution(n-1) + solution(n-2);
+
+        return ret; 
     }
 };
