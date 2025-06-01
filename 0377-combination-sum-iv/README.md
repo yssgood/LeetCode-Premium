@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/combination-sum-iv">377. Combination Sum IV</a></h2><h3>Medium</h3><hr><p>Given an array of <strong>distinct</strong> integers <code>nums</code> and a target integer <code>target</code>, return <em>the number of possible combinations that add up to</em>&nbsp;<code>target</code>.</p>
+<h2><a href="https://leetcode.com/problems/combination-sum-iv/?envType=study-plan-v2&envId=dynamic-programming">377. Combination Sum IV</a></h2><h3>Medium</h3><hr><p>Given an array of <strong>distinct</strong> integers <code>nums</code> and a target integer <code>target</code>, return <em>the number of possible combinations that add up to</em>&nbsp;<code>target</code>.</p>
 
 <p>The test cases are generated so that the answer can fit in a <strong>32-bit</strong> integer.</p>
 
