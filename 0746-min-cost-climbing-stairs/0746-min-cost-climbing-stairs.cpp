@@ -3,17 +3,17 @@ public:
     int memo[1001]; 
     int minCostClimbingStairs(vector<int>& cost) {
         memset(memo,-1,sizeof(memo)); 
-        return min(solution(cost,cost.size()-1), solution(cost,cost.size()-2)); 
+        return solution(cost, cost.size()); 
     }
 
-    int solution(vector<int>& cost,int index){
-        if(index <= 1) return cost[index]; 
+    int solution(vector<int>& cost, int n){
+        if(n <= 1) return 0; 
 
-        int& ret = memo[index];
-        if(ret > -1) return memo[index]; 
+        int& ret = memo[n]; 
+        if(ret > -1) return memo[n]; 
 
 
-        ret = min(solution(cost,index-1), solution(cost,index-2)) + cost[index]; 
+         ret = min(solution(cost,n-1) + cost[n-1], solution(cost,n-2) + cost[n-2]);
 
         return ret; 
     }
