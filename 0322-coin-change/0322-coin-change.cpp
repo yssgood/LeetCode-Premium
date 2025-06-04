@@ -1,57 +1,24 @@
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
-        //amount 11
-        //0 0 0 0 0 0 0 0 0 0 
+        if(amount <= 0) return 0; 
+        int n = coins.size(); 
+        vector<vector<int>> dp(n+1, vector<int>(amount+1,INT_MAX-1)); 
 
-        vector<int> dp(amount + 1, INT_MAX - 1); 
-        dp[0] = 0; 
-        
-        for(int i = 1; i<= amount; i++){
-            for(int coin : coins){
-                if(coin > i) continue; 
-                //if(i == amount) cout << dp[i % coin]; 
-                //dp[i] = min(dp[i], (i / coin) + dp[i % coin]); 
-                dp[i] = min(dp[i], dp[i-coin] + 1); 
+        for(int i = 0; i <= n; i++){
+            dp[i][0] = 0; 
+        }
+
+        for(int i = 1; i <= n; i++){
+            int coin = coins[i-1]; 
+            for(int j = 1; j <= amount; j++){
+                dp[i][j] = dp[i-1][j]; 
+                if(j >= coin){
+                    dp[i][j] = min(dp[i][j],dp[i][j-coin] + 1); 
+                }
             }
         }
 
-        // for(int i = 1; i <= amount; i++){
-        //     cout << dp[i] << ' '; 
-        // }
-
-
-        return dp[amount] == INT_MAX - 1 ? -1 : dp[amount]; 
+        return dp[n][amount] == INT_MAX - 1 ? -1 : dp[n][amount]; 
     }
 };
-
-
-/*
-        //amount 2 
-        //[1,2,5] => 1
-        
-
-        //amount 1 
-        //[1,2,5] => 1
-        //[1,-1,-1] 
-        
-        //amount 2 
-        //[1,2,5] => 1
-        //[2,1,-1] 
-
-        //amount 3 
-        //[1,2,5]
-        //[3,2,-1] 
-
-        //amount 4 
-        //[4,2,-1] 
-
-        //amount 5 
-        //[5,3,1] 
-
-        //amount 6 
-        //[6,3,2] 
-
-        //amount 7 
-        //[7,4,2] 
-*/
