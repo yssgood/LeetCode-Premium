@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-ways-to-build-good-strings/description/?envType=study-plan-v2&envId=dynamic-programming">2466. Count Ways To Build Good Strings</a></h2><h3>Medium</h3><hr><p>Given the integers <code>zero</code>, <code>one</code>, <code>low</code>, and <code>high</code>, we can construct a string by starting with an empty string, and then at each step perform either of the following:</p>
+<h2><a href="https://leetcode.com/problems/count-ways-to-build-good-strings/?envType=study-plan-v2&envId=dynamic-programming">2466. Count Ways To Build Good Strings</a></h2><h3>Medium</h3><hr><p>Given the integers <code>zero</code>, <code>one</code>, <code>low</code>, and <code>high</code>, we can construct a string by starting with an empty string, and then at each step perform either of the following:</p>
 
 <ul>
 	<li>Append the character <code>&#39;0&#39;</code> <code>zero</code> times.</li>
