@@ -1,34 +1,15 @@
 class Solution {
 public:
-    //2 3 4
-    int memo[20001]; 
-    map<int,int> hashMap; 
     int deleteAndEarn(vector<int>& nums) {
-        memset(memo,-1,sizeof(memo)); 
-        sort(nums.begin(),nums.end());  
-        for(int n : nums) hashMap[n]+=n; 
-        return solution(nums,nums[nums.size()-1]); 
+        sort(nums.begin(), nums.end()); 
+        unordered_map<int,int> hashMap; 
+        int max_ = *max_element(nums.begin(), nums.end());
+        for(int n : nums) hashMap[n] += n; 
+        vector<int> dp(max_ + 1,0); 
+        for(int i = 1; i <= max_; i++){
+            dp[i] = max(dp[i-1], dp[max(0,i-2)] + hashMap[i]); 
+        }
+
+        return dp[max_]; 
     }
-    
-    int solution(vector<int>& nums, int n){
-        if(n <= 1) return hashMap[n]; 
-
-        int& ret = memo[n]; 
-        if(ret > -1) return ret; 
-
-        ret = max(solution(nums,n-2) + hashMap[n], solution(nums,n-1)); 
-        
-        return ret; 
-    }
-
 };
-
-
-/*
-
-4 
-3           2
-2  1         1    0 
-
-
-*/ 
