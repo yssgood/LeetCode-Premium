@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-smallest-common-element-in-all-rows/?envType=study-plan-v2&envId=premium-algo-100">1198. Find Smallest Common Element in All Rows</a></h2><h3>Medium</h3><hr><p>Given an <code>m x n</code> matrix <code>mat</code> where every row is sorted in <strong>strictly</strong> <strong>increasing</strong> order, return <em>the <strong>smallest common element</strong> in all rows</em>.</p>
+<h2><a href="https://leetcode.com/problems/find-smallest-common-element-in-all-rows/?envType=weekly-question&envId=2025-08-08">1198. Find Smallest Common Element in All Rows</a></h2><h3>Medium</h3><hr><p>Given an <code>m x n</code> matrix <code>mat</code> where every row is sorted in <strong>strictly</strong> <strong>increasing</strong> order, return <em>the <strong>smallest common element</strong> in all rows</em>.</p>
 
 <p>If there is no common element, return <code>-1</code>.</p>
 
