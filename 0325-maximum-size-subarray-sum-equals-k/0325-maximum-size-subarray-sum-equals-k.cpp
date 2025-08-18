@@ -1,26 +1,27 @@
 class Solution {
 public:
     int maxSubArrayLen(vector<int>& nums, int k) {
-        unordered_map<long long, long long> prefixSumMap;  // prefixSum -> first index
-        prefixSumMap[0] = -1;  // Handle case where subarray starts from index 0
+        long long max_ = 0; 
+        map<long long,long long> hashMap; 
         
-        long long prefixSum = 0;
-        long long maxLen = 0;
-        
-        for (int i = 0; i < nums.size(); i++) {
-            prefixSum += nums[i];
-            
-            // If prefixSum - k exists in map, we found a valid subarray
-            if (prefixSumMap.count(prefixSum - k)) {
-                maxLen = max(maxLen, i - prefixSumMap[prefixSum - k]);
-            }
-            
-            // Only store first occurrence of this prefixSum
-            if (!prefixSumMap.count(prefixSum)) {
-                prefixSumMap[prefixSum] = i;
-            }
+        hashMap[nums[0]] = 0; 
+        for(int i = 1; i < nums.size(); i++){
+            nums[i] = nums[i-1] + nums[i]; 
+            if(!hashMap.count(nums[i])) hashMap[nums[i]] = i; 
         }
         
-        return maxLen;
+        for(int i = 0; i < nums.size(); i++){
+            long long target = (long long)nums[i] - k; 
+            if(nums[i] == k){
+                max_ = max(max_, (long long)i - 0 + 1); 
+            } else if(hashMap.count(target)){
+                max_ = max(max_, (long long)i - (hashMap[target] + 1) + 1); 
+            }
+        }
+        //1, 0, 5, 3, 6
+        //1, 0, 5, 
+        //-2 -1 2 1 
+        //-2 -3 -1 0
+        return max_; 
     }
 };
