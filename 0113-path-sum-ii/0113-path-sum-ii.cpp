@@ -11,27 +11,28 @@
  */
 class Solution {
 public:
-    void pathSumHelper(TreeNode* root, int targetSum, vector<vector<int>>& answer, vector<int>& container){       
+    void pathSumHelper(TreeNode* root, int targetSum, vector<vector<int>>& answer, vector<int>& container){
         if(!root) return; 
-        if(!root->left && !root->right){
-            if(targetSum == root->val){
-                container.push_back(root->val); 
+
+        container.push_back(root->val); 
+
+        if(root->left == nullptr && root->right == nullptr){
+            if(root->val == targetSum){
                 answer.push_back(container); 
-                container.pop_back(); //why do we need this? 
-            } 
+            }
+            container.pop_back(); 
             return; 
         }
 
-        container.push_back(root->val); 
-        pathSumHelper(root->left, targetSum - root->val, answer, container);  
-        pathSumHelper(root->right, targetSum - root->val, answer, container); 
+        pathSumHelper(root->left,targetSum-root->val,answer,container); 
+        pathSumHelper(root->right,targetSum-root->val,answer,container); 
         container.pop_back(); 
+
     }
     vector<vector<int>> pathSum(TreeNode* root, int targetSum) {
-        if(!root) return {}; 
         vector<vector<int>> answer; 
         vector<int> container; 
-        pathSumHelper(root, targetSum, answer, container);
+        pathSumHelper(root,targetSum,answer,container); 
         return answer; 
     }
 };
