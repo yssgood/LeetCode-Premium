@@ -11,23 +11,30 @@
  */
 class Solution {
 public:
-    bool isSubtree(TreeNode* root, TreeNode* subRoot) {
-        if (root == nullptr){
-            return subRoot == nullptr; 
-        }
-
-        return isSubTreeHelper(root,subRoot) || isSubtree(root->left,subRoot) || isSubtree(root->right,subRoot);
-    }
-
-    bool isSubTreeHelper(TreeNode* root, TreeNode* subRoot){
-        if (root == nullptr && subRoot == nullptr){
+    //when the problems' answer can appear anywhere from the subroot, 
+    //it is better to define helper function and use main function to change the root location 
+    bool isSubtreeHelper(TreeNode* root, TreeNode* subRoot) {
+        if(!root && !subRoot){
             return true; 
         }
 
-        if(!root || !subRoot) return false; 
+        if(!root || !subRoot){
+            return false; 
+        }
 
-        if(root->val != subRoot->val) return false; 
+        if(root->val != subRoot->val){
+            return false; 
+        }
 
-        return isSubTreeHelper(root->left, subRoot->left) && isSubTreeHelper(root->right, subRoot->right); 
+        return isSubtreeHelper(root->left,subRoot->left) && isSubtreeHelper(root->right, subRoot->right); 
+    }
+    bool isSubtree(TreeNode* root, TreeNode* subRoot) {
+        if(!root) return false; 
+
+        if(isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot)){
+            return true; 
+        }
+
+        return isSubtreeHelper(root, subRoot) || isSubtreeHelper(root->left, subRoot) || isSubtreeHelper(root->right, subRoot); 
     }
 };
