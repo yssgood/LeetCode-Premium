@@ -1,57 +1,35 @@
 class Solution {
 public:
-    int partition(vector<int>& arr, int low, int high) {
-        // Using leftmost element as pivot (can cause TLE!)
-        int pivot = arr[low];
-        int i = low + 1;
-        int j = high;
-        
-        while (true) {
-            while (i <= high && arr[i] <= pivot) {
-                i++;
-            }
-            
-            while (j >= low && arr[j] > pivot) {
-                j--;
-            }
-            
-            if (i >= j) break;
-            
-            swap(arr[i], arr[j]);
+    int quickSelect(vector<int>& nums, int left, int right, int k){
+        if(left == right){
+            return nums[left]; 
         }
-        
-        swap(arr[low], arr[j]);
-        return j;
-    }
-    
-    int quickSelect(vector<int>& arr, int low, int high, int k) {
-        if (low == high) {
-            return arr[low];  // Base case: single element
+
+        int pivotIndex = partition(nums, left, right); 
+        if(pivotIndex == k){
+            return nums[pivotIndex]; 
         }
-        
-        int pivotIndex = partition(arr, low, high);
-        
-        if (pivotIndex == k) {
-            return arr[pivotIndex];  // Found the k-th element!
+        if(pivotIndex < k){
+            return quickSelect(nums, pivotIndex + 1, right, k); 
         }
-        else if (k < pivotIndex) {
-            // Target is in left partition
-            return quickSelect(arr, low, pivotIndex - 1, k);
-        }
-        else {
-            // Target is in right partition  
-            return quickSelect(arr, pivotIndex + 1, high, k);
+        else{
+            return quickSelect(nums, left, pivotIndex-1, k); 
         }
     }
-    
+    int partition(vector<int>& nums, int left, int right){
+        int pivot = nums[left]; 
+        int i = left + 1, j = right; 
+        while(true){
+            while(i <= right && nums[i] <= pivot) i++; 
+            while(j >= left && nums[j] > pivot) j--; 
+            if(i >= j) break; 
+            swap(nums[i], nums[j]); 
+        }
+        swap(nums[left], nums[j]); 
+        return j; 
+    }
     int findKthLargest(vector<int>& nums, int k) {
-        // No random seed needed since we're using deterministic pivot
-        
-        // Convert "k-th largest" to "index of k-th largest"
-        // For k-th largest in 0-indexed array: targetIndex = n - k
-        int n = nums.size();
-        int targetIndex = n - k;
-        
-        return quickSelect(nums, 0, n - 1, targetIndex);
+        int targetIndex = nums.size() - k; 
+        return quickSelect(nums,0,nums.size()-1,targetIndex);
     }
 };
