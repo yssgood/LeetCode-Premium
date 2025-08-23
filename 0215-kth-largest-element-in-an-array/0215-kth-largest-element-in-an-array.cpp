@@ -12,9 +12,7 @@ public:
         if(pivotIndex < k){
             return quickSelect(nums, pivotIndex + 1, right, k); 
         }
-        else{
-            return quickSelect(nums, left, pivotIndex-1, k); 
-        }
+        return quickSelect(nums, left, pivotIndex-1, k); 
     }
     int partition(vector<int>& nums, int left, int right){
         int pivot = nums[left]; 
