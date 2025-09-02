@@ -1,30 +1,41 @@
 class Solution {
 public:
-    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
-        vector<vector<pair<int, int>>> adj(n);
-        for (auto e : flights) {
-            adj[e[0]].push_back({e[1], e[2]});
-        }
-        vector<int> stops(n, numeric_limits<int>::max());
-        priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> pq;
-        // {dist_from_src_node, node, number_of_stops_from_src_node}
-        pq.push({0, src, 0});
-
-        while (!pq.empty()) {
-            auto temp = pq.top();
-            pq.pop();
-            int dist = temp[0];
-            int node = temp[1];
-            int steps = temp[2];
-            // We have already encountered a path with a lower cost and fewer stops,
-            // or the number of stops exceeds the limit.
-            if (steps > stops[node] || steps > k + 1) continue;
-            stops[node] = steps;
-            if (node == dst) return dist;
-            for (auto& [neighbor, price] : adj[node]) {
-                pq.push({dist + price, neighbor, steps + 1});
+    void dfs(vector<vector<pair<int,int>>>& adj, vector<vector<int>>& dist, 
+             int src, int dst, int k, int stopsUsed) {
+        if (stopsUsed > k + 1) return;  // Too many stops
+        
+        for (auto& p : adj[src]) {
+            int next = p.first;
+            int price = p.second;
+            int newStops = stopsUsed + 1;
+            
+            // Check if this path is better
+            if (newStops <= k + 1 && dist[src][stopsUsed] + price < dist[next][newStops]) {
+                dist[next][newStops] = dist[src][stopsUsed] + price;
+                dfs(adj, dist, next, dst, k, newStops);
             }
         }
-        return -1;
+    }
+    
+    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
+        vector<vector<pair<int,int>>> adj(n);
+        
+        for (auto& flight : flights) {
+            adj[flight[0]].push_back({flight[1], flight[2]});
+        }
+        
+        // dist[node][stops] = minimum cost to reach node using exactly 'stops' stops
+        vector<vector<int>> dist(n, vector<int>(k + 2, INT_MAX));
+        dist[src][0] = 0;  // Start at source with 0 stops
+        
+        dfs(adj, dist, src, dst, k, 0);
+        
+        // Find minimum among all valid stop counts
+        int result = INT_MAX;
+        for (int stops = 0; stops <= k + 1; stops++) {
+            result = min(result, dist[dst][stops]);
+        }
+        
+        return result == INT_MAX ? -1 : result;
     }
 };
