@@ -1,29 +1,44 @@
 class Solution {
 public:
-    void dfs(vector<vector<int>>& adj, vector<bool>& visited, int node){
-        visited[node] = true; 
-        for(int next : adj[node]){
-            if(!visited[next]){
-                dfs(adj,visited,next); 
-            }
-        }
-    }
-    int countComponents(int n, vector<vector<int>>& edges) {
-        vector<vector<int>> adj(n); 
-        for(vector<int>& v : edges){
-            int start = v[0], to = v[1]; 
-            adj[start].push_back(to); 
-            adj[to].push_back(start); 
-        }
 
-        vector<bool> visited(n); 
-        int answer = 0; 
-        for(int i = 0; i < n; i++){
-            if(!visited[i]){
-                answer++; 
-                dfs(adj,visited,i);
+    void dfs(int start, vector<vector<int>>& ourVec, vector<bool>& visited){
+        
+        visited[start] = true;
+        for (int i = 0; i < ourVec[start].size(); i++){
+            if (!visited[ourVec[start][i]]){
+                dfs(ourVec[start][i],ourVec,visited);
             }
         }
-        return answer; 
+        
+    }
+
+
+    int countComponents(int n, vector<vector<int>>& edges) {
+        vector<vector<int>> ourVec(n);
+        for (int i = 0; i < edges.size(); i++){
+            ourVec[edges[i][0]].push_back(edges[i][1]);
+            ourVec[edges[i][1]].push_back(edges[i][0]);
+        }
+        
+        vector<bool> visited(n);
+        
+        int count = 0;
+        
+        for (int i = 0; i < n; i++){
+            if (!visited[i]){
+                count++;
+                dfs(i,ourVec,visited);
+            }
+        }
+        
+        return count;
+        
     }
 };
+
+        //source node can be any nodes 
+        //0 .. n 
+        
+        //0 -> dfs(0) -> we will be able to find connected components from 0 
+        //1 -> markes as visited from our array (visited[1] = true) 
+        
