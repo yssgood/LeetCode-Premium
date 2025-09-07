@@ -3,11 +3,11 @@ public:
     vector<pair<int,int>> dir = {{-2,1},{-2,-1},{-1,2},{1,2},{2,1},{2,-1},{1,-2},{-1,-2}};
     int minKnightMoves(int x, int y) {
         queue<vector<int>> q; 
-        x = abs(x); 
+        x = abs(x); //amount of moves we make to 5 5 and -5 -5 are same
         y = abs(y); 
         q.push({0,0,0}); 
         set<pair<int,int>> set; 
-        set.insert({0,0});  
+        set.insert({0,0}); //because this is about checking the position, we use set 
         while(!q.empty()){
             int size = q.size();
             for(int i = 0; i < size; i++){
