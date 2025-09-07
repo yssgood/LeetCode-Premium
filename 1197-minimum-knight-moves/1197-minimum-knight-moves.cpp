@@ -25,7 +25,7 @@ public:
                     int nX = xx + p.first;
                     int nY = yy + p.second; 
 
-                    if(!set.count({nX,nY}) && nX >= -1 && nY >= -1){
+                    if(!set.count({nX,nY}) && nX >= -2 && nY >= -2){
                         q.push({nX,nY,dist+1});  
                         set.insert({nX,nY}); 
                     }
