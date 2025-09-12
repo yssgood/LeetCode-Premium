@@ -1,20 +1,21 @@
 class Solution {
 public:
-    int memo[1001]; 
     int minCostClimbingStairs(vector<int>& cost) {
-        memset(memo,-1,sizeof(memo)); 
-        return solution(cost, cost.size()); 
+        int n = cost.size(); 
+        vector<int> memo(n,-1); 
+        return min(solve(n-1,cost,memo), solve(n-2,cost,memo));  
     }
 
-    int solution(vector<int>& cost, int n){
-        if(n <= 1) return 0; 
+    int solve(int index, vector<int>& cost, vector<int>& memo){
+        if(index == 0) return cost[0]; 
+        if(index == 1) return cost[1];
 
-        int& ret = memo[n]; 
-        if(ret > -1) return memo[n]; 
+        if(memo[index] != -1) return memo[index]; 
 
+        int firstStep = solve(index-1,cost,memo); 
+        int secondStep = solve(index-2,cost,memo); 
 
-         ret = min(solution(cost,n-1) + cost[n-1], solution(cost,n-2) + cost[n-2]);
-
-        return ret; 
+        memo[index] = min(firstStep, secondStep) + cost[index]; 
+        return memo[index];  
     }
 };
