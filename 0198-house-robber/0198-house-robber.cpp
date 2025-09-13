@@ -2,21 +2,19 @@ class Solution {
 public:
     int rob(vector<int>& nums) {
         int n = nums.size(); 
-        if(n <= 1) return nums[0]; 
+        vector<int> memo(n,-1); 
+        return helper(memo,nums,n-1); 
+    }
 
-        // vector<int>dp(n+1,INT_MAX); 
-        // dp[0] = 0; 
-        // dp[1] = nums[0]; 
-        // for(int i = 2; i <= n; i++){
-        //     dp[i] = max(dp[i-2] + nums[i-1], dp[i-1]); 
-        // }
+    int helper(vector<int>& memo, vector<int>& nums, int index){
+        if(index < 0) return 0; 
+        if(index == 0) return nums[0]; 
 
-        vector<int>dp(n,INT_MAX); 
-        dp[0] = nums[0]; 
-        dp[1] = max(nums[0],nums[1]); 
-        for(int i = 2; i < n; i++){
-            dp[i] = max(dp[i-2] + nums[i], dp[i-1]); 
-        }
-        return dp[n-1]; 
+        if(memo[index] != -1) return memo[index]; 
+
+        int choice1 = helper(memo,nums,index-2) + nums[index]; 
+        int choice2 = helper(memo,nums,index-1); 
+        memo[index] = max(choice1,choice2);
+        return memo[index]; 
     }
 };
