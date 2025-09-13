@@ -22,7 +22,7 @@ public:
         //     dp[0][nums[0]] = true;
         // }
         for(int i = 1; i <= target; i++){
-            if(i == nums[0]) dp[0][nums[0]] = true; 
+            if(i == nums[0]) dp[0][i] = true; 
         }
         
         for(int i = 1; i < n; i++) {
