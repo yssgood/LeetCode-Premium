@@ -7,8 +7,8 @@ public:
     }
 
     int helper(vector<int>& memo, vector<int>& nums, int index){
-        if(index < 0) return 0; 
         if(index == 0) return nums[0]; 
+        if(index == 1) return max(nums[0],nums[1]); 
 
         if(memo[index] != -1) return memo[index]; 
 
