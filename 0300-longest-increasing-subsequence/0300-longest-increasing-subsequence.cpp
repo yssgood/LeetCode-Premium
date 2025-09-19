@@ -1,20 +1,33 @@
 class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
-        if(nums.size() <= 1) return 1; 
-        int n = nums.size(); 
-        int max_ = 1; 
-        vector<int> dp(n,1); 
-
-        for(int i = 1; i < n; i++){
-            for(int j = 0; j < i; j++){
-                if(nums[j] < nums[i]){
-                    dp[i] = max(dp[i], dp[j] + 1); 
-                    max_ = max(max_, dp[i]); 
+        int n = nums.size();
+        vector<int> memo(n,1);
+        
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < i; j++){
+                if (nums[i] > nums[j]){
+                    if (memo[j]+1 > memo[i]){
+                        memo[i] = memo[j]+1;
+                    }
                 }
+                //choosing 5 represents + 1 
+                //previous doesnt have to be i -1 
             }
         }
-
-        return max_; 
+        
+        int max = -1;
+        for (int i = 0; i < n; i++){
+            if (memo[i] > max){
+                max = memo[i];
+            }
+        }
+        return max;
+        
+        // memo is a table that have the best value in that specific number 
+        // [10,9,2,5] 
+        // [1, 1, 1, 1] dp table
+        //  i = 5
+        //  j 
     }
 };
