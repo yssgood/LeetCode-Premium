@@ -1,19 +1,22 @@
 class Solution {
 public:
     string reverseWords(string s) {
+        //eulb si yks eth
         reverse(s.begin(),s.end()); 
-        int start = 0, end = 0; 
         string answer = ""; 
-        while(end < s.length()){
-            while(start < s.length() && !isalnum(s[start])) start++; 
-            end = start; 
-            while(end < s.length() && isalnum(s[end])) end++; 
+        int start = 0;  
+        while(start < s.length()){
+            //cout << start << ' '; 
+            while(start < s.length() && isspace(s[start])) start++; 
+            int end = start; 
+            while(end < s.length() && (isalpha(s[end]) || isdigit(s[end]))) end++; 
+            
             string tmp = s.substr(start, end - start); 
-            reverse(tmp.begin(),tmp.end()); 
-            if(!tmp.empty()) answer += tmp + ' '; 
-            start = end + 1; 
+            reverse(tmp.begin(),tmp.end());
+            if(tmp.length() > 0) answer += tmp + ' '; 
+            start = end; 
         }
-        answer.pop_back();
+        answer.pop_back(); 
         return answer; 
     }
 };
