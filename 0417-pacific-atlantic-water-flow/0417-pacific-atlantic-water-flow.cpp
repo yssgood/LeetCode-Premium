@@ -1,40 +1,46 @@
 class Solution {
 public:
+    bool pacific[201][201];  
+    bool atlantic[201][201];  
     vector<pair<int,int>> dir = {{0,1},{0,-1},{1,0},{-1,0}}; 
-    bool pacific[201][201]; 
-    bool atlantic[201][201]; 
-    void dfs(vector<vector<int>>& heights, int m, int n, int i, int j, int prev, char letter){
-        if(i < 0 || j < 0 || i >= m || j >= n || heights[i][j] < prev) return; 
-        if(letter == 'P' && pacific[i][j] || letter == 'A' && atlantic[i][j]) return; 
+    void dfs(int i, int j, int n, int m, char finder, vector<vector<int>>& heights){
+        if(i < 0 || j < 0 || i >= n || j >= m) return; 
+        
+        if(finder == 'P') pacific[i][j] = true;  
+        if(finder == 'A') atlantic[i][j] = true; 
 
-        if(letter == 'P') pacific[i][j] = true; 
-        if(letter == 'A') atlantic[i][j] = true; 
+        for(pair<int,int>& p : dir){
+            int nX = i + p.first; 
+            int nY = j + p.second; 
 
-        dfs(heights,m,n,i+1,j,heights[i][j],letter); 
-        dfs(heights,m,n,i-1,j,heights[i][j],letter); 
-        dfs(heights,m,n,i,j+1,heights[i][j],letter); 
-        dfs(heights,m,n,i,j-1,heights[i][j],letter); 
+            if(i < 0 || j < 0 || i >= n || j >= m) continue; 
+            if(nX < 0 || nY < 0 || nX >= n || nY >= m) continue; 
+
+            if(finder == 'P' && !pacific[nX][nY] && heights[nX][nY] >= heights[i][j]) dfs(nX, nY, n, m, finder, heights); 
+            if(finder == 'A' && !atlantic[nX][nY] && heights[nX][nY] >= heights[i][j]) dfs(nX, nY, n, m, finder, heights); 
+        }
     }
     vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
         vector<vector<int>> answer; 
-        int m = heights.size(), n = heights[0].size(); 
-        for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
+        int n = heights.size(); 
+        int m = heights[0].size(); 
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
                 if(i == 0 || j == 0){
-                    dfs(heights,m,n,i,j,heights[i][j],'P'); 
+                    dfs(i,j,n,m,'P',heights); 
                 }
-                if(i == m-1 || j == n-1){
-                    dfs(heights,m,n,i,j,heights[i][j],'A'); 
+                if(i == n-1 || j == m-1){
+                    dfs(i,j,n,m,'A',heights);
                 }
             }
         }
 
-        for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
-                if(pacific[i][j] && atlantic[i][j]){
-                    answer.push_back({i,j}); 
-                }
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                //cout << pacific[i][j] << ' '; 
+                if(pacific[i][j] && atlantic[i][j]) answer.push_back({i,j}); 
             }
+            //cout << endl; 
         }
         return answer; 
     }
