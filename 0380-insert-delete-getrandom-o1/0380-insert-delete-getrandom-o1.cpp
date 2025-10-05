@@ -2,27 +2,28 @@ class RandomizedSet {
 public:
     vector<int> container; 
     map<int,int> hashMap; 
-    int global_counter = 0; 
     RandomizedSet() {
         
     }
     
     bool insert(int val) {
-        if(hashMap.count(val)) return false;  
+        if(hashMap.count(val)) return false; 
         container.push_back(val); 
-        hashMap[val] = global_counter++; 
+        hashMap[val] = container.size()-1; 
+
         return true; 
     }
     
     bool remove(int val) {
         if(!hashMap.count(val)) return false; 
-        int removingIndex = hashMap[val]; 
+        int targetIndex = hashMap[val]; 
+        //swap(container[targetIndex], container[container.size()-1]); 
         int lastNumber = container.back(); 
-        container[removingIndex] = lastNumber; 
+        container[targetIndex] = lastNumber; 
         container.pop_back(); 
-        hashMap[lastNumber] = removingIndex; 
+        //hashMap[container[targetIndex]] = targetIndex; 
+        hashMap[lastNumber] = targetIndex; 
         hashMap.erase(val); 
-        global_counter--; 
         return true; 
     }
     
