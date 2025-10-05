@@ -9,6 +9,6 @@ public:
                 return h; 
             }
         }
-        return -1; 
+        return 0; 
     }
 };
