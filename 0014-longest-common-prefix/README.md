@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/longest-common-prefix/?envType=study-plan-v2&envId=top-interview-150">14. Longest Common Prefix</a></h2><h3>Easy</h3><hr><p>Write a function to find the longest common prefix string amongst an array of strings.</p>
+<h2><a href="https://leetcode.com/problems/longest-common-prefix/description/?envType=problem-list-v2&envId=v2l7kxoc">14. Longest Common Prefix</a></h2><h3>Easy</h3><hr><p>Write a function to find the longest common prefix string amongst an array of strings.</p>
 
 <p>If there is no common prefix, return an empty string <code>&quot;&quot;</code>.</p>
 
