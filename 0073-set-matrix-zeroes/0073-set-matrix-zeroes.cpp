@@ -1,22 +1,40 @@
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
-        map<int,int> rowMap, colMap; 
-        for(int i = 0; i < matrix.size(); i++){
-            for(int j = 0; j< matrix[0].size(); j++){
+        int m = matrix.size(), n = matrix[0].size(); 
+        bool firstRow = false; 
+        bool firstCol = false; 
+
+        for(int i = 0; i < m; i++){
+            if(matrix[i][0] == 0) firstCol = true; 
+        }
+
+        for(int j = 0; j < n; j++){
+            if(matrix[0][j] == 0) firstRow = true; 
+        }
+
+        for(int i = 1; i < m; i++){
+            for(int j = 1; j < n; j ++){
                 if(matrix[i][j] == 0){
-                    rowMap[i]++; 
-                    colMap[j]++; 
+                    matrix[0][j] = 0; 
+                    matrix[i][0] = 0; 
                 }
             }
         }
 
-        for(int i = 0; i < matrix.size(); i++){
-            for(int j = 0; j < matrix[0].size(); j++){
-                if(rowMap.count(i) || colMap.count(j)){
+        for(int i = 1; i < m; i++){
+            for(int j = 1; j < n; j++){
+                if(matrix[0][j] == 0 || matrix[i][0] == 0){
                     matrix[i][j] = 0; 
                 }
             }
+        }
+
+        if(firstRow){
+            for(int j = 0; j < n; j++) matrix[0][j] = 0; 
+        }
+        if(firstCol){
+            for(int i = 0; i < m; i++) matrix[i][0] = 0; 
         }
     }
 };
