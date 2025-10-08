@@ -1,14 +1,23 @@
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
-        unordered_map<char,char> sMap, tMap; 
+        map<char,char> isoMap; 
+        map<char,char> isoTMap; 
         for(int i = 0; i < s.length(); i++){
-            
-            if(!sMap.count(s[i]) && !tMap.count(t[i])){
-                sMap[s[i]] = t[i]; 
-                tMap[t[i]] = s[i]; 
-            } else if(sMap[s[i]] != t[i] || tMap[t[i]] != s[i]) return false; 
+            char sChar = s[i];
+            char tChar = t[i]; 
+            if(isoMap.count(sChar) && isoMap[sChar] != tChar || isoTMap.count(tChar) && isoTMap[tChar] != sChar){
+                return false; 
+            }
+
+            isoMap[sChar] = tChar; 
+            isoTMap[tChar] = sChar; 
         }
         return true; 
     }
 };
+
+/*
+"badc"
+"baba"
+*/
