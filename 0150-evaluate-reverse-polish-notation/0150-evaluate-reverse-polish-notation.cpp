@@ -1,36 +1,49 @@
 class Solution {
 public:
-    int calculate(int first, int prev,string& s){
-        int res = 0; 
-        if(s == "*"){
-            res = first * prev;  
-        } else if(s == "+"){
-            res = first + prev; 
-        } else if(s == "-"){
-            res = first - prev;  
-        } else{
-            res = first / prev; 
-        }
-
-        return res; 
-    }
     int evalRPN(vector<string>& tokens) {
-        stack<string> stack; 
+        int answer = 0; 
+        stack<int> numStack; 
+        for(string& t : tokens){
+            if(t == "+"){
+                int first = numStack.top(); 
+                numStack.pop(); 
+                int second = numStack.top(); 
+                numStack.pop(); 
+                numStack.push(second + first); 
+            } else if(t == "-"){
+                int first = numStack.top(); 
+                numStack.pop(); 
+                int second = numStack.top(); 
+                numStack.pop(); 
+                //cout << first << ' ' << second << ' ' << (second + first) << endl; 
 
-        for(string& s : tokens){
-            if(s == "*" || s == "-" || s == "+" || s == "/"){
-                int res = 0; 
-                int prev = stoi(stack.top()); 
-                stack.pop(); 
-                int first = stoi(stack.top()); 
-                stack.pop(); 
-                res = calculate(first, prev, s); 
-                stack.push(to_string(res)); 
+                numStack.push(second - first); 
+            } else if(t == "*"){
+                int first = numStack.top(); 
+                numStack.pop(); 
+                int second = numStack.top(); 
+                numStack.pop(); 
+                numStack.push(second * first); 
+            } else if(t == "/"){
+                int first = numStack.top(); 
+                numStack.pop(); 
+                int second = numStack.top(); 
+                numStack.pop(); 
+                //cout << first << ' ' << second << ' ' << (second / first) << endl; 
+                numStack.push(second / first); 
             } else{
-                stack.push(s); 
+                int num = 0; 
+                if(t[0] == '-'){
+                   num = stoi(t.substr(1)) * -1;  
+                } else{
+                    num = stoi(t); 
+                }
+                numStack.push(num); 
             }
         }
 
-        return stoi(stack.top()); 
+        cout << numStack.top(); 
+
+        return numStack.top(); 
     }
 };
