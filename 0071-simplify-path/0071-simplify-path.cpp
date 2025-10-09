@@ -1,25 +1,25 @@
 class Solution {
 public:
     string simplifyPath(string path) {
-        vector<string> stack; 
+        stack<string> unixStack; 
         stringstream ss(path); 
-        string tmp; 
+        string token; 
 
-        while(getline(ss,tmp,'/')){
-            cout << tmp << ' '; 
-            if(tmp == ".."){
-                if(!stack.empty()) stack.pop_back(); 
-            } else if(tmp != "." && !tmp.empty()){
-                stack.push_back(tmp); 
+        while(getline(ss,token,'/')){
+            if(token == "" || token == "."){
+                continue; 
+            } else if(token == ".."){
+                if(!unixStack.empty()) unixStack.pop(); 
+            } else{
+                unixStack.push(token); 
             }
         }
 
-        string res = ""; 
-        for(auto str : stack) res += "/" + str;  
-        if(res.empty()){
-            return "/"; 
-        } else{
-            return res; 
+        string answer = ""; 
+        while(!unixStack.empty()){
+            answer = "/" + unixStack.top() + answer; 
+            unixStack.pop(); 
         }
+        return answer.empty() ? "/" : answer; 
     }
 };
