@@ -2,22 +2,19 @@ class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         vector<vector<int>> answer; 
-        sort(intervals.begin(), intervals.end(),[](vector<int>& a, vector<int>& b){
-            return a[0] < b[0]; 
-        }); 
-
-        for(int i = 0; i < intervals.size();){
-            int currRight = intervals[i][1]; 
-            int currLeft = intervals[i][0]; 
-            while(i + 1 < intervals.size() && currRight >= intervals[i+1][0]){
-                currRight = max(currRight, intervals[i+1][1]); 
-                i++; 
+        sort(intervals.begin(), intervals.end()); 
+        int prev = intervals[0][1]; 
+        answer.push_back(intervals[0]);
+        for(int i = 1; i < intervals.size(); i++){
+            int next = intervals[i][0]; 
+            if(prev >= next){
+                prev = max(prev,intervals[i][1]); 
+                answer[answer.size()-1][1] = max(answer[answer.size()-1][1], intervals[i][1]); 
+            } else{
+                prev = intervals[i][1]; 
+                answer.push_back(intervals[i]); 
             }
-
-            answer.push_back({currLeft,currRight}); 
-            i++; 
         }
-
         return answer; 
     }
 };
