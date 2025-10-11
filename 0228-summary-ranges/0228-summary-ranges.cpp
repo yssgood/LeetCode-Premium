@@ -2,16 +2,19 @@ class Solution {
 public:
     vector<string> summaryRanges(vector<int>& nums) {
         vector<string> answer; 
-        for(int i = 0; i < nums.size(); i++){
-            int start = nums[i]; 
-            while(i < nums.size()-1 && nums[i] + 1 == nums[i+1]){
-                i++; 
+        int n = nums.size(); 
+        for(int i = 0; i < n; i++){
+            int curr = nums[i]; 
+            int next = nums[i]; 
+            while(i < n -1 && nums[i+1] == (nums[i] + 1)){
+                next = nums[i+1];
+                i++;
             }
 
-            if(start != nums[i]){
-                answer.push_back(to_string(start) + "->" + to_string(nums[i])); 
+            if(curr != next){
+                answer.push_back(to_string(curr) + "->" + to_string(next)); 
             } else{
-                answer.push_back(to_string(start)); 
+                answer.push_back(to_string(curr));  
             }
         }
         return answer; 
