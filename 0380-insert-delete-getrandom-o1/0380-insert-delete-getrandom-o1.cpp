@@ -1,13 +1,14 @@
 class RandomizedSet {
 public:
-    vector<int> container; 
     map<int,int> hashMap; 
+    vector<int> container; 
     RandomizedSet() {
         
     }
     
     bool insert(int val) {
         if(hashMap.count(val)) return false; 
+
         container.push_back(val); 
         hashMap[val] = container.size()-1; 
 
@@ -15,16 +16,19 @@ public:
     }
     
     bool remove(int val) {
-        if(!hashMap.count(val)) return false; 
-        int targetIndex = hashMap[val]; 
-        //swap(container[targetIndex], container[container.size()-1]); 
-        int lastNumber = container.back(); 
-        container[targetIndex] = lastNumber; 
+        if(!hashMap.count(val)) return false;
+
+        int index = hashMap[val]; 
+        int last = container.back(); 
+
+        container[index] = last; 
+        container[container.size()-1] = val; 
         container.pop_back(); 
-        //hashMap[container[targetIndex]] = targetIndex; 
-        hashMap[lastNumber] = targetIndex; 
-        hashMap.erase(val); 
-        return true; 
+
+        hashMap.erase(val);
+        hashMap[last] = index; 
+
+        return true;         
     }
     
     int getRandom() {
