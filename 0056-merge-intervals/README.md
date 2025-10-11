@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/merge-intervals/description/?envType=study-plan-v2&envId=top-interview-150">56. Merge Intervals</a></h2><h3>Medium</h3><hr><p>Given an array&nbsp;of <code>intervals</code>&nbsp;where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, merge all overlapping intervals, and return <em>an array of the non-overlapping intervals that cover all the intervals in the input</em>.</p>
+<h2><a href="https://leetcode.com/problems/merge-intervals">56. Merge Intervals</a></h2><h3>Medium</h3><hr><p>Given an array&nbsp;of <code>intervals</code>&nbsp;where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, merge all overlapping intervals, and return <em>an array of the non-overlapping intervals that cover all the intervals in the input</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -15,6 +15,14 @@
 <strong>Input:</strong> intervals = [[1,4],[4,5]]
 <strong>Output:</strong> [[1,5]]
 <strong>Explanation:</strong> Intervals [1,4] and [4,5] are considered overlapping.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> intervals = [[4,7],[1,4]]
+<strong>Output:</strong> [[1,7]]
+<strong>Explanation:</strong> Intervals [1,4] and [4,7] are considered overlapping.
 </pre>
 
 <p>&nbsp;</p>
