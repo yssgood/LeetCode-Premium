@@ -1,65 +1,80 @@
-struct DLLNode{  // Changed name
+struct Node{
     int key, val; 
-    DLLNode* next; 
-    DLLNode* prev; 
-    DLLNode(int key, int val) : key(key), val(val), next(nullptr), prev(nullptr) {}
+    Node* next; 
+    Node* prev; 
+    Node(int key, int val){
+        this->key = key; 
+        this->val = val; 
+        this->next = nullptr; 
+        this->prev = nullptr; 
+    }
 };
 
 class LRUCache {
 public:
-    unordered_map<int, DLLNode*> hashMap;  // Use DLLNode
-    int cap; 
-    DLLNode* header;  // Use DLLNode
-    DLLNode* tail;    // Use DLLNode
-    
+    unordered_map<int,Node*> hashMap; 
+    int cap = 0; 
+    Node* header;
+    Node* tail; 
     LRUCache(int capacity) {
         cap = capacity; 
-        header = new DLLNode(-1,-1); 
-        tail = new DLLNode(-1,-1); 
+        header = new Node(-1,-1); 
+        tail = new Node(-1,-1); 
         header->next = tail;
-        tail->prev = header;  
-    }
-
-    void addToFront(DLLNode* node){
-        node->next = header->next; 
-        node->prev = header; 
-        header->next->prev = node; 
-        header->next = node; 
-    }
-
-    void removeNode(DLLNode* node){
-        node->prev->next = node->next; 
-        node->next->prev = node->prev; 
-    }
-
-    void moveToFront(DLLNode* node){
-        removeNode(node); 
-        addToFront(node); 
+        tail->prev = header; 
     }
     
     int get(int key) {
         if(!hashMap.count(key)) return -1; 
-        DLLNode* node = hashMap[key]; 
-        moveToFront(node); 
-        return node->val; 
+
+        Node* target = hashMap[key]; 
+        target->prev->next = target->next; 
+        target->next->prev = target->prev; 
+
+        target->prev = header; 
+        target->next = header->next; 
+        header->next->prev = target; 
+        header->next = target;  
+
+        return target->val; 
     }
     
     void put(int key, int value) {
         if(hashMap.count(key)){
-            DLLNode* node = hashMap[key]; 
-            node->val = value; 
-            moveToFront(node); 
+            Node* target = hashMap[key];
+            target->val = value; 
+
+            target->prev->next = target->next; 
+            target->next->prev = target->prev; 
+
+            target->prev = header; 
+            target->next = header->next;  
+            header->next->prev = target; 
+            header->next = target; 
         } else{
-            DLLNode* newNode = new DLLNode(key,value); 
+            Node* newNode = new Node(key,value); 
             hashMap[key] = newNode; 
-            addToFront(newNode); 
+
+            newNode->prev = header; 
+            newNode->next = header->next; 
+            header->next->prev = newNode; 
+            header->next = newNode; 
 
             if(hashMap.size() > cap){
-                DLLNode* lru = tail->prev; 
-                removeNode(lru); 
+                Node* lru = tail->prev; 
+                lru->prev->next = lru->next; 
+                lru->next->prev = lru->prev; 
+
                 hashMap.erase(lru->key); 
                 delete lru; 
             }
         }
     }
 };
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache* obj = new LRUCache(capacity);
+ * int param_1 = obj->get(key);
+ * obj->put(key,value);
+ */
