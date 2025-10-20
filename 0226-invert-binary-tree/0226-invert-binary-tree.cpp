@@ -11,22 +11,14 @@
  */
 class Solution {
 public:
-    //lets use post-order approach  
-    //reach to left and right child firs  
-    //then lets determine what to do at the root  
     TreeNode* invertTree(TreeNode* root) {
-        if(root == nullptr){
-            return nullptr; 
-        }
+        if(!root) return root; 
 
-        TreeNode* left = invertTree(root->left); //left
-        TreeNode* right = invertTree(root->right); //right 
+        TreeNode* left = invertTree(root->left); 
+        TreeNode* right = invertTree(root->right); 
 
-        //what should i do at the root? 
         root->left = right; 
         root->right = left; 
-
         return root; 
-
     }
 };
