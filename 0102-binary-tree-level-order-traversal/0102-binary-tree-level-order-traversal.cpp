@@ -16,21 +16,21 @@ public:
         vector<vector<int>> answer; 
         vector<int> container; 
         queue<TreeNode*> q; 
-        q.push(root);
+        q.push(root); 
         while(!q.empty()){
-            int size = q.size();
+            int size = q.size(); 
             for(int i = 0; i < size; i++){
                 TreeNode* curr = q.front(); 
-                q.pop();  
-
+                q.pop(); 
                 container.push_back(curr->val); 
-                if(curr->left) q.push(curr->left);  
+                if(i == size-1){
+                    answer.push_back(container); 
+                }
+                if(curr->left) q.push(curr->left); 
                 if(curr->right) q.push(curr->right); 
             }
-            answer.push_back(container); 
             container.clear(); 
         }
-
         return answer; 
     }
 };
