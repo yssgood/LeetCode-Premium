@@ -1,51 +1,67 @@
+class Pair{
+    StringBuilder sb; 
+    int count; 
+    public Pair(StringBuilder sb, int count){
+        this.sb = sb; 
+        this.count = count; 
+    } 
+}
 class Solution {
-    class Pair{
-        String s;
-        int count; 
-        public Pair(String s, int count){
-            this.s = s; 
-            this.count = count; 
-        }
-    }
     public int openLock(String[] deadends, String target) {
-        Set<String> hashSet = new HashSet<>();
-        for(String s : deadends) hashSet.add(s); 
+        Map<String,Boolean> hashMap = new HashMap<>(); 
+        for(String s : deadends){
+            hashMap.put(s, true); 
+        }
+
+        if(hashMap.containsKey("0000")) return -1; 
+        if(target.equals("0000")) return 0; 
+
+        hashMap.put("0000",true); 
+
         Queue<Pair> q = new LinkedList<>(); 
-        HashMap<String,Integer> hashMap = new HashMap<>(); 
-        hashMap.put("0000",0); 
-        q.offer(new Pair("0000",0)); 
-        int answer = Integer.MAX_VALUE; 
-        if(hashSet.contains("0000")) return -1; 
+        q.add(new Pair(new StringBuilder("0000"), 0)); 
         while(!q.isEmpty()){
             int size = q.size(); 
             for(int i = 0; i < size; i++){
-                Pair currPair = q.poll(); 
-                String curr = currPair.s; 
-                int count = currPair.count; 
+                Pair first = q.poll(); 
+                int currCount = first.count; 
 
-                if(curr.equals(target)){
-                    return count; 
-                }
+                //if(hashMap.containsKey(first.sb.toString())) continue; 
 
-                //StringBuilder sb = new StringBuilder(curr); 
-                for(int j = 0; j < target.length(); j++){
-                    StringBuilder sb = new StringBuilder(curr); 
-                    char c = sb.charAt(j); 
-                    sb.setCharAt(j, (char)((c - '0' + 1) % 10 + '0'));
-                    String next = sb.toString(); 
-                    if(!hashSet.contains(next) && !hashMap.containsKey(next)){
-                        q.offer(new Pair(next, count + 1)); 
-                        hashMap.put(next,0); 
+                for(int j = 0; j < 4; j++){
+                    StringBuilder curr = first.sb; 
+                    char digitChar = curr.charAt(j); 
+
+                    int digit = digitChar - '0'; 
+                    //System.out.print(digit); 
+
+                    char upDigit = digit + 1 > 9 ? (char)(0 + '0') : (char)((digit + 1) + '0');
+                    char downDigit = digit - 1 < 0 ? (char)(9 + '0') : (char)((digit -1) + '0'); 
+                    
+                    StringBuilder upCurr = new StringBuilder(first.sb); 
+                    StringBuilder downCurr = new StringBuilder(first.sb); 
+
+                    //System.out.println(upDigit); 
+
+                    upCurr.setCharAt(j,upDigit); 
+                    downCurr.setCharAt(j,downDigit); 
+
+                    //System.out.println(upCurr.toString()); 
+
+                    if(upCurr.toString().equals(target) || downCurr.toString().equals(target)) return currCount + 1; 
+
+                    //if(hashMap.containsKey(upCurr) || hashMap.containsKey(downCurr)) return -1; 
+
+                    if(!hashMap.containsKey(upCurr.toString())){
+                        hashMap.put(upCurr.toString(),true); 
+                        q.offer(new Pair(upCurr,currCount + 1)); 
+                    }
+
+                    if(!hashMap.containsKey(downCurr.toString())){
+                        hashMap.put(downCurr.toString(),true); 
+                        q.offer(new Pair(downCurr,currCount + 1)); 
                     }
                     
-
-                    // 감소시키기
-                    sb.setCharAt(j, (char) ((c - '0' + 9) % 10 + '0'));  // 감소시키기 위해 +9
-                    next = sb.toString();
-                    if (!hashSet.contains(next) && !hashMap.containsKey(next)) {
-                        q.offer(new Pair(next, count + 1));
-                        hashMap.put(next,0);
-                    }
 
                 }
             }
