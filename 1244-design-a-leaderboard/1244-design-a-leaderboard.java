@@ -9,28 +9,21 @@ class Leaderboard {
     }
     
     public int top(int K) {
-        TreeSet<Integer> playerList = new TreeSet<>((a,b) -> {
-            //return hashMap.getOrDefault(b,0) - hashMap.getOrDefault(a,0); 
-            int scoreDiff = hashMap.get(b) - hashMap.get(a); 
-            if(scoreDiff != 0) return scoreDiff; 
-            return a - b; 
-        });
-        for(int playerId : hashMap.keySet()){
-            playerList.add(playerId); 
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder()); 
+
+        for(int scores : hashMap.values()){
+            pq.offer(scores); 
         }
         int sum = 0; 
-        for(Integer vals : playerList){
-            if(K > 0){
-                //System.out.println(hashMap.get(vals)); 
-                sum += hashMap.get(vals); 
-            }
+        while(K > 0){
+            sum += pq.poll(); 
             K--; 
         }
         return sum; 
     }
     
     public void reset(int playerId) {
-        hashMap.put(playerId,0); 
+        hashMap.remove(playerId); 
     }
 }
 
