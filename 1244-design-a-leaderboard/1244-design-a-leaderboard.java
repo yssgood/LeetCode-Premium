@@ -1,43 +1,43 @@
 class Leaderboard {
-
-    private HashMap<Integer, Integer> scores;
-    
+    private Map<Integer,Integer> hashMap; 
     public Leaderboard() {
-        this.scores = new HashMap<Integer, Integer>();
+        hashMap = new HashMap<>(); 
     }
     
     public void addScore(int playerId, int score) {
-        
-        if (!this.scores.containsKey(playerId)) {
-            this.scores.put(playerId, 0);
-        }
-        
-        this.scores.put(playerId, this.scores.get(playerId) + score);
+        hashMap.put(playerId, hashMap.getOrDefault(playerId,0) + score); 
     }
     
     public int top(int K) {
-        
-        // A min-heap in java containing entries of a hash map. Note that we have to provide
-        // a comparator of our own to make sure we get the ordering right of these objects.
-        PriorityQueue<Map.Entry<Integer, Integer>> heap = new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
-        
-        for (Map.Entry<Integer, Integer> entry : this.scores.entrySet()) {
-            heap.offer(entry);
-            if (heap.size() > K) {
-                heap.poll();
+        TreeSet<Integer> playerList = new TreeSet<>((a,b) -> {
+            //return hashMap.getOrDefault(b,0) - hashMap.getOrDefault(a,0); 
+            int scoreDiff = hashMap.get(b) - hashMap.get(a); 
+            if(scoreDiff != 0) return scoreDiff; 
+            return a - b; 
+        });
+        for(int playerId : hashMap.keySet()){
+            playerList.add(playerId); 
+        }
+        int sum = 0; 
+        for(Integer vals : playerList){
+            if(K > 0){
+                //System.out.println(hashMap.get(vals)); 
+                sum += hashMap.get(vals); 
             }
+            K--; 
         }
-        
-        int total = 0;
-        Iterator value = heap.iterator();
-        while (value.hasNext()) { 
-            total += ((Map.Entry<Integer, Integer>)value.next()).getValue();   
-        }
-        
-        return total;
+        return sum; 
     }
     
     public void reset(int playerId) {
-        this.scores.put(playerId, 0);
+        hashMap.put(playerId,0); 
     }
 }
+
+/**
+ * Your Leaderboard object will be instantiated and called as such:
+ * Leaderboard obj = new Leaderboard();
+ * obj.addScore(playerId,score);
+ * int param_2 = obj.top(K);
+ * obj.reset(playerId);
+ */
