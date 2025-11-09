@@ -1,60 +1,54 @@
 class Solution {
+    int[][] dir = {{0,1},{0,-1},{1,0},{-1,0}}; 
     public int shortestBridge(int[][] grid) {
-        int n = grid.length;
-        Queue<int[]> q = new LinkedList<>();
-        
-        // Step 1: Find first island, mark as 2, add all cells to queue
-        boolean found = false;
+        int n = grid.length; 
+        Queue<int[]> q = new LinkedList<>(); 
+        boolean found = false; 
         for(int i = 0; i < n && !found; i++){
             for(int j = 0; j < n && !found; j++){
                 if(grid[i][j] == 1){
-                    dfs(grid, i, j, q); // Pass queue to collect cells
-                    found = true;
+                    dfs(grid,i,j,q); 
+                    found = true; 
                 }
             }
         }
 
-        // Step 2: BFS from all cells of first island
-        int[][] dir = {{0,1},{0,-1},{1,0},{-1,0}}; 
-        int steps = 0;
-        
+        int answer = 0; 
         while(!q.isEmpty()){
-            int size = q.size(); // Process level by level
-            
-            for(int k = 0; k < size; k++){
+            int size = q.size();
+            for(int i = 0; i < size; i++){
                 int[] curr = q.poll(); 
-                int x = curr[0]; 
-                int y = curr[1];
-                
+                int x = curr[0], y = curr[1], dist = curr[2]; 
+                if(grid[x][y] == 1) return dist; 
+                //grid[x][y] = 2; 
+                System.out.println(x + " " + y); 
+
                 for(int[] d : dir){
-                    int nX = x + d[0];
+                    int nX = x + d[0]; 
                     int nY = y + d[1]; 
-                    
-                    if(nX >= 0 && nY >= 0 && nX < n && nY < n){
-                        if(grid[nX][nY] == 1) return steps; // Found island 2!
+            
+
+                    if(nX >= 0 && nY >= 0 && nX < n && nY < n && grid[nX][nY] != 2){
+                        if(grid[nX][nY] == 1) return dist;
                         
-                        if(grid[nX][nY] == 0){ // Only visit water
-                            grid[nX][nY] = 2; // Mark as visited
-                            q.offer(new int[]{nX, nY}); 
-                        }
+                        grid[nX][nY] = 2; 
+                        q.offer(new int[]{nX,nY,dist+1}); 
                     }
                 }
+
             }
-            steps++;
         }
 
-        return -1;
+        return -1; 
     }
-    
-    public void dfs(int[][] grid, int i, int j, Queue<int[]> q){
-        if(i < 0 || j < 0 || i >= grid.length || j >= grid.length || grid[i][j] != 1) return; 
-        
-        grid[i][j] = 2; // Mark as first island
-        q.offer(new int[]{i, j}); // Add to queue for BFS
-        
-        dfs(grid, i+1, j, q);
-        dfs(grid, i-1, j, q);
-        dfs(grid, i, j+1, q);
-        dfs(grid, i, j-1, q); 
+    void dfs(int[][] grid, int i, int j, Queue<int[]> q){
+        if(i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] != 1) return; 
+        grid[i][j] = 2; 
+        q.offer(new int[]{i,j,0}); 
+
+        dfs(grid,i+1,j,q);
+        dfs(grid,i-1,j,q);
+        dfs(grid,i,j+1,q);
+        dfs(grid,i,j-1,q); 
     }
 }
