@@ -1,77 +1,79 @@
-class Node {
-    int key; 
-    int value;  
-    Node next;  
-    Node prev; 
-    public Node(int key, int value){
+class Cache {
+    int key, value;
+    Cache next, prev; 
+    public Cache(int key, int value){
         this.key = key;
         this.value = value; 
-        next = null; 
-        prev = null; 
+        this.next = null;
+        this.prev = null; 
     }
 }
 class LRUCache {
-    int cap = 0; 
-    int size = 0; 
-    Map<Integer, Node> hashMap = new HashMap<>(); 
-    Node header = new Node(-1,-1); 
-    Node trailer = new Node(-1,-1); 
+    private int capacity; 
+    private int size; 
+    private Cache header = new Cache(-1,-1); 
+    private Cache trailer = new Cache(-1,-1);
+    private Map<Integer,Cache> hashMap; 
     public LRUCache(int capacity) {
-        cap = capacity; 
-        header.next = trailer;
-        trailer.prev = header; 
+        this.capacity = capacity; 
+        this.size = 0; 
+        this.header.next = trailer;
+        this.trailer.prev = header;
+        this.hashMap = new HashMap<>(); 
     }
     
     public int get(int key) {
         if(!hashMap.containsKey(key)) return -1; 
+        Cache target = hashMap.get(key); 
 
-        Node currCache = hashMap.get(key); 
+        target.prev.next = target.next; 
+        target.next.prev = target.prev; 
 
-        currCache.next.prev = currCache.prev; 
-        currCache.prev.next = currCache.next; 
+        target.next = header.next; 
+        target.prev = header; 
 
-        currCache.next = header.next; 
-        header.next.prev = currCache; 
+        header.next.prev = target; 
+        header.next = target; 
 
-        currCache.prev = header; 
-        header.next = currCache; 
-
-        
-        hashMap.put(key, currCache); 
-        return currCache.value; 
+        return target.value; 
     }
     
     public void put(int key, int value) {
-        Node newCache = new Node(key,value);
-        if(!hashMap.containsKey(key)){
-            size++; 
-            if(size > cap){
-                Node lru = trailer.prev; 
-                lru.prev.next = lru.next; 
-                lru.next.prev = lru.prev; 
-                hashMap.remove(lru.key); 
-                size--; 
-            }
-            newCache.next = header.next; 
-            header.next.prev = newCache; 
+        Cache newCache = new Cache(key,value); 
+        if(hashMap.containsKey(key)){
+            Cache target = hashMap.get(key); 
+            target.value = value; 
 
-            newCache.prev = header; 
-            header.next = newCache; 
-            hashMap.put(key, newCache); 
-        } else{
-            Node currCache = hashMap.get(key); 
-            currCache.value = value; 
-            currCache.prev.next = currCache.next; 
-            currCache.next.prev = currCache.prev; 
+            target.prev.next = target.next;
+            target.next.prev = target.prev; 
 
-            currCache.next = header.next; 
-            header.next.prev = currCache; 
+            target.next = header.next;
+            target.prev = header; 
 
-            currCache.prev = header; 
-            header.next = currCache; 
+            header.next.prev = target;
+            header.next= target; 
 
-            hashMap.put(key, currCache); 
+            hashMap.put(key, target); 
+
+            return; 
+        } 
+
+        size++; 
+
+        if(size > capacity){
+            Cache lru = trailer.prev;
+            lru.prev.next = lru.next; 
+            lru.next.prev = lru.prev; 
+            size--; 
+            hashMap.remove(lru.key); 
         }
+
+        newCache.next = header.next; 
+        newCache.prev = header; 
+
+        header.next.prev = newCache; 
+        header.next = newCache; 
+        hashMap.put(key, newCache); 
     }
 }
 
