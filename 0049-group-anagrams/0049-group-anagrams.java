@@ -4,12 +4,12 @@ class Solution {
         Map<String,List<String>> hashMap = new HashMap<>(); 
         for(String s : strs){
             char[] tmp = s.toCharArray(); 
-            Arrays.sort(tmp); 
-            String newS = new String(tmp); 
-            hashMap.computeIfAbsent(newS, k -> new ArrayList<>()).add(s); 
+            Arrays.sort(tmp);
+            String key = new String(tmp); 
+            hashMap.computeIfAbsent(key, k -> new ArrayList<>()).add(s); 
         }
-        for(List<String> lst : hashMap.values()){
-            answer.add(lst); 
+        for(List<String> ss : hashMap.values()){
+            answer.add(ss); 
         }
         return answer; 
     }
