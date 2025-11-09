@@ -1,89 +1,29 @@
 class Solution {
     public String decodeString(String s) {
-        Stack<Character> stack = new Stack<>(); 
+        Stack<Integer> numStack = new Stack<>(); 
+        Stack<String> stack = new Stack<>(); 
+        int num = 0; 
+        StringBuilder sb = new StringBuilder(); 
         for(char c : s.toCharArray()){
-            if(c == ']'){
-                //create string 
-                StringBuilder tmp = new StringBuilder(); 
-                StringBuilder num = new StringBuilder(); 
-                StringBuilder res = new StringBuilder(); 
-                while(!stack.isEmpty() && !Character.isDigit(stack.peek())){
-                    if(Character.isLetter(stack.peek())){
-                        tmp.append(stack.peek());
-                    }
-                    stack.pop(); 
+            if(Character.isDigit(c)){
+                num = num * 10 + (c-'0'); 
+            } else if(c == '['){
+                numStack.push(num); 
+                stack.push(sb.toString()); 
+                num = 0; 
+                sb = new StringBuilder(); 
+            } else if(c == ']'){
+                int nextDigit = numStack.pop(); 
+                StringBuilder tmp = new StringBuilder(stack.pop());
+                for(int i = 0; i < nextDigit; i++){
+                    tmp.append(sb.toString()); 
                 }
-
-                tmp.reverse(); 
-                
-                while(!stack.isEmpty() && Character.isDigit(stack.peek())){
-                    num.append(stack.peek()); 
-                    stack.pop(); 
-                }
-
-                num.reverse(); 
-
-                int convert = Integer.parseInt(num.toString()); 
-                for(int i = 0; i < convert; i++){
-                    res.append(tmp); 
-                }
-                //System.out.println(res.toString()); 
-                //putting it back to stack 
-                for(char next : res.toString().toCharArray()){
-                    stack.push(next); 
-                }
+                sb = tmp; 
             } else{
-                stack.push(c); 
+                sb.append(c); 
             }
         }
-        
-        StringBuilder answer = new StringBuilder(); 
 
-        while(!stack.isEmpty()){
-            answer.append(stack.peek()); 
-            stack.pop(); 
-        }
-
-        answer.reverse(); 
-
-        return answer.toString(); 
+        return sb.toString(); 
     }
 }
-
-
-
-
-
-/*
-
-3[a ]
-string tmp = "a" 
-num = 3 
-
-"aaa" 
-2[bc ]
-
-cb 
-bc 
-num 2 
-
-aaabcbc 
-
-
-
-3[a2[c  ] 
-tmp = c 
-num = 2 
-
-cc
-
-3[acc  ]
-
-cca 
-acc 
-3 
-
-acc acc acc 
-
-
-*/ 
