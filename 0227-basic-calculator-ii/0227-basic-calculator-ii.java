@@ -1,34 +1,41 @@
 class Solution {
     public int calculate(String s) {
-        Stack<Integer> numStack = new Stack<>(); 
+        int result = 0; 
         int num = 0; 
-        char op = '+'; 
-        int answer = 0; 
+        char operator = '+'; 
+        Stack<Integer> charStack = new Stack<>(); 
         for(int i = 0; i < s.length(); i++){
-            char currChar = s.charAt(i); 
-            if(Character.isDigit(currChar)){
-                num = num * 10 + (currChar - '0'); 
-            }
-
-            if(!Character.isDigit(currChar) && currChar != ' ' || i == s.length()-1){
-                if(op == '+'){
-                    numStack.push(num); 
-                } else if(op == '-'){
-                    numStack.push(-num); 
-                } else if(op == '*'){
-                    numStack.push(numStack.pop() * num); 
+            char c = s.charAt(i); 
+            if(Character.isDigit(c)){
+                num = num * 10 + (c - '0'); 
+            } 
+            
+            if(!Character.isDigit(c) && c != ' ' || i == s.length()-1){
+                if(operator == '+'){
+                    charStack.push(num); 
+                    num = 0; 
+                    operator = c; 
+                } else if(operator == '-'){
+                    charStack.push(-num);
+                    num = 0; 
+                    operator = c; 
+                } else if(operator == '*'){
+                    //System.out.print("h"); 
+                    charStack.push(num * charStack.pop()); 
+                    num = 0; 
+                    operator = c; 
                 } else{
-                    numStack.push(numStack.pop() / num); 
+                    charStack.push(charStack.pop() / num); 
+                    num = 0; 
+                    operator = c; 
                 }
-                num = 0; 
-                op = currChar; 
             }
         }
 
-        while(!numStack.isEmpty()){
-            answer += numStack.pop(); 
+        while(!charStack.isEmpty()){
+            result += charStack.pop(); 
         }
 
-        return answer; 
+        return result; 
     }
 }
