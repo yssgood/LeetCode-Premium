@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/basic-calculator-ii/?envType=company&envId=coupang&favoriteSlug=coupang-all">227. Basic Calculator II</a></h2><h3>Medium</h3><hr><p>Given a string <code>s</code> which represents an expression, <em>evaluate this expression and return its value</em>.&nbsp;</p>
+<h2><a href="https://leetcode.com/problems/basic-calculator-ii">227. Basic Calculator II</a></h2><h3>Medium</h3><hr><p>Given a string <code>s</code> which represents an expression, <em>evaluate this expression and return its value</em>.&nbsp;</p>
 
 <p>The integer division should truncate toward zero.</p>
 
