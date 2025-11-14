@@ -2,36 +2,50 @@ class Solution {
     public int calculate(String s) {
         int result = 0; 
         int num = 0; 
-        int sign = 1; 
-        Stack<Integer> numStack = new Stack<>(); 
+        char operator = '+'; 
+        Stack<Integer> stack = new Stack<>(); 
         for(char c : s.toCharArray()){
             if(Character.isDigit(c)){
-                num = num * 10 + (c-'0'); 
-            } else{
-                if(c == '+'){
-                    result += sign * num; 
-                    sign = 1; 
-                    num = 0;  
-                } else if(c == '-'){
-                    result += sign * num; 
-                    sign = -1; 
-                    num = 0; 
-                } else if(c == '('){
-                    numStack.push(result); 
-                    numStack.push(sign); 
-                    result = 0; 
-                    sign = 1; 
-                } else if(c == ')'){
-                    result += sign * num; 
-                    num = 0;  
+                num = num * 10 + (c -'0'); 
+            } 
 
-                    result *= numStack.pop(); 
-                    result += numStack.pop(); 
+            if (!Character.isDigit(c) && c != ' '){
+                if(operator == '+'){
+                    result = result + num; 
+                    operator = c; 
+                    num = 0; 
+                }
+                if(operator == '-'){
+                    result = result + (-num); 
+                    operator = c; 
+                    num = 0; 
+                }
+                if(c == '('){
+                    stack.push(result); 
+                    if(operator == '+') stack.push(1); 
+                    if(operator == '-') stack.push(-1); 
+
+                    operator = '+';
+                    num = 0; 
+                    result = 0; 
+                } 
+                if(c == ')'){
+                    if(operator == '+') result = result + num; 
+                    if(operator == '-') result = result + (-num); 
+                    System.out.print(result + " "); 
+                    System.out.println(num); 
+                    result *= stack.pop(); 
+                    result += stack.pop(); 
+
+                    operator = '+'; 
+                    num = 0; 
                 }
             }
         }
 
-        result += sign * num; 
+        if(operator == '+') result += num; 
+        if(operator == '-') result += num; 
+
         return result; 
     }
 }
