@@ -1,54 +1,51 @@
 class Solution {
     public int calculate(String s) {
-        int result = 0;
-        int num = 0;
-        char operator = '+';
-        Stack<Integer> stack = new Stack<>();
+        int result = 0; 
+        int num = 0; 
+        char operator = '+'; 
+        Stack<Integer> stack = new Stack<>(); 
+        for(char c : s.toCharArray()){
+            if(Character.isDigit(c)){
+                num = num * 10 + (c -'0'); 
+            } 
 
-        for (char c : s.toCharArray()) {
-
-            if (Character.isDigit(c)) {
-                num = num * 10 + (c - '0');
-            }
-
-            if (!Character.isDigit(c) && c != ' ') {
-
-                // 1) + 또는 - 처리
-                if (operator == '+') result += num;
-                else if (operator == '-') result += -num;
-
-                // operator 갱신은 +, - 일 때만!
-                if (c == '+' || c == '-') operator = c;
-
-                num = 0;
-
-                // 2) '(' 처리
-                if (c == '(') {
-                    // 현재까지의 result 저장
-                    stack.push(result);
-
-                    // 현재까지의 sign 저장
-                    stack.push(operator == '+' ? 1 : -1);
-
-                    // 괄호 안에서 새 계산 시작
-                    result = 0;
-                    operator = '+';
+            if (!Character.isDigit(c) && c != ' '){
+                if(operator == '+'){
+                    result = result + num; 
+                    if(c == '+' || c== '-') operator = c; 
+                    num = 0; 
                 }
+                if(operator == '-'){
+                    result = result + (-num); 
+                    if(c == '+' || c== '-') operator = c; 
+                    num = 0; 
+                }
+                if(c == '('){
+                    stack.push(result); 
+                    if(operator == '+') stack.push(1); 
+                    if(operator == '-') stack.push(-1); 
 
-                // 3) ')' 처리
-                if (c == ')') {
-                    int sign = stack.pop();
-                    int prev = stack.pop();
+                    operator = '+';
+                    num = 0; 
+                    result = 0; 
+                } 
+                if(c == ')'){
+                    if(operator == '+') result = result + num; 
+                    if(operator == '-') result = result + (-num); 
+                    // System.out.print(result + " "); 
+                    // System.out.println(num); 
+                    result *= stack.pop(); 
+                    result += stack.pop(); 
 
-                    result = prev + sign * result;
+                    operator = '+'; 
+                    num = 0; 
                 }
             }
         }
 
-        // 마지막 숫자 처리
-        if (operator == '+') result += num;
-        else if (operator == '-') result += -num;
+        if(operator == '+') result += num; 
+        if(operator == '-') result += num; 
 
-        return result;
+        return result; 
     }
 }
