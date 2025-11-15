@@ -1,68 +1,66 @@
 class RangeModule {
-    private TreeMap<Integer,Integer> map; 
+
+    TreeMap<Integer,Integer> rangeMap; 
 
     public RangeModule() {
-        this.map = new TreeMap<>(); 
+        this.rangeMap = new TreeMap<>(); 
     }
     
     public void addRange(int left, int right) {
-        if(left >= right) return; 
-
-        Map.Entry<Integer,Integer> entry = map.floorEntry(left); 
+        
+        Map.Entry<Integer,Integer> entry = rangeMap.floorEntry(left); 
         if(entry != null && entry.getValue() >= left){
-            left = Math.min(left, entry.getKey()); 
-            right = Math.max(right, entry.getValue()); 
-            map.remove(entry.getKey()); 
+            left = Math.min(entry.getKey(), left); 
+            right = Math.max(entry.getValue(), right); 
+            rangeMap.remove(entry.getKey()); 
         }
 
-        entry = map.ceilingEntry(left); 
+        entry = rangeMap.ceilingEntry(left); 
         while(entry != null && entry.getKey() <= right){
-            right = Math.max(right, entry.getValue()); 
-            map.remove(entry.getKey()); 
-            entry = map.ceilingEntry(left); 
+            right = Math.max(entry.getValue(), right); 
+            rangeMap.remove(entry.getKey()); 
+            entry = rangeMap.ceilingEntry(left); 
         }
 
-        map.put(left,right); 
+
+        rangeMap.put(left, right); 
     }
     
     public boolean queryRange(int left, int right) {
-        if (left >= right) return true; 
-        Map.Entry<Integer,Integer> entry = map.floorEntry(left); 
+        //search for the lowerbound of the left 
+        //return true if the right value is bigger than or equal to the right 
+        Map.Entry<Integer,Integer>  entry = rangeMap.floorEntry(left); 
         if(entry == null) return false; 
-
         return entry.getValue() >= right; 
     }
     
     public void removeRange(int left, int right) {
-        if(left >= right) return; 
-
-        Map.Entry<Integer,Integer> entry = map.floorEntry(left); 
+        Map.Entry<Integer,Integer> entry = rangeMap.floorEntry(left);
         if(entry != null && entry.getValue() > left){
-            int start = entry.getKey(); 
+            int start = entry.getKey();
             int end = entry.getValue(); 
-            map.remove(start); 
-
-            if(start < left) {
-                map.put(start, left); 
+            rangeMap.remove(start); 
+            if(start < left){
+                rangeMap.put(start, left); 
             }
 
             if(end > right){
-                map.put(right,end); 
+                rangeMap.put(right, end); 
             }
         }
 
-        entry = map.ceilingEntry(left); 
+        entry = rangeMap.ceilingEntry(left); 
         while(entry != null && entry.getKey() < right){
-            int start = entry.getKey(); 
-            int end = entry.getValue(); 
-            map.remove(start); 
+            int start = entry.getKey();
+            int end = entry.getValue();
+            rangeMap.remove(start); 
 
-            if(end > right) {
-                map.put(right,end); 
+            if(end > right){
+                rangeMap.put(right, end);
                 break; 
             }
 
-            entry = map.ceilingEntry(left); 
+            entry = rangeMap.ceilingEntry(left); 
         }
     }
 }
