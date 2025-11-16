@@ -40,6 +40,8 @@ class Solution {
             if (indegree.get(c) == 0) q.add(c);
         }
 
+        if(q.isEmpty()) return ""; 
+
         StringBuilder sb = new StringBuilder();
 
         while (!q.isEmpty()) {
