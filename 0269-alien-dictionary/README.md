@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/alien-dictionary">269. Alien Dictionary</a></h2><h3>Hard</h3><hr><p>There is a new alien language that uses the English alphabet. However, the order of the letters is unknown to you.</p>
+<h2><a href="https://leetcode.com/problems/alien-dictionary/?envType=company&envId=coupang&favoriteSlug=coupang-all">269. Alien Dictionary</a></h2><h3>Hard</h3><hr><p>There is a new alien language that uses the English alphabet. However, the order of the letters is unknown to you.</p>
 
 <p>You are given a list of strings <code>words</code> from the alien language&#39;s dictionary. Now it is claimed that the strings in <code>words</code> are <span data-keyword="lexicographically-smaller-string-alien"><strong>sorted lexicographically</strong></span> by the rules of this new language.</p>
 
