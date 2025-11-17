@@ -1,17 +1,38 @@
-import java.util.*;
-
 class MedianFinder {
-    List<Integer> nums = new ArrayList<>();
 
-    public void addNum(int num) {
-        int pos = Collections.binarySearch(nums, num);
-        if (pos < 0) pos = -(pos + 1);
-        nums.add(pos, num); // 항상 정렬 유지
+    PriorityQueue<Integer> minHeap = new PriorityQueue<>(); 
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder()); 
+
+    public MedianFinder() {
+        
     }
+    
+    public void addNum(int num) {
+        if(maxHeap.isEmpty() || maxHeap.peek() >= num){
+            maxHeap.offer(num); 
+        } else{
+            minHeap.offer(num); 
+        }
 
+        if(maxHeap.size() > minHeap.size() + 1){
+            minHeap.offer(maxHeap.poll());   // ✔ 방향 올바름
+        } else if (minHeap.size() > maxHeap.size()) {
+            maxHeap.offer(minHeap.poll());
+        }
+    }
+    
     public double findMedian() {
-        int n = nums.size();
-        if (n % 2 == 1) return nums.get(n/2);
-        return (nums.get(n/2 - 1) + nums.get(n/2)) / 2.0;
+        if(maxHeap.size() == minHeap.size()){
+            return (double)(maxHeap.peek() + minHeap.peek()) / 2; 
+        } else{
+            return maxHeap.peek(); 
+        }
     }
 }
+
+/**
+ * Your MedianFinder object will be instantiated and called as such:
+ * MedianFinder obj = new MedianFinder();
+ * obj.addNum(num);
+ * double param_2 = obj.findMedian();
+ */
