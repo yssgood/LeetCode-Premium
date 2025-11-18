@@ -1,10 +1,11 @@
 class SnapshotArray {
-    List<Map<Integer, Integer>> arr = new ArrayList<>(); 
+
+    List<TreeMap<Integer,Integer>> arr = new ArrayList<>();  
     int snapId = 0; 
 
     public SnapshotArray(int length) {
         for(int i = 0; i < length; i++){
-            arr.add(new HashMap<>()); 
+            arr.add(new TreeMap<>());  
         }
     }
     
@@ -17,13 +18,9 @@ class SnapshotArray {
     }
     
     public int get(int index, int snap_id) {
-        Map<Integer,Integer> history = arr.get(index); 
-        for(int id = snap_id;  id >= 0; id--){
-            if(history.containsKey(id)){
-                return history.get(id); 
-            }
-        }
-        return 0; 
+        Map.Entry<Integer,Integer> target = arr.get(index).floorEntry(snap_id); 
+        if(target == null) return 0;  
+        return target.getValue(); 
     }
 }
 
