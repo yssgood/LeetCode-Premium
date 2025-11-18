@@ -1,18 +1,21 @@
 class Solution {
     public int longestRepeatingSubstring(String s) {
-        //brute force would be ok 
-        Set<String> hashSet = new HashSet<>(); 
-        int answer = 0; 
-        for(int i = 0; i < s.length(); i++){
-            for(int j = i+1; j <= s.length(); j++){
+        int max_ = 0; 
+        int n = s.length(); 
+        
+        Set<String> set = new HashSet<>(); 
+        for(int i = 0; i < n; i++){
+            int count = 0; 
+            for(int j = i+1; j <= n; j++){
                 String tmp = s.substring(i,j); 
-                if(hashSet.contains(tmp)){
-                    answer = Math.max(answer, j - i); 
+                if(set.contains(tmp)){
+                    count++; 
                 }
-                hashSet.add(tmp); 
+                set.add(tmp); 
             }
+            max_ = Math.max(max_, count); 
         }
 
-        return answer; 
+        return max_; 
     }
 }
