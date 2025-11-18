@@ -1,13 +1,20 @@
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        List<List<Integer>> adj =  new ArrayList<>(); 
+        if(numCourses <= 1) return true; 
+        if(prerequisites.length == 0) return true; 
+
+        int[] inOrder = new int[numCourses]; 
+        List<List<Integer>> adj = new ArrayList<>(); 
+
         for(int i = 0; i < numCourses; i++){
             adj.add(new ArrayList<>()); 
         }
 
-        int[] inOrder = new int[numCourses]; 
-        for(int[] course : prerequisites){
-            int to = course[0], from = course[1]; 
+        for(int[] p : prerequisites){
+            int from = p[1];  
+            int to = p[0]; 
+            
+            
             adj.get(from).add(to); 
             inOrder[to]++; 
         }
@@ -16,23 +23,28 @@ class Solution {
         for(int i = 0; i < numCourses; i++){
             if(inOrder[i] == 0) q.offer(i); 
         }
-        if(q.isEmpty()) return false; 
 
+        if(q.isEmpty()) return false; 
+        
+        int count = 0; 
         while(!q.isEmpty()){
             int size = q.size(); 
+            count++; 
             for(int i = 0; i < size; i++){
                 int curr = q.poll(); 
                 for(int next : adj.get(curr)){
                     inOrder[next]--; 
                     if(inOrder[next] == 0){
-                        q.offer(next); 
+                        q.offer(next);
                     }
                 }
             }
         }
+
         for(int i = 0; i < numCourses; i++){
-            if(inOrder[i] > 0) return false; 
+            if(inOrder[i] != 0) return false; 
         }
+
         return true; 
     }
 }
