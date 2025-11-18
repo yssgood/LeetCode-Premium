@@ -1,27 +1,35 @@
 class HitCounter {
-    Deque<int[]> dq = new LinkedList<>(); 
+    class Pair{
+        int time; 
+        int numHits; 
+        public Pair(int time, int numHits){
+            this.time = time;
+            this.numHits = numHits; 
+        }
+    }
+
+    private Queue<Pair> q; 
+    int size = 0; 
 
     public HitCounter() {
-        
+        this.q = new LinkedList<>(); 
     }
     
     public void hit(int timestamp) {
-        if(dq.isEmpty() || dq.peekLast()[0] != timestamp){
-            dq.offer(new int[]{timestamp, 1});
-        } else{
-            dq.peekLast()[1]++; 
-        }
+        size++; 
+        if(!q.isEmpty() && q.peek().time == timestamp){
+            q.peek().numHits++; 
+            return; 
+        } 
+        q.add(new Pair(timestamp,1)); 
     }
     
     public int getHits(int timestamp) {
-        while(!dq.isEmpty() && timestamp - dq.peek()[0] >= 300){
-            dq.poll(); 
+        while(!q.isEmpty() && timestamp - q.peek().time >= 300){
+            size -= q.peek().numHits; 
+            q.poll(); 
         }
-        int total = 0; 
-        for(int[] pair : dq){
-            total += pair[1]; 
-        }
-        return total; 
+        return size;
     }
 }
 
