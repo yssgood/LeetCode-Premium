@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/snapshot-array">1146. Snapshot Array</a></h2><h3>Medium</h3><hr><p>Implement a SnapshotArray that supports the following interface:</p>
+<h2><a href="https://leetcode.com/problems/snapshot-array/?envType=company&envId=coupang&favoriteSlug=coupang-all">1146. Snapshot Array</a></h2><h3>Medium</h3><hr><p>Implement a SnapshotArray that supports the following interface:</p>
 
 <ul>
 	<li><code>SnapshotArray(int length)</code> initializes an array-like data structure with the given length. <strong>Initially, each element equals 0</strong>.</li>
