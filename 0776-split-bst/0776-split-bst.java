@@ -17,13 +17,13 @@ class Solution {
     public TreeNode[] splitBST(TreeNode root, int target) {
         if(root == null) return new TreeNode[]{null,null}; 
         if(root.val > target){
-            TreeNode[] left = splitBST(root.left, target); 
-            root.left = left[1]; 
-            return new TreeNode[]{left[0],root}; 
+            TreeNode[] leftTree = splitBST(root.left, target); 
+            root.left = leftTree[1]; 
+            return new TreeNode[]{leftTree[0], root}; 
         } else{
-            TreeNode[] right = splitBST(root.right, target); 
-            root.right = right[0]; 
-            return new TreeNode[]{root, right[1]}; 
+            TreeNode[] rightTree = splitBST(root.right, target); 
+            root.right = rightTree[0]; 
+            return new TreeNode[]{root, rightTree[1]}; 
         }
     }
 }
