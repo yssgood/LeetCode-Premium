@@ -1,74 +1,72 @@
 class Cache {
     int key; 
     int value; 
-    int count; 
-    public Cache(int key, int value) {
-        this.key = key;
-        this.value = value;
-        this.count = 1; 
+    int frequency; 
+    public Cache (int key, int value, int frequency){
+        this.key = key; 
+        this.value = value; 
+        this.frequency = frequency; 
     }
 }
-
 class LFUCache {
-    private final int capacity; 
-    private int size; 
-    private int minFreq; 
 
-    private Map<Integer, Cache> cacheMap; 
-    private Map<Integer, LinkedHashSet<Cache>> freqMap; 
+    private Map<Integer, LinkedList<Cache>> freqMap = new HashMap<>(); 
+    private Map<Integer, Cache> hashMap = new HashMap<>(); 
+    private int capacity = 0; 
+    private int size = 0; 
+    private int min_counter = 1; 
 
     public LFUCache(int capacity) {
         this.capacity = capacity; 
-        this.size = 0;
-        this.minFreq = 0; 
-        this.cacheMap = new HashMap<>(); 
-        this.freqMap = new HashMap<>(); 
     }
     
     public int get(int key) {
-        if(!cacheMap.containsKey(key)) return -1; 
-
-        Cache node = cacheMap.get(key); 
-        updateFrequency(node); 
-        return node.value; 
+        if(!hashMap.containsKey(key)) return -1; 
+        Cache target = hashMap.get(key); 
+        //frequency update 
+        updateFrequency(target); 
+        return target.value; 
     }
     
     public void put(int key, int value) {
-        if(capacity == 0) return; 
-        if(cacheMap.containsKey(key)){
-            Cache node = cacheMap.get(key); 
-            node.value = value; 
-            updateFrequency(node); 
-            return; 
-        } 
-
-        if (size >= capacity) {
-            LinkedHashSet<Cache> minFreqSet = freqMap.get(minFreq); 
-            Cache toRemove = minFreqSet.iterator().next(); 
-            minFreqSet.remove(toRemove); 
-            if(minFreqSet.isEmpty()) freqMap.remove(minFreq); 
-
-            cacheMap.remove(toRemove.key); 
-            size--; 
+        if(hashMap.containsKey(key)){
+            Cache target = hashMap.get(key); 
+            target.value = value; 
+            //frequency update 
+            updateFrequency(target); 
+            hashMap.put(key, target); 
+            return;   
         }
 
-        Cache newNode = new Cache(key, value); 
-        cacheMap.put(key, newNode); 
-        freqMap.computeIfAbsent(1, k -> new LinkedHashSet<>()).add(newNode); 
-        minFreq = 1; 
+        if(size >= capacity){
+            LinkedList<Cache> lfuList = freqMap.get(min_counter); 
+            Cache evictCache = lfuList.pollFirst(); //least recently used 
+            if(lfuList.isEmpty()){
+                freqMap.remove(min_counter); 
+            }
+            size--; 
+            hashMap.remove(evictCache.key); 
+        }
+
+        Cache newCache = new Cache(key,value,1);
+        min_counter = 1; 
         size++; 
+
+        hashMap.put(key, newCache); 
+        freqMap.computeIfAbsent(1, k -> new LinkedList<Cache>()).add(newCache); 
     }
 
-    void updateFrequency(Cache node){
-        int oldVal = node.count; 
-        LinkedHashSet<Cache> oldSet = freqMap.get(oldVal); 
-        oldSet.remove(node); //this may remove value in the middle? 
-        if(oldSet.isEmpty()){
-            freqMap.remove(oldVal); 
-            if(oldVal == minFreq) minFreq++; 
+    void updateFrequency(Cache target){
+        int oldCount = target.frequency; 
+        LinkedList<Cache> oldGroup = freqMap.get(oldCount); 
+        if(!oldGroup.isEmpty()){
+            oldGroup.remove(target); 
+            if(oldGroup.isEmpty() && oldCount == min_counter){
+                min_counter++; 
+            }
         }
-        node.count++;
-        freqMap.computeIfAbsent(node.count, k -> new LinkedHashSet<>()).add(node); 
+        target.frequency++; 
+        freqMap.computeIfAbsent(target.frequency, k -> new LinkedList<Cache>()).add(target); 
     }
 }
 
