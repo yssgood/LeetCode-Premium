@@ -1,50 +1,40 @@
 class Solution {
     public int calculate(String s) {
-        int result = 0; 
+        int sign = 1; 
         int num = 0; 
-        char operator = '+'; 
+        int result = 0; 
         Stack<Integer> stack = new Stack<>(); 
+
         for(char c : s.toCharArray()){
             if(Character.isDigit(c)){
-                num = num * 10 + (c -'0'); 
-            } 
+                num = num * 10 + (c - '0'); 
+            }
 
-            if (!Character.isDigit(c) && c != ' '){
-                if(operator == '+'){
-                    result = result + num; 
-                    if(c == '+' || c== '-') operator = c; 
-                    num = 0; 
-                }
-                if(operator == '-'){
-                    result = result + (-num); 
-                    if(c == '+' || c== '-') operator = c; 
-                    num = 0; 
-                }
-                if(c == '('){
-                    stack.push(result); 
-                    if(operator == '+') stack.push(1); 
-                    if(operator == '-') stack.push(-1); 
+            if(c == '('){
+                stack.push(result);
+                stack.push(sign); 
+                result = 0; 
+                num = 0; 
+                sign = 1; 
+            } else if(c == ')'){
+                result += sign * num; 
+                num = 0; 
+                int prevSign = stack.pop(); 
+                int prevResult = stack.pop(); 
 
-                    operator = '+';
-                    num = 0; 
-                    result = 0; 
-                } 
-                if(c == ')'){
-                    if(operator == '+') result = result + num; 
-                    if(operator == '-') result = result + (-num); 
-                    // System.out.print(result + " "); 
-                    // System.out.println(num); 
-                    result *= stack.pop(); 
-                    result += stack.pop(); 
+                result = prevResult + prevSign * result; 
 
-                    operator = '+'; 
-                    num = 0; 
-                }
+
+            } else if (!Character.isDigit(c) && c != ' '){
+                result += sign * num; 
+                num = 0; 
+                sign = (c == '+') ? 1 : -1; 
             }
         }
 
-        if(operator == '+') result += num; 
-        if(operator == '-') result += num; 
+        if(num != 0){
+            result += sign * num; 
+        }
 
         return result; 
     }
