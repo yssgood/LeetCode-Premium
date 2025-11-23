@@ -1,6 +1,8 @@
 class RandomizedSet {
+
+    List<Integer> arrayList = new ArrayList<>(); 
     Map<Integer,Integer> hashMap = new HashMap<>(); 
-    ArrayList<Integer> lst = new ArrayList<>(); 
+    int index = 0; 
 
     public RandomizedSet() {
         
@@ -9,32 +11,32 @@ class RandomizedSet {
     public boolean insert(int val) {
         if(hashMap.containsKey(val)) return false; 
 
-        lst.add(val); 
-        hashMap.put(val, lst.size() - 1); 
+        arrayList.add(val); 
+        hashMap.put(val, index++); 
 
-        return true;  
+        return true; 
     }
     
     public boolean remove(int val) {
         if(!hashMap.containsKey(val)) return false; 
 
-        int originPos = hashMap.get(val); 
-        int lastNum = lst.get(lst.size()-1); 
+        int targetVal = arrayList.get(arrayList.size()-1); 
+        int valIndex = hashMap.get(val); 
 
-        lst.set(originPos, lastNum); 
-        lst.set(lst.size()-1, val); 
+        arrayList.set(valIndex, targetVal); 
+        arrayList.set(arrayList.size()-1, val); 
 
-        lst.remove(lst.size()-1); 
-        hashMap.put(lastNum, originPos); 
-
+        arrayList.removeLast(); 
+        hashMap.put(targetVal, valIndex); 
         hashMap.remove(val); 
+        index--; 
 
         return true; 
     }
     
     public int getRandom() {
-        int randomIndex = (int)(Math.random() * lst.size()); 
-        return lst.get(randomIndex);
+        int randomIndex = (int)(Math.random() * arrayList.size()); 
+        return arrayList.get(randomIndex);
     }
 }
 
