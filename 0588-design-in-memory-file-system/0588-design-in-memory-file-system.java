@@ -1,64 +1,75 @@
-class File {
-    boolean isFile; 
-    String content; 
-    TreeMap<String, File> children = new TreeMap<>(); 
-    public File(){
-        this.isFile =false; 
-        this.content = ""; 
-    }
-}
 class FileSystem {
+    class File {
+        boolean isFile;  
+        String content; 
+        TreeMap<String,File> children; 
+        public File(){
+            isFile = false; 
+            content = ""; 
+            this.children = new TreeMap<>(); 
+        }
+    }
 
-    File root; 
+    private File root;
 
     public FileSystem() {
         root = new File(); 
     }
     
     public List<String> ls(String path) {
-        File lastPath = updatePath(path); 
+        File file = findPath(path); 
         List<String> answer = new ArrayList<>(); 
-        if(lastPath.isFile){
+        if(file.isFile){
             String[] split = path.split("/"); 
             answer.add(split[split.length-1]); 
             return answer; 
         }
-        for(String p : lastPath.children.keySet()){
-            answer.add(p); 
+
+        for(String remaining : file.children.keySet()){
+            answer.add(remaining); 
         }
+
         return answer; 
+
     }
     
     public void mkdir(String path) {
-        updatePath(path); 
+        createPath(path); 
     }
     
     public void addContentToFile(String filePath, String content) {
-        File lastPath = updatePath(filePath); 
-        lastPath.isFile = true; 
-        lastPath.content += content; 
+        File file = createPath(filePath); 
+        file.isFile = true; 
+        file.content += content;
     }
     
     public String readContentFromFile(String filePath) {
-        File lastPath = updatePath(filePath); 
-        return lastPath.content; 
+        File file = findPath(filePath);
+        return file.content; 
     }
-    public File updatePath(String path){
-        if(path.equals("/")){
-            return root; 
-        }
 
-        String[] pathSplit = path.split("/"); 
+    public File findPath(String path){
+        String[] pathArray = path.split("/"); 
         File curr = root; 
-        for(int i = 1; i < pathSplit.length; i++){
-            String pathName = pathSplit[i]; 
-            if(!curr.children.containsKey(pathName)){
-                curr.children.put(pathName, new File()); 
+        for(int i = 1; i < pathArray.length; i++){
+            String nextPath = pathArray[i]; 
+            curr = curr.children.get(nextPath); 
+        }
+        return curr; 
+    }
+
+    public File createPath(String path){
+        String[] pathArray = path.split("/"); 
+        File curr = root; 
+        for(int i = 1; i < pathArray.length; i++){
+            String nextPath = pathArray[i]; 
+            if(!curr.children.containsKey(nextPath)){
+                curr.children.put(nextPath, new File()); 
             }
-            curr = curr.children.get(pathName); 
+            curr = curr.children.get(nextPath); 
         }
 
-        return curr;
+        return curr; 
     }
 }
 
