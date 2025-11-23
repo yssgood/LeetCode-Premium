@@ -1,38 +1,33 @@
 class Solution {
     public String decodeString(String s) {
-        Stack<Integer> numStack = new Stack<>(); 
+        Stack<Integer> numStack = new Stack<>();
         Stack<StringBuilder> stringStack = new Stack<>(); 
+        StringBuilder curr = new StringBuilder(); 
         int num = 0; 
-        StringBuilder sb = new StringBuilder(); 
         for(char c : s.toCharArray()){
-            
             if(Character.isDigit(c)){
                 num = num * 10 + (c - '0'); 
-            } 
-            
-            if(c == '['){
+            } else if(c == '['){
                 numStack.push(num); 
-                stringStack.push(sb); 
+                stringStack.push(curr); 
+                curr = new StringBuilder(); 
                 num = 0; 
-                sb = new StringBuilder();
-            } 
-            
-            if(c == ']'){
+            } else if(c == ']'){
                 int numTimes = numStack.pop(); 
                 StringBuilder tmp = new StringBuilder(); 
                 for(int i = 0; i < numTimes; i++){
-                    tmp.append(sb.toString()); 
+                    tmp.append(curr.toString()); 
                 }
                 StringBuilder prev = stringStack.pop(); 
-                prev.append(tmp.toString()); 
-                sb = prev; 
-            } 
+                prev.append(tmp); 
+                curr = prev; 
+                //stringStack.push(curr); 
 
-            if (Character.isLetter(c)) {
-                sb.append(c); 
+            } else{
+                curr.append(c); 
             }
         }
 
-        return sb.toString(); 
+        return curr.toString(); 
     }
 }
