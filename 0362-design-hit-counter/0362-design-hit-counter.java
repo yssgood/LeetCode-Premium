@@ -1,35 +1,20 @@
 class HitCounter {
-    class Pair{
-        int time; 
-        int numHits; 
-        public Pair(int time, int numHits){
-            this.time = time;
-            this.numHits = numHits; 
-        }
-    }
 
-    private Queue<Pair> q; 
-    int size = 0; 
+    private Queue<Integer> q = new LinkedList<>(); 
 
     public HitCounter() {
-        this.q = new LinkedList<>(); 
+        
     }
     
     public void hit(int timestamp) {
-        size++; 
-        if(!q.isEmpty() && q.peek().time == timestamp){
-            q.peek().numHits++; 
-            return; 
-        } 
-        q.add(new Pair(timestamp,1)); 
+        q.add(timestamp); 
     }
     
     public int getHits(int timestamp) {
-        while(!q.isEmpty() && timestamp - q.peek().time >= 300){
-            size -= q.peek().numHits; 
+        while(!q.isEmpty() && timestamp - q.peek() >= 300){
             q.poll(); 
         }
-        return size;
+        return q.size();
     }
 }
 
