@@ -1,25 +1,30 @@
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
-        //have monotonic increasing queue 
-        LinkedList<Integer> dq = new LinkedList<>(); 
-        List<Integer> answer = new ArrayList<>(); 
+        List<Integer> lst = new ArrayList<>(); 
+        LinkedList<Integer> dequeue = new LinkedList<>(); 
 
         for(int i = 0; i < nums.length; i++){
-            if(!dq.isEmpty() && dq.peekFirst() <= i - k){
-                dq.pollFirst(); 
+            //widow checking 
+            if(!dequeue.isEmpty() && dequeue.peekFirst() <= i - k){
+                dequeue.pollFirst(); 
             }
 
-            while(!dq.isEmpty() && nums[i] > nums[dq.peekLast()]){
-                dq.pollLast(); 
+            while(!dequeue.isEmpty() && nums[dequeue.peekLast()] < nums[i]){
+                dequeue.pollFirst(); 
             }
 
-            dq.add(i); 
-
+            dequeue.add(i); 
+            //System.out.println(dequeue.size()); 
             if(i - k + 1 >= 0){
-                answer.add(nums[dq.peekFirst()]); 
+                lst.add(nums[dequeue.peekFirst()]); 
             }
         }
 
-        return answer.stream().mapToInt(Integer::intValue).toArray(); 
+        int[] res = new int[lst.size()]; 
+        for(int i = 0; i < lst.size(); i++){
+            res[i] = lst.get(i); 
+        }
+
+        return res; 
     }
 }
