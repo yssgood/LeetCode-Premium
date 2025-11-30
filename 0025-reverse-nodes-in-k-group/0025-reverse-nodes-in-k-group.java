@@ -1,7 +1,7 @@
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode dummy = new ListNode(-1);
-        dummy.next = head; 
+        //dummy.next = head; 
 
         ListNode prevGroupTail = dummy; 
         ListNode curr = head; 
