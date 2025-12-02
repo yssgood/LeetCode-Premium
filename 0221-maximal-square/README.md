@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximal-square/?envType=study-plan-v2&envId=dynamic-programming">221. Maximal Square</a></h2><h3>Medium</h3><hr><p>Given an <code>m x n</code> binary <code>matrix</code> filled with <code>0</code>&#39;s and <code>1</code>&#39;s, <em>find the largest square containing only</em> <code>1</code>&#39;s <em>and return its area</em>.</p>
+<h2><a href="https://leetcode.com/problems/maximal-square/?envType=study-plan-v2&envId=top-interview-150">221. Maximal Square</a></h2><h3>Medium</h3><hr><p>Given an <code>m x n</code> binary <code>matrix</code> filled with <code>0</code>&#39;s and <code>1</code>&#39;s, <em>find the largest square containing only</em> <code>1</code>&#39;s <em>and return its area</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
