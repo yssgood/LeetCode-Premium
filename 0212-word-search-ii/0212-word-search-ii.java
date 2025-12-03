@@ -31,7 +31,7 @@ class Solution {
     public void dfs(int i, int j, char[][] board, Trie curr){
         char c = board[i][j]; 
         Trie next = curr.children.get(c);
-        if (next == null) return;
+        //if (next == null) return;
 
         // 단어 완성
         if (next.isEnd) {
