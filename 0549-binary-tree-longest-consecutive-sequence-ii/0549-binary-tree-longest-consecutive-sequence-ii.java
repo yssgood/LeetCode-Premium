@@ -30,22 +30,26 @@ class Solution {
         if(root.left != null){
             if(root.val - root.left.val == -1){
                 //left[1]++; 
-                inc = Math.max(inc, left[0] + 1); 
+                //inc = Math.max(inc, left[0] + 1); 
+                inc = left[0] + 1; 
                 
             }
             if(root.val - root.left.val == 1){
                 //left[0]++; 
-                dec = Math.max(dec, left[1] + 1); 
+                //dec = Math.max(dec, left[1] + 1); 
+                dec = left[1] + 1; 
             }
         }
 
         if(root.right != null){
             if(root.val - root.right.val == -1){
                 //right[1]++; 
+                //inc = Math.max(inc, right[0] + 1); 
                 inc = Math.max(inc, right[0] + 1); 
             }
             if(root.val - root.right.val == 1){
                 //right[0]++; 
+                //dec = Math.max(dec, right[1] + 1); 
                 dec = Math.max(dec, right[1] + 1); 
             }
         }
