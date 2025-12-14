@@ -1,35 +1,48 @@
 class Solution {
     public int shortestWay(String source, String target) {
-        int sourceIndex = 0; 
-        int targetIndex = 0; 
-        int m = source.length(); 
-        int n = target.length(); 
-        int answer = 0; 
-        Set<Character> hashSet = new HashSet<>(); 
+        Map<Character, List<Integer>> map = new HashMap<>();
 
-
-        for(char c : source.toCharArray()){
-            hashSet.add(c); 
+        // store indexes for each char
+        for(int i = 0; i < source.length(); i++) {
+            char c = source.charAt(i);
+            map.computeIfAbsent(c, k -> new ArrayList<>()).add(i);
         }
-        while(targetIndex < n){
-            char curr = target.charAt(targetIndex); 
 
-            if(!hashSet.contains(curr)) return -1; 
+        int count = 1;
+        int start = -1; // last used position in source
 
-            while(sourceIndex < m && targetIndex < n){
-                if(source.charAt(sourceIndex) == target.charAt(targetIndex)){
-                    sourceIndex++;
-                    targetIndex++; 
-                } else{
-                    sourceIndex++; 
-                }
+        for(int e = 0; e < target.length(); e++) {
+            char curr = target.charAt(e);
+
+            if(!map.containsKey(curr)) return -1;
+
+            List<Integer> positions = map.get(curr);
+
+            // binary search for first index > start
+            int idx = upperBound(positions, start);
+
+            if(idx == positions.size()) {
+                // restart source
+                count++;
+                start = -1;
+                idx = upperBound(positions, start);
             }
 
-            answer++; 
-            sourceIndex = 0; 
+            start = positions.get(idx);
         }
 
-        return answer; 
+        return count;
+    }
 
+    // returns 첫 번째 value > target
+    private int upperBound(List<Integer> list, int target) {
+        int lo = 0;
+        int hi = list.size();
+        while(lo < hi) {
+            int mid = lo + (hi - lo) / 2;
+            if(list.get(mid) > target) hi = mid;
+            else lo = mid + 1;
+        }
+        return lo;
     }
 }
