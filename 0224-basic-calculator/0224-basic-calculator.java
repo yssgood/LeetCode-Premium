@@ -1,41 +1,44 @@
 class Solution {
     public int calculate(String s) {
-        int sign = 1; 
-        int num = 0; 
-        int result = 0; 
         Stack<Integer> stack = new Stack<>(); 
-
-        for(char c : s.toCharArray()){
-            if(Character.isDigit(c)){
-                num = num * 10 + (c - '0'); 
+        int sign = 1;  
+        int num = 0; 
+        int cumulative = 0; 
+        for(int i = 0; i < s.length(); i++){
+            char curr = s.charAt(i); 
+            if(Character.isDigit(curr)){
+                num = num * 10 + (curr - '0'); 
             }
-
-            if(c == '('){
-                stack.push(result);
+            if(curr == '('){
+                stack.push(cumulative); 
                 stack.push(sign); 
-                result = 0; 
-                num = 0; 
                 sign = 1; 
-            } else if(c == ')'){
-                result += sign * num; 
-                num = 0; 
+                cumulative = 0; 
+            }
+            if(curr == ')'){
+                cumulative += sign * num; 
                 int prevSign = stack.pop(); 
-                int prevResult = stack.pop(); 
-
-                result = prevResult + prevSign * result; 
-
-
-            } else if (!Character.isDigit(c) && c != ' '){
-                result += sign * num; 
+                int prevCumulative = stack.pop(); 
+                cumulative *= prevSign;
+                cumulative += prevCumulative; 
                 num = 0; 
-                sign = (c == '+') ? 1 : -1; 
+            } else{
+                if(curr == '-'){
+                    int tmp = num * sign; 
+                    cumulative += tmp; 
+                    sign = -1; 
+                    num = 0; 
+                } else if(curr == '+'){
+                    int tmp = num * sign; 
+                    cumulative += tmp; 
+                    sign = 1; 
+                    num = 0; 
+                }
             }
         }
 
-        if(num != 0){
-            result += sign * num; 
-        }
+        cumulative += sign * num; 
 
-        return result; 
+        return cumulative; 
     }
 }
