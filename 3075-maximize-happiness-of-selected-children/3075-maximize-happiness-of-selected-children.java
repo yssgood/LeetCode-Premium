@@ -9,6 +9,7 @@ class Solution {
         
         for(int i = 0; i < k; i++){
             arr[i] -= i; 
+            if(arr[i] <= 0) break;  // 더 이상 의미 없음
             if(arr[i] >= 0) answer += arr[i]; 
         }
 
