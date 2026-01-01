@@ -1,29 +1,28 @@
 class Leaderboard {
-    private Map<Integer,Integer> hashMap; 
+    Map<Integer,Integer> leaderBoard; 
     public Leaderboard() {
-        hashMap = new HashMap<>(); 
+        leaderBoard = new HashMap<>(); 
     }
     
     public void addScore(int playerId, int score) {
-        hashMap.put(playerId, hashMap.getOrDefault(playerId,0) + score); 
+        leaderBoard.put(playerId, leaderBoard.getOrDefault(playerId,0) + score); 
     }
     
     public int top(int K) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder()); 
-
-        for(int scores : hashMap.values()){
-            pq.offer(scores); 
+        int res = 0; 
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> b - a); 
+        for(Map.Entry<Integer,Integer> entry : leaderBoard.entrySet()){
+            pq.offer(entry.getValue()); 
         }
-        int sum = 0; 
         while(K > 0){
-            sum += pq.poll(); 
+            res += pq.poll(); 
             K--; 
         }
-        return sum; 
+        return res; 
     }
     
     public void reset(int playerId) {
-        hashMap.remove(playerId); 
+        leaderBoard.put(playerId,0); 
     }
 }
 
