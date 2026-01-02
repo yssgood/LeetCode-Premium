@@ -9,7 +9,7 @@ class Solution {
             if(i == currJump){
                 currJump = maxJump; 
                 jump++; 
-                if(currJump >= nums.length) return jump; 
+                if(currJump >= nums.length-1) return jump; 
             }
         }
         return jump; 
