@@ -105,6 +105,7 @@
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 | [0290-word-pattern](https://github.com/yssgood/LeetCode-Premium/tree/master/0290-word-pattern) |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
+| [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
@@ -299,4 +300,13 @@
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/yssgood/LeetCode-Premium/tree/master/0155-min-stack) |
+| [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
+## Linked List
+|  |
+| ------- |
+| [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 <!---LeetCode Topics End-->
