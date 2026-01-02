@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/design-twitter/">355. Design Twitter</a></h2><h3>Medium</h3><hr><p>Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and is able to see the <code>10</code> most recent tweets in the user&#39;s news feed.</p>
+<h2><a href="https://leetcode.com/problems/design-twitter">355. Design Twitter</a></h2><h3>Medium</h3><hr><p>Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and is able to see the <code>10</code> most recent tweets in the user&#39;s news feed.</p>
 
 <p>Implement the <code>Twitter</code> class:</p>
 
