@@ -15,16 +15,16 @@ class Solution {
         int sum = 0;
         
         // check divisors up to sqrt(n)
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i * i <= n; i++) {
             if (n % i == 0) {
                 count++;
                 sum += i;
                 
-                // // add the paired divisor if different
-                // if (i != n / i) {
-                //     count++;
-                //     sum += n / i;
-                // }
+                // add the paired divisor if different
+                if (i != n / i) {
+                    count++;
+                    sum += n / i;
+                }
                 
                 // early exit if more than 4 divisors
                 if (count > 4) {
