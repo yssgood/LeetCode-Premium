@@ -5,31 +5,34 @@
  *     ListNode next;
  *     ListNode() {}
  *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = dnext; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        if(head == null) return head; 
         ListNode slow = head; 
         ListNode fast = head; 
-        while(fast != null && n > 0){
+
+        for(int i = 0; i < n; i++){
             fast = fast.next; 
-            n--; 
         }
+
+        //if(fast != null) System.out.print(fast.val); 
+
+        if(fast == null) return head.next; 
+
 
         while(fast != null && fast.next != null){
             slow = slow.next; 
             fast = fast.next; 
         }
 
-        if(slow == fast) return null; 
-        if(fast == null) return head.next; 
-        slow.next = slow.next.next; 
+        // System.out.print(slow.val);  
+        // if(fast != null) System.out.print(fast.val); 
 
+        slow.next = slow.next.next; 
         return head; 
+
     }
 }
-
-//[1,2]
-//1 -> 2 -> null 
-//2 
