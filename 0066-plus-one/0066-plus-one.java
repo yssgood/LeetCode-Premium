@@ -1,18 +1,18 @@
 class Solution {
     public int[] plusOne(int[] digits) {
         List<Integer> answer = new ArrayList<>(); 
-        int sum = (digits[digits.length-1] + 1) % 10; 
-        int carry = (digits[digits.length-1] + 1) / 10; 
-        answer.add(sum); 
-        for(int i = digits.length-2; i >= 0;  i--){
-            sum = (digits[i] + carry) % 10; 
-            carry = (digits[digits.length-1] + 1) / 10;
-            answer.add(sum); 
+        int offset = (digits[digits.length-1] + 1) / 10; 
+        answer.add((digits[digits.length-1] + 1) % 10); 
+        for(int i = digits.length-2; i >= 0; i--){
+            int sum = digits[i] + offset; 
+            answer.add(sum % 10); 
+            offset = sum >= 10 ? 1 : 0; 
         }
-        if(carry > 0) answer.add(1); 
-        int[] res = new int[answer.size()]; 
-        Collections.reverse(answer); 
-        for(int i = 0; i < answer.size(); i++) res[i] = answer.get(i); 
-        return res;  
+
+        if(offset > 0) answer.add(1); 
+
+        Collections.reverse(answer);
+
+        return answer.stream().mapToInt(i -> i).toArray(); 
     }
 }
