@@ -1,8 +1,8 @@
-<h2><a href="https://leetcode.com/problems/the-maze-iii/">499. The Maze III</a></h2><h3>Hard</h3><hr><div><p>There is a ball in a <code>maze</code> with empty spaces (represented as <code>0</code>) and walls (represented as <code>1</code>). The ball can go through the empty spaces by rolling <strong>up, down, left or right</strong>, but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction. There is also a hole in this maze. The ball will drop into the hole if it rolls onto the hole.</p>
+<h2><a href="https://leetcode.com/problems/the-maze-iii">499. The Maze III</a></h2><h3>Hard</h3><hr><p>There is a ball in a <code>maze</code> with empty spaces (represented as <code>0</code>) and walls (represented as <code>1</code>). The ball can go through the empty spaces by rolling <strong>up, down, left or right</strong>, but it won&#39;t stop rolling until hitting a wall. When the ball stops, it could choose the next direction (must be different from last chosen direction). There is also a hole in this maze. The ball will drop into the hole if it rolls onto the hole.</p>
 
-<p>Given the <code>m x n</code> <code>maze</code>, the ball's position <code>ball</code> and the hole's position <code>hole</code>, where <code>ball = [ball<sub>row</sub>, ball<sub>col</sub>]</code> and <code>hole = [hole<sub>row</sub>, hole<sub>col</sub>]</code>, return <em>a string </em><code>instructions</code><em> of all the instructions that the ball should follow to drop in the hole with the <strong>shortest distance</strong> possible</em>. If there are multiple valid instructions, return the <strong>lexicographically minimum</strong> one. If the ball can't drop in the hole, return <code>"impossible"</code>.</p>
+<p>Given the <code>m x n</code> <code>maze</code>, the ball&#39;s position <code>ball</code> and the hole&#39;s position <code>hole</code>, where <code>ball = [ball<sub>row</sub>, ball<sub>col</sub>]</code> and <code>hole = [hole<sub>row</sub>, hole<sub>col</sub>]</code>, return <em>a string </em><code>instructions</code><em> of all the instructions that the ball should follow to drop in the hole with the <strong>shortest distance</strong> possible</em>. If there are multiple valid instructions, return the <strong>lexicographically minimum</strong> one. If the ball can&#39;t drop in the hole, return <code>&quot;impossible&quot;</code>.</p>
 
-<p>If there is a way for the ball to drop in the hole, the answer <code>instructions</code> should contain the characters <code>'u'</code> (i.e., up), <code>'d'</code> (i.e., down), <code>'l'</code> (i.e., left), and <code>'r'</code> (i.e., right).</p>
+<p>If there is a way for the ball to drop in the hole, the answer <code>instructions</code> should contain the characters <code>&#39;u&#39;</code> (i.e., up), <code>&#39;d&#39;</code> (i.e., down), <code>&#39;l&#39;</code> (i.e., left), and <code>&#39;r&#39;</code> (i.e., right).</p>
 
 <p>The <strong>distance</strong> is the number of <strong>empty spaces</strong> traveled by the ball from the start position (excluded) to the destination (included).</p>
 
@@ -10,26 +10,29 @@
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/03/31/maze3-1-grid.jpg" style="width: 573px; height: 573px;">
-<pre><strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [0,1]
-<strong>Output:</strong> "lul"
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/31/maze3-1-grid.jpg" style="width: 573px; height: 573px;" />
+<pre>
+<strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [0,1]
+<strong>Output:</strong> &quot;lul&quot;
 <strong>Explanation:</strong> There are two shortest ways for the ball to drop into the hole.
-The first way is left -&gt; up -&gt; left, represented by "lul".
-The second way is up -&gt; left, represented by 'ul'.
-Both ways have shortest distance 6, but the first way is lexicographically smaller because 'l' &lt; 'u'. So the output is "lul".
+The first way is left -&gt; up -&gt; left, represented by &quot;lul&quot;.
+The second way is up -&gt; left, represented by &#39;ul&#39;.
+Both ways have shortest distance 6, but the first way is lexicographically smaller because &#39;l&#39; &lt; &#39;u&#39;. So the output is &quot;lul&quot;.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/03/31/maze3-2-grid.jpg" style="width: 573px; height: 573px;">
-<pre><strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [3,0]
-<strong>Output:</strong> "impossible"
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/31/maze3-2-grid.jpg" style="width: 573px; height: 573px;" />
+<pre>
+<strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [3,0]
+<strong>Output:</strong> &quot;impossible&quot;
 <strong>Explanation:</strong> The ball cannot reach the hole.
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre><strong>Input:</strong> maze = [[0,0,0,0,0,0,0],[0,0,1,0,0,1,0],[0,0,0,0,1,0,0],[0,0,0,0,0,0,1]], ball = [0,4], hole = [3,5]
-<strong>Output:</strong> "dldr"
+<pre>
+<strong>Input:</strong> maze = [[0,0,0,0,0,0,0],[0,0,1,0,0,1,0],[0,0,0,0,1,0,0],[0,0,0,0,0,0,1]], ball = [0,4], hole = [3,5]
+<strong>Output:</strong> &quot;dldr&quot;
 </pre>
 
 <p>&nbsp;</p>
@@ -47,4 +50,3 @@ Both ways have shortest distance 6, but the first way is lexicographically small
 	<li>Both the ball and the hole exist in an empty space, and they will not be in the same position initially.</li>
 	<li>The maze contains <strong>at least 2 empty spaces</strong>.</li>
 </ul>
-</div>
