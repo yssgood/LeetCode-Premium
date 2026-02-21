@@ -1,29 +1,32 @@
 class Solution {
-    int[] prefix; 
-    int total; 
+    int[] prefixArr; 
+
     public Solution(int[] w) {
-        prefix = new int[w.length]; 
-        prefix[0] = w[0];
+        prefixArr = new int[w.length]; 
+        prefixArr[0] = w[0]; 
         for(int i = 1; i < w.length; i++){
-            prefix[i] = prefix[i-1] + w[i]; 
+            prefixArr[i] = w[i] + prefixArr[i-1]; 
         }
-        total = prefix[prefix.length-1]; 
     }
     
     public int pickIndex() {
-        int rand = (int)(Math.random() * total) + 1; 
-        int left = 0, right = prefix.length-1; 
-        
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (prefix[mid] < rand) {
-                left = mid + 1;
-            } else {
-                right = mid;
+        int randomIndex = (int)(Math.random() * prefixArr[prefixArr.length-1]) + 1; 
+        return binarySearch(randomIndex); 
+    }
+
+    private int binarySearch(int target){
+        int left = 0, right = prefixArr.length; 
+        int res = 0; 
+        while(left < right){
+            int middle = (left + right) / 2; 
+            if(prefixArr[middle] >= target){
+                res = middle; 
+                right = middle; 
+            } else{
+                left = middle + 1; 
             }
         }
-
-        return left;
+        return res; 
     }
 }
 
