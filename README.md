@@ -79,6 +79,7 @@
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0005-longest-palindromic-substring) |
 | [0014-longest-common-prefix](https://github.com/yssgood/LeetCode-Premium/tree/master/0014-longest-common-prefix) |
+| [0020-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/0020-valid-parentheses/) | Easy |
 | [0076-minimum-window-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0076-minimum-window-substring) |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0151-reverse-words-in-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0151-reverse-words-in-a-string) |
@@ -298,6 +299,7 @@
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0020-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/0020-valid-parentheses/) | Easy |
 | [0155-min-stack](https://github.com/yssgood/LeetCode-Premium/tree/master/0155-min-stack) |
 ## Design
 | Problem Name | Difficulty |
