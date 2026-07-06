@@ -133,6 +133,7 @@
 | [0056-merge-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/yssgood/LeetCode-Premium/tree/master/0057-insert-interval) |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
+| [0088-merge-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0088-merge-sorted-array/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/master/0128-longest-consecutive-sequence) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/yssgood/LeetCode-Premium/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
@@ -185,6 +186,7 @@
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/yssgood/LeetCode-Premium/tree/master/0027-remove-element) |
+| [0088-merge-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0088-merge-sorted-array/) | Easy |
 | [0151-reverse-words-in-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0151-reverse-words-in-a-string) |
 | [0161-one-edit-distance](https://github.com/yssgood/LeetCode-Premium/tree/master/0161-one-edit-distance) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -225,6 +227,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0056-merge-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0056-merge-intervals) |
+| [0088-merge-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0088-merge-sorted-array/) | Easy |
 | [0252-meeting-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0252-meeting-rooms) |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
