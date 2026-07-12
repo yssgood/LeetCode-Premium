@@ -1,23 +1,24 @@
 class Solution {
     public String reverseWords(String s) {
-        StringBuilder sb = new StringBuilder(s); 
-        StringBuilder answer = new StringBuilder(); 
-        sb.reverse(); 
+        s = new StringBuilder(s).reverse().toString(); 
         int start = 0, end = 0; 
         int n = s.length(); 
-        while(end < n){
-            while(start < n && sb.toString().charAt(start) == ' ') start++; 
-            end = start; 
-            while(end < n && sb.toString().charAt(end) != ' ') end++;
+        StringBuilder sb = new StringBuilder(); 
 
-            StringBuilder tmp = new StringBuilder(sb.toString().substring(start, end)); 
-            tmp.reverse(); 
-            if(tmp.length() > 0) answer.append(tmp.toString()).append(" "); 
+        while(end < n){
+            while(end < n && Character.isSpace(s.charAt(end))) end++; 
             start = end; 
+            while(end < n && s.charAt(end) != ' ') end++; 
+
+            if(!s.substring(start,end).isEmpty()){
+                StringBuilder tmp = new StringBuilder(s.substring(start,end)).reverse(); 
+                sb.append(tmp).append(' '); 
+            }
+            end++; 
         }
 
-        answer.deleteCharAt(answer.length()-1); 
-        
-        return answer.toString(); 
+        sb.deleteCharAt(sb.length()-1); 
+
+        return sb.toString(); 
     }
 }
