@@ -7,9 +7,7 @@ class Solution {
             char curr = s.charAt(end); 
             hashMap.put(curr, hashMap.getOrDefault(curr,0) + 1); 
             while(hashMap.get(curr) > 1){
-                char prev = s.charAt(start); 
-                hashMap.put(prev, hashMap.get(prev) - 1); 
-                if(hashMap.get(prev) <= 0) hashMap.remove(prev); 
+                hashMap.put(s.charAt(start), hashMap.get(s.charAt(start)) - 1); 
                 start++; 
             }
             answer = Math.max(answer, end - start + 1); 
