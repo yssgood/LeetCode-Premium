@@ -84,6 +84,7 @@
 | [0014-longest-common-prefix](https://github.com/yssgood/LeetCode-Premium/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/0020-valid-parentheses/) | Easy |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/yssgood/LeetCode-Premium/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0058-length-of-last-word](https://github.com/yssgood/LeetCode-Premium/tree/main/0058-length-of-last-word/) | Easy |
 | [0068-text-justification](https://github.com/yssgood/LeetCode-Premium/tree/main/0068-text-justification/) | Hard |
 | [0071-simplify-path](https://github.com/yssgood/LeetCode-Premium/tree/main/0071-simplify-path/) | Medium |
@@ -111,6 +112,7 @@
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0013-roman-to-integer](https://github.com/yssgood/LeetCode-Premium/tree/main/0013-roman-to-integer/) | Easy |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/yssgood/LeetCode-Premium/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0076-minimum-window-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
@@ -130,6 +132,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/yssgood/LeetCode-Premium/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0076-minimum-window-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0076-minimum-window-substring) |
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
