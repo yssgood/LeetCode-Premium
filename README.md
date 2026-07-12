@@ -82,6 +82,7 @@
 | [0013-roman-to-integer](https://github.com/yssgood/LeetCode-Premium/tree/main/0013-roman-to-integer/) | Easy |
 | [0014-longest-common-prefix](https://github.com/yssgood/LeetCode-Premium/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/0020-valid-parentheses/) | Easy |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0058-length-of-last-word](https://github.com/yssgood/LeetCode-Premium/tree/main/0058-length-of-last-word/) | Easy |
 | [0071-simplify-path](https://github.com/yssgood/LeetCode-Premium/tree/main/0071-simplify-path/) | Medium |
 | [0076-minimum-window-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0076-minimum-window-substring) |
@@ -198,6 +199,7 @@
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/yssgood/LeetCode-Premium/tree/master/0027-remove-element) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0080-remove-duplicates-from-sorted-array-ii/) | Medium |
 | [0088-merge-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0088-merge-sorted-array/) | Easy |
 | [0151-reverse-words-in-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0151-reverse-words-in-a-string) |
@@ -340,4 +342,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 <!---LeetCode Topics End-->
