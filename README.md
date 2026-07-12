@@ -130,6 +130,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
+| [0014-longest-common-prefix](https://github.com/yssgood/LeetCode-Premium/tree/main/0014-longest-common-prefix/) | Easy |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/yssgood/LeetCode-Premium/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0033-search-in-rotated-sorted-array) |
