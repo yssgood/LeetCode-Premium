@@ -149,6 +149,7 @@
 | [0027-remove-element](https://github.com/yssgood/LeetCode-Premium/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0033-search-in-rotated-sorted-array) |
 | [0036-valid-sudoku](https://github.com/yssgood/LeetCode-Premium/tree/main/0036-valid-sudoku/) | Medium |
+| [0048-rotate-image](https://github.com/yssgood/LeetCode-Premium/tree/main/0048-rotate-image/) | Medium |
 | [0053-maximum-subarray](https://github.com/yssgood/LeetCode-Premium/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0054-spiral-matrix/) | Medium |
 | [0055-jump-game](https://github.com/yssgood/LeetCode-Premium/tree/master/0055-jump-game) |
@@ -204,6 +205,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0013-roman-to-integer](https://github.com/yssgood/LeetCode-Premium/tree/main/0013-roman-to-integer/) | Easy |
+| [0048-rotate-image](https://github.com/yssgood/LeetCode-Premium/tree/main/0048-rotate-image/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/yssgood/LeetCode-Premium/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0189-rotate-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0189-rotate-array) |
 | [1069-confusing-number](https://github.com/yssgood/LeetCode-Premium/tree/master/1069-confusing-number) |
@@ -252,6 +254,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0036-valid-sudoku](https://github.com/yssgood/LeetCode-Premium/tree/main/0036-valid-sudoku/) | Medium |
+| [0048-rotate-image](https://github.com/yssgood/LeetCode-Premium/tree/main/0048-rotate-image/) | Medium |
 | [0054-spiral-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0054-spiral-matrix/) | Medium |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
