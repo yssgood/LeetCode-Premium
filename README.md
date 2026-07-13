@@ -114,6 +114,7 @@
 | [0013-roman-to-integer](https://github.com/yssgood/LeetCode-Premium/tree/main/0013-roman-to-integer/) | Easy |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/yssgood/LeetCode-Premium/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0036-valid-sudoku](https://github.com/yssgood/LeetCode-Premium/tree/main/0036-valid-sudoku/) | Medium |
+| [0073-set-matrix-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0076-minimum-window-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
@@ -156,6 +157,7 @@
 | [0056-merge-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/yssgood/LeetCode-Premium/tree/master/0057-insert-interval) |
 | [0068-text-justification](https://github.com/yssgood/LeetCode-Premium/tree/main/0068-text-justification/) | Hard |
+| [0073-set-matrix-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0080-remove-duplicates-from-sorted-array-ii/) | Medium |
 | [0088-merge-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0088-merge-sorted-array/) | Easy |
@@ -256,6 +258,7 @@
 | [0036-valid-sudoku](https://github.com/yssgood/LeetCode-Premium/tree/main/0036-valid-sudoku/) | Medium |
 | [0048-rotate-image](https://github.com/yssgood/LeetCode-Premium/tree/main/0048-rotate-image/) | Medium |
 | [0054-spiral-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0054-spiral-matrix/) | Medium |
+| [0073-set-matrix-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
