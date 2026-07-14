@@ -403,4 +403,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0128-longest-consecutive-sequence/) | Medium |
 <!---LeetCode Topics End-->
