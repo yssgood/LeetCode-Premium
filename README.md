@@ -95,6 +95,7 @@
 | [0161-one-edit-distance](https://github.com/yssgood/LeetCode-Premium/tree/master/0161-one-edit-distance) |
 | [0186-reverse-words-in-a-string-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0186-reverse-words-in-a-string-ii) |
 | [0205-isomorphic-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0205-isomorphic-strings/) | Easy |
+| [0242-valid-anagram](https://github.com/yssgood/LeetCode-Premium/tree/main/0242-valid-anagram/) | Easy |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 | [0290-word-pattern](https://github.com/yssgood/LeetCode-Premium/tree/master/0290-word-pattern) |
@@ -121,6 +122,7 @@
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
 | [0205-isomorphic-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0205-isomorphic-strings/) | Easy |
+| [0242-valid-anagram](https://github.com/yssgood/LeetCode-Premium/tree/main/0242-valid-anagram/) | Easy |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 | [0290-word-pattern](https://github.com/yssgood/LeetCode-Premium/tree/master/0290-word-pattern) |
@@ -280,6 +282,7 @@
 | [0056-merge-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0088-merge-sorted-array/) | Easy |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
+| [0242-valid-anagram](https://github.com/yssgood/LeetCode-Premium/tree/main/0242-valid-anagram/) | Easy |
 | [0252-meeting-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0252-meeting-rooms) |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
