@@ -94,6 +94,7 @@
 | [0151-reverse-words-in-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0151-reverse-words-in-a-string) |
 | [0161-one-edit-distance](https://github.com/yssgood/LeetCode-Premium/tree/master/0161-one-edit-distance) |
 | [0186-reverse-words-in-a-string-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0186-reverse-words-in-a-string-ii) |
+| [0205-isomorphic-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0205-isomorphic-strings/) | Easy |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 | [0290-word-pattern](https://github.com/yssgood/LeetCode-Premium/tree/master/0290-word-pattern) |
@@ -119,6 +120,7 @@
 | [0076-minimum-window-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
+| [0205-isomorphic-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0205-isomorphic-strings/) | Easy |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 | [0290-word-pattern](https://github.com/yssgood/LeetCode-Premium/tree/master/0290-word-pattern) |
