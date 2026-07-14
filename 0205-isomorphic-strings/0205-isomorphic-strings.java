@@ -1,13 +1,17 @@
 class Solution {
     public boolean isIsomorphic(String s, String t) {
         Map<Character,Character> hashMap = new HashMap<>(); 
-        for(int i = 0; i < s.length(); i++){
-            char sChar = s.charAt(i); 
-            char tChar = t.charAt(i); 
+        Set<Character> mappedChar = new HashSet<>(); 
 
-            if(hashMap.containsKey(sChar) && hashMap.get(sChar) != tChar) return false; 
-            
-            hashMap.put(sChar, tChar); 
+        for(int i = 0; i < s.length(); i++){
+            char left = s.charAt(i); 
+            char right = t.charAt(i); 
+
+            if(hashMap.containsKey(left) && hashMap.get(left) != right) return false; 
+            if(!hashMap.containsKey(left) && mappedChar.contains(right)) return false; 
+
+            hashMap.put(left, right); 
+            mappedChar.add(right); 
         }
 
         return true; 
