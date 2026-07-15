@@ -223,6 +223,7 @@
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
 | [0013-roman-to-integer](https://github.com/yssgood/LeetCode-Premium/tree/main/0013-roman-to-integer/) | Easy |
 | [0048-rotate-image](https://github.com/yssgood/LeetCode-Premium/tree/main/0048-rotate-image/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/yssgood/LeetCode-Premium/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
@@ -396,6 +397,7 @@
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
 | [0141-linked-list-cycle](https://github.com/yssgood/LeetCode-Premium/tree/main/0141-linked-list-cycle/) | Easy |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 ## Heap (Priority Queue)
@@ -417,5 +419,6 @@
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
 <!---LeetCode Topics End-->
