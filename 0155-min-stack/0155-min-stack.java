@@ -1,34 +1,37 @@
 class MinStack {
-    Stack<Integer> stack = new Stack<>(); 
-    Stack<Integer> minStack = new Stack<>(); 
+
+    Deque<Integer> mainStack = new ArrayDeque<>(); 
+    Deque<Integer> minStack = new ArrayDeque<>();
 
     public MinStack() {
         
     }
     
-    public void push(int val) {
-        stack.push(val); 
-        if(minStack.isEmpty() || minStack.peek() >= val) minStack.push(val); 
+    public void push(int value) {
+        mainStack.addLast(value); 
+        if(minStack.isEmpty() || minStack.peekLast() >= value){
+            minStack.addLast(value); 
+        }
     }
     
     public void pop() {
-        int val = stack.pop(); 
-        if(minStack.peek() == val) minStack.pop(); 
+        int target = mainStack.pollLast(); 
+        if(!minStack.isEmpty() && minStack.peekLast() == target) minStack.pollLast(); 
     }
     
     public int top() {
-        return stack.peek(); 
+        return mainStack.peekLast(); 
     }
     
     public int getMin() {
-        return minStack.peek(); 
+        return minStack.peekLast(); 
     }
 }
 
 /**
  * Your MinStack object will be instantiated and called as such:
  * MinStack obj = new MinStack();
- * obj.push(val);
+ * obj.push(value);
  * obj.pop();
  * int param_3 = obj.top();
  * int param_4 = obj.getMin();
