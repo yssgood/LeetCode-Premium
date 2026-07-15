@@ -1,39 +1,38 @@
 class Solution {
     public String simplifyPath(String path) {
-        String[] words = path.split("/"); 
-        Stack<String> stack = new Stack<>(); 
+        path = path + "/";   // 마지막에 / 추가
+        Deque<StringBuilder> stack = new ArrayDeque<>(); 
 
-        for(String s : words){
-            
-            if(s.equals(".") || s.equals("..")){
-                if(s.equals("..") && !stack.isEmpty()) stack.pop(); 
-            } else{
-                //System.out.print(s + " "); 
-                if(s.length() > 0) stack.push(s); 
-            }
-        }
 
+        int end = 0; 
         StringBuilder sb = new StringBuilder(); 
-        while(!stack.isEmpty()){
-            StringBuilder lastPath = new StringBuilder(stack.pop()); 
-            lastPath.reverse(); 
-            sb.append("/").append(lastPath.toString()); 
+        int n = path.length(); 
+
+        while(end < n){
+            char curr = path.charAt(end); 
             
+            if(curr != '/'){
+                sb.append(path.charAt(end)); 
+            } else{
+                if(!sb.toString().equals(".") && !sb.toString().equals("..") && !sb.isEmpty()){
+                    stack.push(sb); 
+                } else{
+                    if(sb.toString().equals("..") && !stack.isEmpty()){
+                        stack.pop(); 
+                    }
+                }
+                sb = new StringBuilder(); 
+            }
+            end++; 
         }
 
-        sb.append("/"); 
-        sb.reverse(); 
-        if(sb.length() > 1) sb.deleteCharAt(sb.length()-1); 
+        // if(!sb.isEmpty()) stack.push(sb); 
 
-        return sb.toString(); 
+        StringBuilder result = new StringBuilder();
+        while(!stack.isEmpty()){
+            result.append("/").append(stack.pollLast());
+        }
+
+        return result.length() == 0 ? "/" : result.toString();
     }
 }
-
-/*
-    foo 
-                  home 
-
-   /oof/emoh/
-   /home/foo/
-
-*/ 
