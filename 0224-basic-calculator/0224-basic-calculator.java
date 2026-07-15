@@ -1,44 +1,42 @@
 class Solution {
     public int calculate(String s) {
-        Stack<Integer> stack = new Stack<>(); 
-        int sign = 1;  
-        int num = 0; 
-        int cumulative = 0; 
-        for(int i = 0; i < s.length(); i++){
-            char curr = s.charAt(i); 
-            if(Character.isDigit(curr)){
-                num = num * 10 + (curr - '0'); 
+        Stack<Integer> stack = new Stack<>();
+        int result = 0; 
+        int sign = 1; 
+        int curr = 0; 
+        for(char c : s.toCharArray()){
+            if(Character.isDigit(c)){
+                curr = curr * 10 + (c - '0'); 
             }
-            if(curr == '('){
-                stack.push(cumulative); 
-                stack.push(sign); 
+
+            if(c == '+'){
+                result += sign * curr; 
+                curr = 0; 
                 sign = 1; 
-                cumulative = 0; 
             }
-            if(curr == ')'){
-                cumulative += sign * num; 
-                int prevSign = stack.pop(); 
-                int prevCumulative = stack.pop(); 
-                cumulative *= prevSign;
-                cumulative += prevCumulative; 
-                num = 0; 
-            } else{
-                if(curr == '-'){
-                    int tmp = num * sign; 
-                    cumulative += tmp; 
-                    sign = -1; 
-                    num = 0; 
-                } else if(curr == '+'){
-                    int tmp = num * sign; 
-                    cumulative += tmp; 
-                    sign = 1; 
-                    num = 0; 
-                }
+
+            if(c == '-'){
+                result += sign * curr; 
+                curr = 0; 
+                sign = -1; 
+            }
+
+            if(c == '('){
+                stack.push(result); 
+                stack.push(sign); 
+                result = 0; 
+                sign = 1; 
+            }
+
+            if(c == ')'){
+                result += sign * curr; 
+                curr = 0; 
+                result *= stack.pop();
+                result += stack.pop();
+                sign = 1; 
             }
         }
 
-        cumulative += sign * num; 
-
-        return cumulative; 
+        return result + sign * curr; 
     }
 }
