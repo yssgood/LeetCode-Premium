@@ -13,20 +13,23 @@ class Solution {
         ListNode dummy = new ListNode(-1); 
         dummy.next = head; 
         ListNode curr = dummy; 
-        for(int i = 1; i < left; i++){
+        for(int i = 0; i < left - 1; i++){
             curr = curr.next; 
         }
-        ListNode lastTail = curr.next; 
-        ListNode newTail = curr.next; 
-        ListNode newHead = null; 
+        
+        ListNode tail = curr.next; 
+        ListNode newHead = curr.next; 
+        ListNode prev = null; 
         for(int i = left; i <= right; i++){
-            ListNode tmp = newTail.next; 
-            newTail.next = newHead; 
-            newHead = newTail; 
-            newTail = tmp; 
+            ListNode tmp = newHead.next; 
+            newHead.next = prev; 
+            prev = newHead; 
+            newHead = tmp; 
         }
-        lastTail.next = newTail; 
-        curr.next = newHead; 
+
+        curr.next = prev; 
+        tail.next = newHead; 
+
         return dummy.next; 
     }
 }
