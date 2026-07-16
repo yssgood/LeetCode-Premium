@@ -398,6 +398,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
+| [0092-reverse-linked-list-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0092-reverse-linked-list-ii/) | Medium |
 | [0141-linked-list-cycle](https://github.com/yssgood/LeetCode-Premium/tree/main/0141-linked-list-cycle/) | Easy |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 ## Heap (Priority Queue)
