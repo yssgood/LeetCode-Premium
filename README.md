@@ -335,6 +335,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
+| [0100-same-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0100-same-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
@@ -345,6 +346,7 @@
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0100-same-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0100-same-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
@@ -444,9 +446,11 @@
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0100-same-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0100-same-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0100-same-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0100-same-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 <!---LeetCode Topics End-->
