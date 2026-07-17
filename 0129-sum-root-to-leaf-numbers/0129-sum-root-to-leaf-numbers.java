@@ -14,24 +14,23 @@
  * }
  */
 class Solution {
-    int currNum = 0; 
-    int result = 0; 
+    int answer = 0; 
     public int sumNumbers(TreeNode root) {
-        dfs(root); 
-        return result; 
+        if(root.left == null && root.right == null) return root.val; 
+        sumNumbersHelper(root.left, root.val); 
+        sumNumbersHelper(root.right, root.val); 
+        return answer; 
     }
 
-    public void dfs(TreeNode root){
+    public void sumNumbersHelper(TreeNode root, int val){
         if(root == null) return; 
-        currNum = currNum * 10 + root.val; 
-        if(root.left ==  null && root.right == null){
-            result += currNum; 
-            currNum /= 10;
-            return;
-        }
 
-        dfs(root.left); 
-        dfs(root.right); 
-        currNum /= 10; 
+        val = val * 10 + (root.val); 
+        sumNumbersHelper(root.left,val); 
+        sumNumbersHelper(root.right,val);
+
+        if(root.left == null && root.right == null){
+            answer += val; 
+        }
     }
 }
