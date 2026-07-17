@@ -10,22 +10,27 @@
  */
 class Solution {
     public ListNode partition(ListNode head, int x) {
-        ListNode headDummy = new ListNode(-1); 
-        ListNode tailDummy = new ListNode(-1); 
-        ListNode headCurr = headDummy; 
-        ListNode tailCurr = tailDummy; 
+        ListNode smallDummy = new ListNode(-1); 
+        ListNode bigDummy = new ListNode(-1); 
+        
+        ListNode smallCurr = smallDummy; 
+        ListNode bigCurr = bigDummy; 
+
         while(head != null){
-            if(head.val < x){
-                headCurr.next = new ListNode(head.val); 
-                headCurr = headCurr.next; 
+            int val = head.val; 
+            if(val < x){
+                smallCurr.next = new ListNode(val); 
+                smallCurr = smallCurr.next; 
             } else{
-                tailCurr.next = new ListNode(head.val); 
-                tailCurr = tailCurr.next; 
+                bigCurr.next = new ListNode(val); 
+                bigCurr = bigCurr.next; 
             }
             head = head.next; 
         }
 
-        headCurr.next = tailDummy.next; 
-        return headDummy.next; 
+        smallCurr.next = bigDummy.next; 
+
+        
+        return smallDummy.next; 
     }
 }
