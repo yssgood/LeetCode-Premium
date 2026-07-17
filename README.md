@@ -125,6 +125,7 @@
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/master/0128-longest-consecutive-sequence) |
 | [0138-copy-list-with-random-pointer](https://github.com/yssgood/LeetCode-Premium/tree/main/0138-copy-list-with-random-pointer/) | Medium |
 | [0141-linked-list-cycle](https://github.com/yssgood/LeetCode-Premium/tree/main/0141-linked-list-cycle/) | Easy |
+| [0146-lru-cache](https://github.com/yssgood/LeetCode-Premium/tree/main/0146-lru-cache/) | Medium |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
 | [0202-happy-number](https://github.com/yssgood/LeetCode-Premium/tree/main/0202-happy-number/) | Easy |
 | [0205-isomorphic-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0205-isomorphic-strings/) | Easy |
@@ -397,6 +398,7 @@
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0146-lru-cache](https://github.com/yssgood/LeetCode-Premium/tree/main/0146-lru-cache/) | Medium |
 | [0155-min-stack](https://github.com/yssgood/LeetCode-Premium/tree/master/0155-min-stack) |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 ## Linked List
@@ -410,6 +412,7 @@
 | [0092-reverse-linked-list-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0092-reverse-linked-list-ii/) | Medium |
 | [0138-copy-list-with-random-pointer](https://github.com/yssgood/LeetCode-Premium/tree/main/0138-copy-list-with-random-pointer/) | Medium |
 | [0141-linked-list-cycle](https://github.com/yssgood/LeetCode-Premium/tree/main/0141-linked-list-cycle/) | Easy |
+| [0146-lru-cache](https://github.com/yssgood/LeetCode-Premium/tree/main/0146-lru-cache/) | Medium |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
@@ -432,4 +435,8 @@
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
+## Doubly-Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0146-lru-cache](https://github.com/yssgood/LeetCode-Premium/tree/main/0146-lru-cache/) | Medium |
 <!---LeetCode Topics End-->
