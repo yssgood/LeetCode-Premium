@@ -343,6 +343,7 @@
 | [0101-symmetric-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0101-symmetric-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0112-path-sum/) | Easy |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
@@ -358,6 +359,7 @@
 | [0101-symmetric-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0101-symmetric-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0112-path-sum/) | Easy |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
@@ -427,6 +429,7 @@
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0082-remove-duplicates-from-sorted-list-ii/) | Medium |
 | [0086-partition-list](https://github.com/yssgood/LeetCode-Premium/tree/main/0086-partition-list/) | Medium |
 | [0092-reverse-linked-list-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0092-reverse-linked-list-ii/) | Medium |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0138-copy-list-with-random-pointer](https://github.com/yssgood/LeetCode-Premium/tree/main/0138-copy-list-with-random-pointer/) | Medium |
 | [0141-linked-list-cycle](https://github.com/yssgood/LeetCode-Premium/tree/main/0141-linked-list-cycle/) | Easy |
 | [0146-lru-cache](https://github.com/yssgood/LeetCode-Premium/tree/main/0146-lru-cache/) | Medium |
@@ -465,6 +468,7 @@
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/yssgood/LeetCode-Premium/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/yssgood/LeetCode-Premium/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
 | [0112-path-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0112-path-sum/) | Easy |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 ## Binary Tree
@@ -476,6 +480,7 @@
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/yssgood/LeetCode-Premium/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/yssgood/LeetCode-Premium/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
 | [0112-path-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0112-path-sum/) | Easy |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 <!---LeetCode Topics End-->
