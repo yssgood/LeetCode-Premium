@@ -1,44 +1,41 @@
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        if(numCourses <= 1) return true; 
-        if(prerequisites.length == 0) return true; 
-
         int[] inOrder = new int[numCourses]; 
         List<List<Integer>> adj = new ArrayList<>(); 
-
         for(int i = 0; i < numCourses; i++){
             adj.add(new ArrayList<>()); 
         }
+        for(int[] pre : prerequisites){
+            int to = pre[0]; 
+            int from = pre[1]; 
 
-        for(int[] p : prerequisites){
-            int from = p[1];  
-            int to = p[0]; 
-            
-            
-            adj.get(from).add(to); 
             inOrder[to]++; 
+            adj.get(from).add(to); 
         }
 
         Queue<Integer> q = new LinkedList<>(); 
         for(int i = 0; i < numCourses; i++){
-            if(inOrder[i] == 0) q.offer(i); 
+            if(inOrder[i] == 0) q.add(i); 
         }
 
         if(q.isEmpty()) return false; 
-        
-        int count = 0; 
+
+        int num = 0; 
+
         while(!q.isEmpty()){
             int size = q.size(); 
-            count++; 
-            int curr = q.poll(); 
-            for(int next : adj.get(curr)){
-                inOrder[next]--; 
-                if(inOrder[next] == 0){
-                    q.offer(next);
+            for(int i = 0; i < size; i++){
+                int node = q.poll();
+                num++; 
+                for(int next : adj.get(node)){
+                    inOrder[next]--; 
+                    if(inOrder[next] == 0){
+                        q.add(next); 
+                    }
                 }
             }
         }
 
-        return count == numCourses;
+        return num == numCourses; 
     }
 }
