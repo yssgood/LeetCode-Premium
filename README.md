@@ -283,6 +283,7 @@
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0222-count-complete-tree-nodes](https://github.com/yssgood/LeetCode-Premium/tree/main/0222-count-complete-tree-nodes/) | Easy |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 ## Matrix
 | Problem Name | Difficulty |
@@ -329,6 +330,7 @@
 | [0162-find-peak-element](https://github.com/yssgood/LeetCode-Premium/tree/master/0162-find-peak-element) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
+| [0222-count-complete-tree-nodes](https://github.com/yssgood/LeetCode-Premium/tree/main/0222-count-complete-tree-nodes/) | Easy |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Backtracking
 | Problem Name | Difficulty |
@@ -477,6 +479,7 @@
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
 | [0173-binary-search-tree-iterator](https://github.com/yssgood/LeetCode-Premium/tree/main/0173-binary-search-tree-iterator/) | Medium |
+| [0222-count-complete-tree-nodes](https://github.com/yssgood/LeetCode-Premium/tree/main/0222-count-complete-tree-nodes/) | Easy |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
@@ -491,6 +494,7 @@
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
 | [0173-binary-search-tree-iterator](https://github.com/yssgood/LeetCode-Premium/tree/main/0173-binary-search-tree-iterator/) | Medium |
+| [0222-count-complete-tree-nodes](https://github.com/yssgood/LeetCode-Premium/tree/main/0222-count-complete-tree-nodes/) | Easy |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 ## Binary Search Tree
 | Problem Name | Difficulty |
