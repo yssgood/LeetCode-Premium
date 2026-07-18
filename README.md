@@ -194,6 +194,7 @@
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
 | [0189-rotate-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0189-rotate-array) |
+| [0198-house-robber](https://github.com/yssgood/LeetCode-Premium/tree/main/0198-house-robber/) | Medium |
 | [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0219-contains-duplicate-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0219-contains-duplicate-ii/) | Easy |
@@ -281,6 +282,7 @@
 | [0055-jump-game](https://github.com/yssgood/LeetCode-Premium/tree/master/0055-jump-game) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yssgood/LeetCode-Premium/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0198-house-robber](https://github.com/yssgood/LeetCode-Premium/tree/main/0198-house-robber/) | Medium |
 | [0392-is-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0392-is-subsequence/) | Easy |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
