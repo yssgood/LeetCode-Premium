@@ -205,6 +205,7 @@
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/yssgood/LeetCode-Premium/tree/main/0289-game-of-life/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
+| [0322-coin-change](https://github.com/yssgood/LeetCode-Premium/tree/main/0322-coin-change/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
@@ -285,6 +286,7 @@
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0198-house-robber](https://github.com/yssgood/LeetCode-Premium/tree/main/0198-house-robber/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
+| [0322-coin-change](https://github.com/yssgood/LeetCode-Premium/tree/main/0322-coin-change/) | Medium |
 | [0392-is-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0392-is-subsequence/) | Easy |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
@@ -391,6 +393,7 @@
 | [0210-course-schedule-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0210-course-schedule-ii/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
+| [0322-coin-change](https://github.com/yssgood/LeetCode-Premium/tree/main/0322-coin-change/) | Medium |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
 | [0490-the-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/0490-the-maze) |
