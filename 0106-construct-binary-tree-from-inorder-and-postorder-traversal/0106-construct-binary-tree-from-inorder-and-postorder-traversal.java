@@ -14,29 +14,29 @@
  * }
  */
 class Solution {
+    int index = 0; 
     Map<Integer,Integer> hashMap = new HashMap<>(); 
-    int index; 
     public TreeNode buildTree(int[] inorder, int[] postorder) {
+        index = postorder.length-1;  
         for(int i = 0; i < inorder.length; i++){
             hashMap.put(inorder[i], i); 
         }
-        index = postorder.length-1; 
-        return buildTree(inorder, postorder, 0, postorder.length-1); 
+        return buildTreeHelper(inorder, postorder, 0, inorder.length-1); 
     }
 
-    public TreeNode buildTree(int[] inorder, int[] postorder, int left, int right){
-        if(left > right || index < 0){
+    public TreeNode buildTreeHelper(int[] inorder, int[] postorder, int left, int right){
+        if(left > right){
             return null; 
         }
-        
-        int rootPos = hashMap.get(postorder[index]); 
-        TreeNode root = new TreeNode(postorder[index--]); 
 
-        TreeNode rightTree = buildTree(inorder, postorder, rootPos+1, right); 
-        TreeNode leftTree = buildTree(inorder, postorder, left, rootPos-1); 
+        int curr = postorder[index--]; 
+        TreeNode root = new TreeNode(curr);  
 
-        root.left = leftTree; 
+        TreeNode rightTree = buildTreeHelper(inorder, postorder, hashMap.get(curr) + 1, right); 
+        TreeNode leftTree = buildTreeHelper(inorder, postorder, left, hashMap.get(curr) - 1); 
+
         root.right = rightTree; 
+        root.left = leftTree; 
 
         return root; 
     }
