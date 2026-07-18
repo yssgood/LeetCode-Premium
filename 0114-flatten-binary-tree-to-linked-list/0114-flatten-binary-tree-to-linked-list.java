@@ -14,23 +14,24 @@
  * }
  */
 class Solution {
-    List<TreeNode> arrList = new ArrayList<>(); 
     public void flatten(TreeNode root) {
         if(root == null) return; 
-        dfs(root); 
-        root.left = null; 
-        for(int i = 1; i < arrList.size(); i++){
-            TreeNode curr = arrList.get(i); 
+        List<TreeNode> preOrder = new ArrayList<>(); 
+        preOrderHelper(root, preOrder); 
+
+        TreeNode curr = root; 
+        for(int i = 1; i < preOrder.size(); i++){
             curr.left = null; 
-            root.right = curr; 
-            root = root.right; 
+            curr.right = preOrder.get(i); 
+            curr = curr.right; 
         }
     }
-
-    public void dfs(TreeNode root){
+    public void preOrderHelper(TreeNode root, List<TreeNode> preOrder){
         if(root == null) return; 
-        arrList.add(root); 
-        dfs(root.left); 
-        dfs(root.right); 
+
+        preOrder.add(root); 
+        preOrderHelper(root.left, preOrder); 
+        preOrderHelper(root.right, preOrder); 
     }
+
 }
