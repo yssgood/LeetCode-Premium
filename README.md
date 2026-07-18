@@ -177,6 +177,7 @@
 | [0057-insert-interval](https://github.com/yssgood/LeetCode-Premium/tree/master/0057-insert-interval) |
 | [0068-text-justification](https://github.com/yssgood/LeetCode-Premium/tree/main/0068-text-justification/) | Hard |
 | [0073-set-matrix-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/main/0073-set-matrix-zeroes/) | Medium |
+| [0074-search-a-2d-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0074-search-a-2d-matrix/) | Medium |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0080-remove-duplicates-from-sorted-array-ii/) | Medium |
 | [0088-merge-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0088-merge-sorted-array/) | Easy |
@@ -295,6 +296,7 @@
 | [0048-rotate-image](https://github.com/yssgood/LeetCode-Premium/tree/main/0048-rotate-image/) | Medium |
 | [0054-spiral-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0054-spiral-matrix/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/main/0073-set-matrix-zeroes/) | Medium |
+| [0074-search-a-2d-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0074-search-a-2d-matrix/) | Medium |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/yssgood/LeetCode-Premium/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
@@ -331,6 +333,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0033-search-in-rotated-sorted-array) |
+| [0074-search-a-2d-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0074-search-a-2d-matrix/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/yssgood/LeetCode-Premium/tree/master/0162-find-peak-element) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
