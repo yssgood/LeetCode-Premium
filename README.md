@@ -75,8 +75,8 @@
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## String
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0005-longest-palindromic-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0005-longest-palindromic-substring) |
 | [0006-zigzag-conversion](https://github.com/yssgood/LeetCode-Premium/tree/main/0006-zigzag-conversion/) | Medium |
@@ -113,8 +113,8 @@
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
 | [3451-string-compression-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/3451-string-compression-iii) |
 ## Hash Table
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0013-roman-to-integer](https://github.com/yssgood/LeetCode-Premium/tree/main/0013-roman-to-integer/) | Easy |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/yssgood/LeetCode-Premium/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
@@ -146,8 +146,8 @@
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
 ## Sliding Window
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/yssgood/LeetCode-Premium/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0076-minimum-window-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0076-minimum-window-substring) |
@@ -157,8 +157,8 @@
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/yssgood/LeetCode-Premium/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
 | [0014-longest-common-prefix](https://github.com/yssgood/LeetCode-Premium/tree/main/0014-longest-common-prefix/) | Easy |
 | [0015-3sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0015-3sum/) | Medium |
@@ -216,8 +216,8 @@
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [3632-button-with-longest-push-time](https://github.com/yssgood/LeetCode-Premium/tree/master/3632-button-with-longest-push-time) |
 ## Greedy
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
 | [0055-jump-game](https://github.com/yssgood/LeetCode-Premium/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -225,8 +225,8 @@
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
 ## Math
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
 | [0013-roman-to-integer](https://github.com/yssgood/LeetCode-Premium/tree/main/0013-roman-to-integer/) | Easy |
 | [0048-rotate-image](https://github.com/yssgood/LeetCode-Premium/tree/main/0048-rotate-image/) | Medium |
@@ -237,8 +237,8 @@
 | [1069-confusing-number](https://github.com/yssgood/LeetCode-Premium/tree/master/1069-confusing-number) |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
 ## Two Pointers
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0005-longest-palindromic-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/yssgood/LeetCode-Premium/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0015-3sum/) | Medium |
@@ -267,8 +267,8 @@
 | [1894-merge-strings-alternately](https://github.com/yssgood/LeetCode-Premium/tree/master/1894-merge-strings-alternately) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Dynamic Programming
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0005-longest-palindromic-substring](https://github.com/yssgood/LeetCode-Premium/tree/master/0005-longest-palindromic-substring) |
 | [0053-maximum-subarray](https://github.com/yssgood/LeetCode-Premium/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/yssgood/LeetCode-Premium/tree/master/0055-jump-game) |
@@ -279,12 +279,12 @@
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/yssgood/LeetCode-Premium/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Bit Manipulation
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 ## Matrix
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0036-valid-sudoku](https://github.com/yssgood/LeetCode-Premium/tree/main/0036-valid-sudoku/) | Medium |
 | [0048-rotate-image](https://github.com/yssgood/LeetCode-Premium/tree/main/0048-rotate-image/) | Medium |
 | [0054-spiral-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0054-spiral-matrix/) | Medium |
@@ -299,8 +299,8 @@
 | [1036-rotting-oranges](https://github.com/yssgood/LeetCode-Premium/tree/master/1036-rotting-oranges) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Sorting
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0015-3sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0015-3sum/) | Medium |
 | [0049-group-anagrams](https://github.com/yssgood/LeetCode-Premium/tree/main/0049-group-anagrams/) | Medium |
 | [0056-merge-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0056-merge-intervals) |
@@ -314,14 +314,14 @@
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Counting
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
 | [0383-ransom-note](https://github.com/yssgood/LeetCode-Premium/tree/main/0383-ransom-note/) | Easy |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 ## Binary Search
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0033-search-in-rotated-sorted-array) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/yssgood/LeetCode-Premium/tree/master/0162-find-peak-element) |
@@ -329,13 +329,13 @@
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Backtracking
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
 ## Depth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0100-same-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0100-same-tree/) | Easy |
 | [0101-symmetric-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0101-symmetric-tree/) | Easy |
@@ -350,8 +350,8 @@
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 ## Breadth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0100-same-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0100-same-tree/) | Easy |
 | [0101-symmetric-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0101-symmetric-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
@@ -367,57 +367,57 @@
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Union Find
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/master/0128-longest-consecutive-sequence) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/master/0547-number-of-provinces) |
 ## Graph
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0277-find-the-celebrity](https://github.com/yssgood/LeetCode-Premium/tree/master/0277-find-the-celebrity) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 ## Divide and Conquer
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0053-maximum-subarray](https://github.com/yssgood/LeetCode-Premium/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/yssgood/LeetCode-Premium/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
 ## Interactive
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0277-find-the-celebrity](https://github.com/yssgood/LeetCode-Premium/tree/master/0277-find-the-celebrity) |
 ## Simulation
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0054-spiral-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0054-spiral-matrix/) | Medium |
 | [0068-text-justification](https://github.com/yssgood/LeetCode-Premium/tree/main/0068-text-justification/) | Hard |
 | [0289-game-of-life](https://github.com/yssgood/LeetCode-Premium/tree/main/0289-game-of-life/) | Medium |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
 ## Trie
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0014-longest-common-prefix](https://github.com/yssgood/LeetCode-Premium/tree/master/0014-longest-common-prefix) |
 ## Stack
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0020-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/0020-valid-parentheses/) | Easy |
 | [0071-simplify-path](https://github.com/yssgood/LeetCode-Premium/tree/main/0071-simplify-path/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/yssgood/LeetCode-Premium/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0155-min-stack](https://github.com/yssgood/LeetCode-Premium/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
 ## Design
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0146-lru-cache](https://github.com/yssgood/LeetCode-Premium/tree/main/0146-lru-cache/) | Medium |
 | [0155-min-stack](https://github.com/yssgood/LeetCode-Premium/tree/master/0155-min-stack) |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 ## Linked List
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/yssgood/LeetCode-Premium/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0061-rotate-list](https://github.com/yssgood/LeetCode-Premium/tree/main/0061-rotate-list/) | Medium |
@@ -429,33 +429,33 @@
 | [0146-lru-cache](https://github.com/yssgood/LeetCode-Premium/tree/main/0146-lru-cache/) | Medium |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 ## Heap (Priority Queue)
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 ## String Matching
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 ## Prefix Sum
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 ## Union-Find
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0128-longest-consecutive-sequence/) | Medium |
 ## Recursion
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
 ## Doubly-Linked List
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0146-lru-cache](https://github.com/yssgood/LeetCode-Premium/tree/main/0146-lru-cache/) | Medium |
 ## Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0100-same-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0100-same-tree/) | Easy |
 | [0101-symmetric-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0101-symmetric-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
@@ -464,8 +464,8 @@
 | [0129-sum-root-to-leaf-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 ## Binary Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0100-same-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0100-same-tree/) | Easy |
 | [0101-symmetric-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0101-symmetric-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
