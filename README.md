@@ -184,6 +184,7 @@
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yssgood/LeetCode-Premium/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/master/0128-longest-consecutive-sequence) |
+| [0130-surrounded-regions](https://github.com/yssgood/LeetCode-Premium/tree/main/0130-surrounded-regions/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/yssgood/LeetCode-Premium/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/yssgood/LeetCode-Premium/tree/master/0162-find-peak-element) |
@@ -294,6 +295,7 @@
 | [0054-spiral-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0054-spiral-matrix/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
+| [0130-surrounded-regions](https://github.com/yssgood/LeetCode-Premium/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/yssgood/LeetCode-Premium/tree/main/0289-game-of-life/) | Medium |
@@ -350,6 +352,7 @@
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/yssgood/LeetCode-Premium/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
+| [0130-surrounded-regions](https://github.com/yssgood/LeetCode-Premium/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
@@ -367,6 +370,7 @@
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0112-path-sum/) | Easy |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [0130-surrounded-regions](https://github.com/yssgood/LeetCode-Premium/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
@@ -462,6 +466,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0130-surrounded-regions](https://github.com/yssgood/LeetCode-Premium/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
