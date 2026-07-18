@@ -190,6 +190,7 @@
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
 | [0189-rotate-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0189-rotate-array) |
+| [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0219-contains-duplicate-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0228-summary-ranges](https://github.com/yssgood/LeetCode-Premium/tree/main/0228-summary-ranges/) | Easy |
@@ -293,6 +294,7 @@
 | [0054-spiral-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0054-spiral-matrix/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
+| [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/yssgood/LeetCode-Premium/tree/main/0289-game-of-life/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
@@ -348,6 +350,7 @@
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/yssgood/LeetCode-Premium/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
+| [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
@@ -364,6 +367,7 @@
 | [0104-maximum-depth-of-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0112-path-sum/) | Easy |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/yssgood/LeetCode-Premium/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
@@ -458,6 +462,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
