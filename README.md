@@ -204,6 +204,7 @@
 | [0283-move-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/yssgood/LeetCode-Premium/tree/main/0289-game-of-life/) | Medium |
+| [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
@@ -283,6 +284,7 @@
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yssgood/LeetCode-Premium/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0198-house-robber](https://github.com/yssgood/LeetCode-Premium/tree/main/0198-house-robber/) | Medium |
+| [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0392-is-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0392-is-subsequence/) | Easy |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
@@ -343,6 +345,7 @@
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/yssgood/LeetCode-Premium/tree/main/0222-count-complete-tree-nodes/) | Easy |
+| [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Backtracking
 | Problem Name | Difficulty |
