@@ -105,6 +105,7 @@
 | [0345-reverse-vowels-of-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0345-reverse-vowels-of-a-string) |
 | [0383-ransom-note](https://github.com/yssgood/LeetCode-Premium/tree/main/0383-ransom-note/) | Easy |
 | [0392-is-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0392-is-subsequence/) | Easy |
+| [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1123-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/master/1123-single-row-keyboard) |
@@ -457,6 +458,7 @@
 | [0155-min-stack](https://github.com/yssgood/LeetCode-Premium/tree/master/0155-min-stack) |
 | [0173-binary-search-tree-iterator](https://github.com/yssgood/LeetCode-Premium/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
+| [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 ## Design
@@ -505,6 +507,7 @@
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
+| [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
 ## Doubly-Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
