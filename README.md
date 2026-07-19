@@ -112,6 +112,7 @@
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [1894-merge-strings-alternately](https://github.com/yssgood/LeetCode-Premium/tree/master/1894-merge-strings-alternately) |
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 | [3451-string-compression-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/3451-string-compression-iii) |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -238,6 +239,7 @@
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -456,6 +458,7 @@
 | [0173-binary-search-tree-iterator](https://github.com/yssgood/LeetCode-Premium/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
