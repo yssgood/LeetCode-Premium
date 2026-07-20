@@ -110,6 +110,7 @@
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1123-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/master/1123-single-row-keyboard) |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
+| [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [1894-merge-strings-alternately](https://github.com/yssgood/LeetCode-Premium/tree/master/1894-merge-strings-alternately) |
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
@@ -149,6 +150,7 @@
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1123-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/master/1123-single-row-keyboard) |
 | [1331-rank-transform-of-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/1331-rank-transform-of-an-array/) | Easy |
+| [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
 ## Sliding Window
@@ -224,6 +226,7 @@
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
+| [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/yssgood/LeetCode-Premium/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
@@ -338,6 +341,7 @@
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/1331-rank-transform-of-an-array/) | Easy |
+| [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Counting
@@ -345,6 +349,7 @@
 | ------- | ------- |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
 | [0383-ransom-note](https://github.com/yssgood/LeetCode-Premium/tree/main/0383-ransom-note/) | Easy |
+| [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 ## Binary Search
 | Problem Name | Difficulty |
