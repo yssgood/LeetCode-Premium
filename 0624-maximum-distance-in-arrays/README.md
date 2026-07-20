@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-distance-in-arrays">624. Maximum Distance in Arrays</a></h2><h3>Medium</h3><hr><p>You are given <code>m</code> <code>arrays</code>, where each array is sorted in <strong>ascending order</strong>.</p>
+<h2><a href="https://leetcode.com/problems/maximum-distance-in-arrays/?envType=study-plan-v2&envId=premium-algo-100">624. Maximum Distance in Arrays</a></h2><h3>Medium</h3><hr><p>You are given <code>m</code> <code>arrays</code>, where each array is sorted in <strong>ascending order</strong>.</p>
 
 <p>You can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers <code>a</code> and <code>b</code> to be their absolute difference <code>|a - b|</code>.</p>
 
