@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/wiggle-sort">280. Wiggle Sort</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code>, reorder it such that <code>nums[0] &lt;= nums[1] &gt;= nums[2] &lt;= nums[3]...</code>.</p>
+<h2><a href="https://leetcode.com/problems/wiggle-sort/?envType=study-plan-v2&envId=premium-algo-100">280. Wiggle Sort</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code>, reorder it such that <code>nums[0] &lt;= nums[1] &gt;= nums[2] &lt;= nums[3]...</code>.</p>
 
 <p>You may assume the input array always has a valid answer.</p>
 
