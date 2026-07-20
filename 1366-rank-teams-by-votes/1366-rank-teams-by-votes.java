@@ -1,41 +1,30 @@
 class Solution {
     public String rankTeams(String[] votes) {
-        Map<Character, int[]> hashMap = new HashMap<>(); 
-        String answer = votes[0]; 
+        Map<Character,int[]> hashMap = new HashMap<>(); 
         for(String s : votes){
             for(int i = 0; i < s.length(); i++){
                 hashMap.computeIfAbsent(s.charAt(i), k -> new int[s.length()])[i]++; 
             }
         }
 
-        char[] charArr = answer.toCharArray();
+        String tmp = votes[0]; 
         List<Character> lst = new ArrayList<>(); 
-        for(char c : charArr) lst.add(c); 
-        Collections.sort(lst, (a,b) -> {
-            int[] forA = hashMap.get(a); 
-            int[] forB = hashMap.get(b); 
-            for(int i = 0; i < forA.length; i++){
-                if(forA[i] != forB[i]){
-                    return forB[i] - forA[i]; 
-                }
-                // if(forA[i] > forB[i]){
-                //     return forA[i] - forB[i]; 
-                // }
-                // if(forB[i] < forA[i]){
-                //     return forB[i] - forA[i]; 
-                // }
+        for(char c : tmp.toCharArray()) lst.add(c); 
+
+        lst.sort((a,b) -> {
+            int[] arrA = hashMap.get(a); 
+            int[] arrB = hashMap.get(b); 
+
+            for(int i = 0; i < arrA.length; i++){
+                if(arrA[i] != arrB[i]) return Integer.compare(arrB[i], arrA[i]); 
             }
 
-            return a - b; 
-        });
-
-        char[] res = new char[answer.length()];  
-        for(int i = 0; i < res.length; i++){
-            res[i] = lst.get(i); 
+            return Character.compare(a,b); 
         }
+        );
 
-        answer = new String(res); 
-
-        return answer; 
+        StringBuilder sb = new StringBuilder(); 
+        for(char c : lst) sb.append(c); 
+        return sb.toString(); 
     }
 }
