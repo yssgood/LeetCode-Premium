@@ -213,6 +213,7 @@
 | [0289-game-of-life](https://github.com/yssgood/LeetCode-Premium/tree/main/0289-game-of-life/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0322-coin-change](https://github.com/yssgood/LeetCode-Premium/tree/main/0322-coin-change/) | Medium |
+| [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
@@ -256,6 +257,7 @@
 | [0189-rotate-array](https://github.com/yssgood/LeetCode-Premium/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/yssgood/LeetCode-Premium/tree/main/0202-happy-number/) | Easy |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
+| [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
 | [1056-confusing-number](https://github.com/yssgood/LeetCode-Premium/tree/main/1056-confusing-number/) | Easy |
 | [1069-confusing-number](https://github.com/yssgood/LeetCode-Premium/tree/master/1069-confusing-number) |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
@@ -477,6 +479,7 @@
 | [0155-min-stack](https://github.com/yssgood/LeetCode-Premium/tree/master/0155-min-stack) |
 | [0173-binary-search-tree-iterator](https://github.com/yssgood/LeetCode-Premium/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
+| [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
@@ -572,4 +575,8 @@
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/yssgood/LeetCode-Premium/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0210-course-schedule-ii/) | Medium |
+## Randomized
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
 <!---LeetCode Topics End-->
