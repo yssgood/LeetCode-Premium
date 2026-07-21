@@ -107,6 +107,7 @@
 | [0392-is-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0392-is-subsequence/) | Easy |
 | [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
 | [0412-fizz-buzz](https://github.com/yssgood/LeetCode-Premium/tree/main/0412-fizz-buzz/) | Easy |
+| [0415-add-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0415-add-strings/) | Easy |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1123-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/master/1123-single-row-keyboard) |
@@ -260,6 +261,7 @@
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
 | [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
 | [0412-fizz-buzz](https://github.com/yssgood/LeetCode-Premium/tree/main/0412-fizz-buzz/) | Easy |
+| [0415-add-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0415-add-strings/) | Easy |
 | [1056-confusing-number](https://github.com/yssgood/LeetCode-Premium/tree/main/1056-confusing-number/) | Easy |
 | [1069-confusing-number](https://github.com/yssgood/LeetCode-Premium/tree/master/1069-confusing-number) |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
@@ -457,6 +459,7 @@
 | [0068-text-justification](https://github.com/yssgood/LeetCode-Premium/tree/main/0068-text-justification/) | Hard |
 | [0289-game-of-life](https://github.com/yssgood/LeetCode-Premium/tree/main/0289-game-of-life/) | Medium |
 | [0412-fizz-buzz](https://github.com/yssgood/LeetCode-Premium/tree/main/0412-fizz-buzz/) | Easy |
+| [0415-add-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0415-add-strings/) | Easy |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
 ## Trie
 | Problem Name | Difficulty |
