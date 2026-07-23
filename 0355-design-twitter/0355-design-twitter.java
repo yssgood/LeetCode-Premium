@@ -1,60 +1,60 @@
 class Twitter {
+
     class Tweet {
-        int userId, tweetId; 
-        int globalTime; 
+        int tweetId; 
+        int time; 
         Tweet next; 
-        public Tweet(int userId, int tweetId, int globalTime){
-            this.userId = userId; 
-            this.tweetId = tweetId; 
-            this.globalTime = globalTime; 
+        public Tweet(int tweetId, int time){
+            this.tweetId = tweetId;
+            this.time = time; 
+            this.next = null; 
         }
     }
 
-    Map<Integer,Tweet> hashMap; 
+    //Map<Integer,List<Integer>> tweetMap; 
+    int time = 0; 
+    Map<Integer, Tweet> tweetMap; 
     Map<Integer,Set<Integer>> followMap; 
-    int globalTime = 0; 
 
     public Twitter() {
-        this.hashMap = new HashMap<>(); 
-        this.followMap = new HashMap<>(); 
+        tweetMap = new HashMap<>(); 
+        followMap = new HashMap<>(); 
     }
     
     public void postTweet(int userId, int tweetId) {
-        Tweet newTweet = new Tweet(userId, tweetId, globalTime++); 
-        if(!hashMap.containsKey(userId)){
-            hashMap.put(userId, newTweet); 
-            return;  
+        Tweet newTweet = new Tweet(tweetId,time++); 
+        if(tweetMap.containsKey(userId)){
+            Tweet curr = tweetMap.get(userId); 
+
+            newTweet.next = curr; 
+            //curr.next = newTweet; 
+            tweetMap.put(userId, newTweet); 
+            return; 
         }
-        Tweet oldTweet = hashMap.get(userId); 
-        newTweet.next = oldTweet; 
-        hashMap.put(userId, newTweet); 
+        tweetMap.put(userId, newTweet); 
     }
     
     public List<Integer> getNewsFeed(int userId) {
-        PriorityQueue<Tweet> pq = new PriorityQueue<>((a,b) -> b.globalTime - a.globalTime); 
-        Tweet target = hashMap.get(userId); 
         List<Integer> answer = new ArrayList<>(); 
-        //if(target == null) return answer; 
-        if(target != null) pq.offer(target); 
+        PriorityQueue<Tweet> pq = new PriorityQueue<>((a,b) -> Integer.compare(b.time,a.time)); 
+
+        if(tweetMap.containsKey(userId)) pq.offer(tweetMap.get(userId));
+
         if(followMap.containsKey(userId)){
-            for(int followers : followMap.get(userId)){
-                if(hashMap.containsKey(followers)){
-                    pq.offer(hashMap.get(followers)); 
+            for(int followId : followMap.get(userId)){
+                if(tweetMap.containsKey(followId)){
+                    pq.offer(tweetMap.get(followId)); 
                 }
             }
         }
 
-        int K = 10; 
-        while(!pq.isEmpty() && K > 0){
-            Tweet curr = pq.poll(); 
-            answer.add(curr.tweetId); 
-            if(curr.next != null){
-                pq.offer(curr.next); 
-            }
-            K--; 
+        while(!pq.isEmpty() && answer.size() < 10){
+            Tweet top = pq.poll(); 
+            answer.add(top.tweetId);
+            if(top.next != null) pq.offer(top.next);  
         }
 
-        return answer;
+        return answer; 
     }
     
     public void follow(int followerId, int followeeId) {
@@ -63,8 +63,10 @@ class Twitter {
     }
     
     public void unfollow(int followerId, int followeeId) {
-        if(followerId == followeeId || !followMap.containsKey(followerId)) return; 
-        followMap.get(followerId).remove(followeeId); 
+        if(followerId == followeeId) return; 
+        if(followMap.containsKey(followerId)){
+            followMap.get(followerId).remove(followeeId); 
+        }
     }
 }
 
