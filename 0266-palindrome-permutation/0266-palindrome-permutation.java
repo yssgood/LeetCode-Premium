@@ -1,15 +1,13 @@
 class Solution {
     public boolean canPermutePalindrome(String s) {
-        HashMap<Character,Integer> hashMap = new HashMap<>(); 
-        for(Character c : s.toCharArray()){
-            if(hashMap.containsKey(c)){
-                hashMap.put(c, hashMap.get(c) - 1); 
-                if(hashMap.get(c) <= 0) hashMap.remove(c); 
-            } else{
-                hashMap.put(c, 1); 
-            }
+        Map<Character,Integer> hashMap = new HashMap<>(); 
+        for(char c : s.toCharArray()) hashMap.merge(c,1,Integer::sum); 
+
+        int count = 0; 
+        for(var e : hashMap.entrySet()){
+            if(e.getValue() % 2 != 0) count++;
+            if(count > 1) return false; 
         }
-        //System.out.print(hashMap.size()); 
-        return hashMap.size() > 1 ? false : true; 
+        return true; 
     }
 }
