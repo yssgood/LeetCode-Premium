@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/sentence-similarity/">734. Sentence Similarity</a></h2><h3>Easy</h3><hr><div><p>We can represent a sentence as an array of words, for example, the sentence <code>"I am happy with leetcode"</code> can be represented as <code>arr = ["I","am",happy","with","leetcode"]</code>.</p>
+<h2><a href="https://leetcode.com/problems/sentence-similarity">734. Sentence Similarity</a></h2><h3>Easy</h3><hr><p>We can represent a sentence as an array of words, for example, the sentence <code>&quot;I am happy with leetcode&quot;</code> can be represented as <code>arr = [&quot;I&quot;,&quot;am&quot;,happy&quot;,&quot;with&quot;,&quot;leetcode&quot;]</code>.</p>
 
 <p>Given two sentences <code>sentence1</code> and <code>sentence2</code> each represented as a string array and given an array of string pairs <code>similarPairs</code> where <code>similarPairs[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> indicates that the two words <code>x<sub>i</sub></code> and <code>y<sub>i</sub></code> are similar.</p>
 
@@ -16,23 +16,26 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> sentence1 = ["great","acting","skills"], sentence2 = ["fine","drama","talent"], similarPairs = [["great","fine"],["drama","acting"],["skills","talent"]]
+<pre>
+<strong>Input:</strong> sentence1 = [&quot;great&quot;,&quot;acting&quot;,&quot;skills&quot;], sentence2 = [&quot;fine&quot;,&quot;drama&quot;,&quot;talent&quot;], similarPairs = [[&quot;great&quot;,&quot;fine&quot;],[&quot;drama&quot;,&quot;acting&quot;],[&quot;skills&quot;,&quot;talent&quot;]]
 <strong>Output:</strong> true
 <strong>Explanation:</strong> The two sentences have the same length and each word i of sentence1 is also similar to the corresponding word in sentence2.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> sentence1 = ["great"], sentence2 = ["great"], similarPairs = []
+<pre>
+<strong>Input:</strong> sentence1 = [&quot;great&quot;], sentence2 = [&quot;great&quot;], similarPairs = []
 <strong>Output:</strong> true
 <strong>Explanation:</strong> A word is similar to itself.
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre><strong>Input:</strong> sentence1 = ["great"], sentence2 = ["doubleplus","good"], similarPairs = [["great","doubleplus"]]
+<pre>
+<strong>Input:</strong> sentence1 = [&quot;great&quot;], sentence2 = [&quot;doubleplus&quot;,&quot;good&quot;], similarPairs = [[&quot;great&quot;,&quot;doubleplus&quot;]]
 <strong>Output:</strong> false
-<strong>Explanation:</strong> As they don't have the same length, we return false.
+<strong>Explanation:</strong> As they don&#39;t have the same length, we return false.
 </pre>
 
 <p>&nbsp;</p>
@@ -48,4 +51,3 @@
 	<li><code>x<sub>i</sub></code> and <code>y<sub>i</sub></code> consist of lower-case and upper-case English letters.</li>
 	<li>All the pairs <code>(x<sub>i</sub>,<sub> </sub>y<sub>i</sub>)</code> are <strong>distinct</strong>.</li>
 </ul>
-</div>
