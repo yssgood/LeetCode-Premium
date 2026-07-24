@@ -160,6 +160,7 @@
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
+| [1426-counting-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/1426-counting-elements/) | Easy |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
 ## Sliding Window
@@ -242,6 +243,7 @@
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
 | [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
+| [1426-counting-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/1426-counting-elements/) | Easy |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/yssgood/LeetCode-Premium/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/2038-nearest-exit-from-entrance-in-maze) |
