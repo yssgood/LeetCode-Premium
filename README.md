@@ -221,6 +221,7 @@
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0219-contains-duplicate-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0228-summary-ranges](https://github.com/yssgood/LeetCode-Premium/tree/main/0228-summary-ranges/) | Easy |
+| [0240-search-a-2d-matrix-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0249-group-shifted-strings](https://github.com/yssgood/LeetCode-Premium/tree/master/0249-group-shifted-strings) |
 | [0252-meeting-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0253-meeting-rooms-ii/) | Medium |
@@ -353,6 +354,7 @@
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/yssgood/LeetCode-Premium/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
+| [0240-search-a-2d-matrix-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/yssgood/LeetCode-Premium/tree/main/0289-game-of-life/) | Medium |
 | [0311-sparse-matrix-multiplication](https://github.com/yssgood/LeetCode-Premium/tree/main/0311-sparse-matrix-multiplication/) | Medium |
@@ -403,6 +405,7 @@
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/yssgood/LeetCode-Premium/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/yssgood/LeetCode-Premium/tree/main/0222-count-complete-tree-nodes/) | Easy |
+| [0240-search-a-2d-matrix-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
@@ -480,6 +483,7 @@
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/yssgood/LeetCode-Premium/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/yssgood/LeetCode-Premium/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
 | [0169-majority-element](https://github.com/yssgood/LeetCode-Premium/tree/main/0169-majority-element/) | Easy |
+| [0240-search-a-2d-matrix-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 ## Interactive
 | Problem Name | Difficulty |
 | ------- | ------- |
