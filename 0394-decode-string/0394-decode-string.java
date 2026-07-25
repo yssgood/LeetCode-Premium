@@ -1,38 +1,31 @@
 class Solution {
     public String decodeString(String s) {
-        Stack<StringBuilder> sbStack = new Stack<>(); 
         Stack<Integer> numStack = new Stack<>(); 
+        Stack<StringBuilder> sbStack = new Stack<>(); 
         int num = 0; 
-        int index = 0; 
-        int n = s.length();
-        StringBuilder sb = new StringBuilder(); 
-        while(index < n){
-            
-            if(Character.isDigit(s.charAt(index))){
-                num = (num * 10) + s.charAt(index) - '0'; 
-            }
+        StringBuilder curr = new StringBuilder(); 
 
-            if(Character.isAlphabetic(s.charAt(index))){
-                sb.append(s.charAt(index)); 
-            }
-
-            if(s.charAt(index) == '['){
-                sbStack.push(sb); 
+        for(char c : s.toCharArray()){
+            if(Character.isDigit(c)){
+                num = num * 10 + (c - '0'); 
+            } else if(c == '['){
                 numStack.push(num); 
+                sbStack.push(curr); 
+                curr = new StringBuilder(); 
                 num = 0; 
-                sb = new StringBuilder(); 
-            } else if(s.charAt(index) == ']'){
-                StringBuilder prev = sbStack.pop(); 
-                int numTmp = numStack.pop(); 
-                for(int i = 0; i < numTmp; i++){
-                    prev.append(sb); 
+            } else if(c == ']'){
+                int prevNum = numStack.pop(); 
+                curr = new StringBuilder(curr.toString().repeat(prevNum));
+                if(!sbStack.isEmpty()){
+                    curr = sbStack.pop().append(curr); 
                 }
-                sb = prev; 
+            } else{
+                curr.append(c); 
             }
-
-            index++; 
         }
 
-        return sb.toString(); 
+
+
+        return curr.toString(); 
     }
 }
