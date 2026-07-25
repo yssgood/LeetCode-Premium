@@ -109,6 +109,7 @@
 | [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
 | [0412-fizz-buzz](https://github.com/yssgood/LeetCode-Premium/tree/main/0412-fizz-buzz/) | Easy |
 | [0415-add-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0415-add-strings/) | Easy |
+| [0443-string-compression](https://github.com/yssgood/LeetCode-Premium/tree/main/0443-string-compression/) | Medium |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [0925-long-pressed-name](https://github.com/yssgood/LeetCode-Premium/tree/main/0925-long-pressed-name/) | Easy |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
@@ -316,6 +317,7 @@
 | [0283-move-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/master/0283-move-zeroes) |
 | [0345-reverse-vowels-of-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0392-is-subsequence/) | Easy |
+| [0443-string-compression](https://github.com/yssgood/LeetCode-Premium/tree/main/0443-string-compression/) | Medium |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
 | [0925-long-pressed-name](https://github.com/yssgood/LeetCode-Premium/tree/main/0925-long-pressed-name/) | Easy |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
