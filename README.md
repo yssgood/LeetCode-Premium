@@ -229,6 +229,7 @@
 | [0322-coin-change](https://github.com/yssgood/LeetCode-Premium/tree/main/0322-coin-change/) | Medium |
 | [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
+| [0422-valid-word-square](https://github.com/yssgood/LeetCode-Premium/tree/main/0422-valid-word-square/) | Easy |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
@@ -348,6 +349,7 @@
 | [0286-walls-and-gates](https://github.com/yssgood/LeetCode-Premium/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/yssgood/LeetCode-Premium/tree/main/0289-game-of-life/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
+| [0422-valid-word-square](https://github.com/yssgood/LeetCode-Premium/tree/main/0422-valid-word-square/) | Easy |
 | [0490-the-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/0490-the-maze) |
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
