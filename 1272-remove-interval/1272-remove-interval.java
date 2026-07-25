@@ -1,23 +1,18 @@
 class Solution {
     public List<List<Integer>> removeInterval(int[][] intervals, int[] toBeRemoved) {
         List<List<Integer>> answer = new ArrayList<>(); 
-        for(int[] arr : intervals){
+        for(int i = 0; i < intervals.length; i++){
+            int L = intervals[i][0], R = intervals[i][1]; 
 
-            if(arr[1] < toBeRemoved[0] || arr[0] > toBeRemoved[1]){
-                answer.add(Arrays.asList(arr[0],arr[1])); 
-            } else{
+            if(L < toBeRemoved[0]){
+                answer.add(List.of(L, Math.min(R,toBeRemoved[0]))); 
+            }
 
-                if(arr[0] < toBeRemoved[0]){
-                    answer.add(Arrays.asList(arr[0], toBeRemoved[0])); 
-                } 
-                if(arr[1] > toBeRemoved[1]){
-                    answer.add(Arrays.asList(toBeRemoved[1], arr[1])); 
-                }
-
+            if(R > toBeRemoved[1]){
+                answer.add(List.of(Math.max(L,toBeRemoved[1]), R)); 
             }
         }
 
         return answer; 
-
     }
 }
