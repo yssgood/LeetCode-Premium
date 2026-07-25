@@ -610,6 +610,7 @@
 | [0133-clone-graph](https://github.com/yssgood/LeetCode-Premium/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/yssgood/LeetCode-Premium/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0210-course-schedule-ii/) | Medium |
+| [0277-find-the-celebrity](https://github.com/yssgood/LeetCode-Premium/tree/main/0277-find-the-celebrity/) | Medium |
 ## Topological Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
