@@ -2,13 +2,10 @@ class Solution {
     public boolean validWordSquare(List<String> words) {
         int n = words.size(); 
         for(int i = 0; i < n; i++){
-            String row = words.get(i); 
-            String col = ""; 
-            for(int j = 0; j < n; j++){
-                if(i >= words.get(j).length()) break; 
-                col += words.get(j).charAt(i); 
+            String curr = words.get(i); 
+            for(int j = 0; j < curr.length(); j++){
+                if(j >= n || i >= words.get(j).length() || curr.charAt(j) != words.get(j).charAt(i)) return false; 
             }
-            if(!row.equals(col)) return false; 
         }
         return true; 
     }
