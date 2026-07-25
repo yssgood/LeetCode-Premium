@@ -1,20 +1,16 @@
 class Solution {
     public int calculateTime(String keyboard, String word) {
-        HashMap<Character,Integer> hashMap = new HashMap<>(); 
-        int answer = 0, currChar = 0; 
-        for(int i = 0; i < 26; i++){
-            hashMap.put(keyboard.charAt(i), i);  
+        Map<Character,Integer> hashMap = new HashMap<>(); 
+        for(int i = 0; i < keyboard.length(); i++){
+            hashMap.put(keyboard.charAt(i), i); 
         }
 
+        int answer = 0;
+        int curr = 0;  
         for(char c : word.toCharArray()){
-            int next = hashMap.get(c); 
-            //System.out.print(currChar); 
-            //System.out.println(next); 
-            answer += Math.abs(currChar - next); 
-            
-            currChar = next; 
+            answer += Math.abs(hashMap.get(c) - curr); 
+            curr = hashMap.get(c); 
         }
-
         return answer; 
     }
 }
