@@ -233,6 +233,7 @@
 | [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0311-sparse-matrix-multiplication](https://github.com/yssgood/LeetCode-Premium/tree/main/0311-sparse-matrix-multiplication/) | Medium |
 | [0322-coin-change](https://github.com/yssgood/LeetCode-Premium/tree/main/0322-coin-change/) | Medium |
+| [0334-increasing-triplet-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
 | [0422-valid-word-square](https://github.com/yssgood/LeetCode-Premium/tree/main/0422-valid-word-square/) | Easy |
@@ -268,6 +269,7 @@
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0253-meeting-rooms-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0280-wiggle-sort](https://github.com/yssgood/LeetCode-Premium/tree/main/0280-wiggle-sort/) | Medium |
+| [0334-increasing-triplet-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
