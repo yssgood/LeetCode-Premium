@@ -579,6 +579,7 @@
 | [0128-longest-consecutive-sequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0130-surrounded-regions](https://github.com/yssgood/LeetCode-Premium/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
+| [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/main/0547-number-of-provinces/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -636,6 +637,7 @@
 | [0207-course-schedule](https://github.com/yssgood/LeetCode-Premium/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0210-course-schedule-ii/) | Medium |
 | [0277-find-the-celebrity](https://github.com/yssgood/LeetCode-Premium/tree/main/0277-find-the-celebrity/) | Medium |
+| [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/main/0547-number-of-provinces/) | Medium |
 ## Topological Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
