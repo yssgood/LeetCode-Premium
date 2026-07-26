@@ -169,6 +169,7 @@
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
 | [1657-determine-if-two-strings-are-close](https://github.com/yssgood/LeetCode-Premium/tree/main/1657-determine-if-two-strings-are-close/) | Medium |
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
+| [2336-smallest-number-in-infinite-set](https://github.com/yssgood/LeetCode-Premium/tree/main/2336-smallest-number-in-infinite-set/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/yssgood/LeetCode-Premium/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
@@ -543,6 +544,7 @@
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 | [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
+| [2336-smallest-number-in-infinite-set](https://github.com/yssgood/LeetCode-Premium/tree/main/2336-smallest-number-in-infinite-set/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -563,6 +565,7 @@
 | ------- | ------- |
 | [0253-meeting-rooms-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
+| [2336-smallest-number-in-infinite-set](https://github.com/yssgood/LeetCode-Premium/tree/main/2336-smallest-number-in-infinite-set/) | Medium |
 ## String Matching
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -647,4 +650,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
+## Ordered Set
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2336-smallest-number-in-infinite-set](https://github.com/yssgood/LeetCode-Premium/tree/main/2336-smallest-number-in-infinite-set/) | Medium |
 <!---LeetCode Topics End-->
