@@ -1,7 +1,8 @@
 class Solution {
     public String decodeString(String s) {
+        Stack<StringBuilder> stack = new Stack<>(); 
         Stack<Integer> numStack = new Stack<>(); 
-        Stack<StringBuilder> sbStack = new Stack<>(); 
+
         int num = 0; 
         StringBuilder curr = new StringBuilder(); 
 
@@ -10,21 +11,22 @@ class Solution {
                 num = num * 10 + (c - '0'); 
             } else if(c == '['){
                 numStack.push(num); 
-                sbStack.push(curr); 
-                curr = new StringBuilder(); 
+                stack.push(curr); 
                 num = 0; 
+                curr = new StringBuilder(); 
             } else if(c == ']'){
-                int prevNum = numStack.pop(); 
-                curr = new StringBuilder(curr.toString().repeat(prevNum));
-                if(!sbStack.isEmpty()){
-                    curr = sbStack.pop().append(curr); 
+                int numTimes = numStack.pop(); 
+                StringBuilder tmp = new StringBuilder();
+                for(int i = 0; i < numTimes; i++){
+                    tmp.append(curr); 
                 }
+                StringBuilder prev = stack.pop(); 
+                prev.append(tmp); 
+                curr = prev; 
             } else{
                 curr.append(c); 
             }
         }
-
-
 
         return curr.toString(); 
     }
