@@ -247,6 +247,7 @@
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
 | [0490-the-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/0490-the-maze) |
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
+| [0622-design-circular-queue](https://github.com/yssgood/LeetCode-Premium/tree/main/0622-design-circular-queue/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
 | [0724-find-pivot-index](https://github.com/yssgood/LeetCode-Premium/tree/main/0724-find-pivot-index/) | Easy |
@@ -543,6 +544,7 @@
 | [0173-binary-search-tree-iterator](https://github.com/yssgood/LeetCode-Premium/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 | [0384-shuffle-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0384-shuffle-an-array/) | Medium |
+| [0622-design-circular-queue](https://github.com/yssgood/LeetCode-Premium/tree/main/0622-design-circular-queue/) | Medium |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
 | [2336-smallest-number-in-infinite-set](https://github.com/yssgood/LeetCode-Premium/tree/main/2336-smallest-number-in-infinite-set/) | Medium |
 ## Linked List
@@ -560,6 +562,7 @@
 | [0141-linked-list-cycle](https://github.com/yssgood/LeetCode-Premium/tree/main/0141-linked-list-cycle/) | Easy |
 | [0146-lru-cache](https://github.com/yssgood/LeetCode-Premium/tree/main/0146-lru-cache/) | Medium |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
+| [0622-design-circular-queue](https://github.com/yssgood/LeetCode-Premium/tree/main/0622-design-circular-queue/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -654,4 +657,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2336-smallest-number-in-infinite-set](https://github.com/yssgood/LeetCode-Premium/tree/main/2336-smallest-number-in-infinite-set/) | Medium |
+## Queue
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0622-design-circular-queue](https://github.com/yssgood/LeetCode-Premium/tree/main/0622-design-circular-queue/) | Medium |
 <!---LeetCode Topics End-->
