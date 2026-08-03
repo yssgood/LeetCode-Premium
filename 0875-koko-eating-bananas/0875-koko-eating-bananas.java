@@ -1,36 +1,29 @@
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
-        int left = 1, right = 0;
-        for(int n : piles){
-            right = Math.max(right, n); 
+        int left = 1; 
+        int right = Integer.MIN_VALUE; 
+        for(int p : piles){
+            right = Math.max(right,p); 
         }
-        int candidate = 0; 
-        
+
+        int answer = 0; 
         while(left <= right){
             int k = left + (right - left) / 2; 
 
-            //boolean leftOver = false; 
-            long numRounds = 0; 
+            long time = 0; 
             for(int n : piles){
-                numRounds += k > n ? 1 : n / k; 
-                if(n > k && n % k > 0){
-                    numRounds++; 
-                    //System.out.println(n + " " + k); 
-                    //leftOver = true; 
-                }
+                time += (n / k); 
+                time += (n % k > 0 ? 1 : 0); 
             }
 
-            //numRounds += leftOver ? 1 : 0; 
-
-            //System.out.println(numRounds + " " + k + " " + leftOver);
-
-            if(numRounds <= h){
-                candidate = k; 
+            if(time <= h){
+                answer = k; 
                 right = k - 1; 
+            } else{
+                left = k + 1; 
             }
-            else left = k + 1; 
         }
 
-        return candidate; 
+        return answer; 
     }
 }
