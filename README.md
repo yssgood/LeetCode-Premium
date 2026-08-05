@@ -116,6 +116,7 @@
 | [1100-find-k-length-substrings-with-no-repeated-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/1100-find-k-length-substrings-with-no-repeated-characters/) | Medium |
 | [1123-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/master/1123-single-row-keyboard) |
 | [1165-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/main/1165-single-row-keyboard/) | Easy |
+| [1249-minimum-remove-to-make-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/1249-minimum-remove-to-make-valid-parentheses/) | Medium |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
 | [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
 | [1483-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/master/1483-rank-teams-by-votes) |
@@ -540,6 +541,7 @@
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
 | [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
 | [0735-asteroid-collision](https://github.com/yssgood/LeetCode-Premium/tree/main/0735-asteroid-collision/) | Medium |
+| [1249-minimum-remove-to-make-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/1249-minimum-remove-to-make-valid-parentheses/) | Medium |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 ## Design
