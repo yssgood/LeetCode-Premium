@@ -247,6 +247,7 @@
 | [0422-valid-word-square](https://github.com/yssgood/LeetCode-Premium/tree/main/0422-valid-word-square/) | Easy |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
+| [0485-max-consecutive-ones](https://github.com/yssgood/LeetCode-Premium/tree/main/0485-max-consecutive-ones/) | Easy |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
 | [0490-the-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/0490-the-maze) |
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
