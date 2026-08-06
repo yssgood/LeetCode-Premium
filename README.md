@@ -125,6 +125,7 @@
 | [1894-merge-strings-alternately](https://github.com/yssgood/LeetCode-Premium/tree/master/1894-merge-strings-alternately) |
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
+| [2788-split-strings-by-separator](https://github.com/yssgood/LeetCode-Premium/tree/main/2788-split-strings-by-separator/) | Easy |
 | [3451-string-compression-iii](https://github.com/yssgood/LeetCode-Premium/tree/master/3451-string-compression-iii) |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -274,6 +275,7 @@
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
 | [2352-equal-row-and-column-pairs](https://github.com/yssgood/LeetCode-Premium/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
+| [2788-split-strings-by-separator](https://github.com/yssgood/LeetCode-Premium/tree/main/2788-split-strings-by-separator/) | Easy |
 | [3632-button-with-longest-push-time](https://github.com/yssgood/LeetCode-Premium/tree/master/3632-button-with-longest-push-time) |
 ## Greedy
 | Problem Name | Difficulty |
