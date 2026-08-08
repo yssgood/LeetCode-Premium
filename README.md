@@ -159,6 +159,7 @@
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
 | [0383-ransom-note](https://github.com/yssgood/LeetCode-Premium/tree/main/0383-ransom-note/) | Easy |
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
+| [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
@@ -254,6 +255,7 @@
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 | [0622-design-circular-queue](https://github.com/yssgood/LeetCode-Premium/tree/main/0622-design-circular-queue/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
+| [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
 | [0724-find-pivot-index](https://github.com/yssgood/LeetCode-Premium/tree/main/0724-find-pivot-index/) | Easy |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
@@ -385,6 +387,7 @@
 | [0422-valid-word-square](https://github.com/yssgood/LeetCode-Premium/tree/main/0422-valid-word-square/) | Easy |
 | [0490-the-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/0490-the-maze) |
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
+| [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
 | [1036-rotting-oranges](https://github.com/yssgood/LeetCode-Premium/tree/master/1036-rotting-oranges) |
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
@@ -405,6 +408,7 @@
 | [0280-wiggle-sort](https://github.com/yssgood/LeetCode-Premium/tree/main/0280-wiggle-sort/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
+| [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
@@ -465,6 +469,7 @@
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
 | [0490-the-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/0490-the-maze) |
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/master/0547-number-of-provinces) |
+| [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 ## Breadth-First Search
@@ -487,6 +492,7 @@
 | [0417-pacific-atlantic-water-flow](https://github.com/yssgood/LeetCode-Premium/tree/master/0417-pacific-atlantic-water-flow) |
 | [0490-the-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/0490-the-maze) |
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/master/0547-number-of-provinces) |
+| [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
 | [1036-rotting-oranges](https://github.com/yssgood/LeetCode-Premium/tree/master/1036-rotting-oranges) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
@@ -597,6 +603,7 @@
 | [0130-surrounded-regions](https://github.com/yssgood/LeetCode-Premium/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/main/0547-number-of-provinces/) | Medium |
+| [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -676,4 +683,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0141-linked-list-cycle](https://github.com/yssgood/LeetCode-Premium/tree/main/0141-linked-list-cycle/) | Easy |
+## Hash Function
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 <!---LeetCode Topics End-->
