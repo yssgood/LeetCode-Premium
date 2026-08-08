@@ -1,31 +1,46 @@
 class Solution {
     int[][] dir = {{0,1},{0,-1},{1,0},{-1,0}}; 
-    char[] dirChar = {'R','L','D','U'}; 
-    Set<String> set = new HashSet<>(); 
+    char[] letter = {'r','l','u','d'}; 
     public int numDistinctIslands(int[][] grid) {
-        for(int i = 0; i < grid.length; i++){
-            for(int j = 0; j < grid[0].length; j++){
+        int n = grid.length;  
+        int m = grid[0].length; 
+        Set<String> answer = new HashSet<>(); 
+        
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
                 if(grid[i][j] == 1){
-                    StringBuilder sb = new StringBuilder(); 
-                    sb.append("C"); 
-                    dfs(grid,i,j,sb); 
-                    set.add(sb.toString());
+                    String curr = "s"; 
+                    String res = dfs(grid,i,j,curr);
+                    System.out.println(res); 
+                    answer.add(res); 
                 }
             }
         }
-
-        return set.size(); 
+        return answer.size(); 
     }
 
-    void dfs(int[][] grid, int i, int j, StringBuilder sb){
+    public String dfs(int[][] grid, int i, int j, String curr){
+        if(i >= grid.length || j >= grid[0].length || i < 0 || j < 0 || grid[i][j] != 1) return ""; 
+
         grid[i][j] = 0; 
+
+
         for(int k = 0; k < 4; k++){
             int nX = i + dir[k][0]; 
             int nY = j + dir[k][1]; 
-            if(nX >= 0 && nY >= 0 && nX < grid.length && nY < grid[0].length && grid[nX][nY] == 1){
-                sb.append(dirChar[k]); 
-                dfs(grid,nX,nY,sb); 
+
+            char c = letter[k]; 
+
+            if(nX < grid.length || nY < grid[0].length || nX >= 0 || nY >= 0 || grid[nX][nY] == 1){
+                curr += c; 
+                curr += dfs(grid,nX,nY,""); 
+                //curr += "?"; 
             }
+
+            //curr += dfs(grid,nX,nY,curr); 
         }
+
+
+        return curr; 
     }
 }
