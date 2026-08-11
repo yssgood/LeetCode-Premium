@@ -1,32 +1,30 @@
 class Solution {
     public String minRemoveToMakeValid(String s) {
         Deque<Integer> stack = new ArrayDeque<>(); 
-        Set<Integer> removed = new HashSet<>(); 
-
+        StringBuilder sb = new StringBuilder(s); 
         for(int i = 0; i < s.length(); i++){
-            char curr = s.charAt(i); 
-            if(curr == '('){
-                stack.add(i); 
-            } else if(curr == ')'){
-                if(stack.isEmpty()){
-                    removed.add(i); 
-                } else{
+            char curr = sb.charAt(i); 
+            if(curr == ')'){
+                if(!stack.isEmpty()){
                     stack.pop(); 
+                } else{
+                    sb.setCharAt(i,'?'); 
                 }
             }
-        }
-        
-        while(!stack.isEmpty()){
-            removed.add(stack.pop()); 
-        }
-
-        StringBuilder sb = new StringBuilder(); 
-
-        for(int i = 0; i < s.length(); i++){
-            if(!removed.contains(i)){
-                sb.append(s.charAt(i)); 
+            if(curr == '('){
+                stack.push(i); 
             }
         }
+
+        while(!stack.isEmpty()){
+            sb.setCharAt(stack.pop(),'?'); 
+        }
+
+        for(int i = sb.length() - 1; i >= 0; i--){
+            if(sb.charAt(i) == '?') sb.deleteCharAt(i); 
+        }
+
+        
 
         return sb.toString(); 
     }
