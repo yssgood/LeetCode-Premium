@@ -111,6 +111,7 @@
 | [0415-add-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0415-add-strings/) | Easy |
 | [0443-string-compression](https://github.com/yssgood/LeetCode-Premium/tree/main/0443-string-compression/) | Medium |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [0925-long-pressed-name](https://github.com/yssgood/LeetCode-Premium/tree/main/0925-long-pressed-name/) | Easy |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1100-find-k-length-substrings-with-no-repeated-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/1100-find-k-length-substrings-with-no-repeated-characters/) | Medium |
@@ -291,6 +292,7 @@
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 ## Math
 | Problem Name | Difficulty |
@@ -550,6 +552,7 @@
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
 | [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
 | [0735-asteroid-collision](https://github.com/yssgood/LeetCode-Premium/tree/main/0735-asteroid-collision/) | Medium |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/1249-minimum-remove-to-make-valid-parentheses/) | Medium |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
@@ -687,4 +690,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 <!---LeetCode Topics End-->
