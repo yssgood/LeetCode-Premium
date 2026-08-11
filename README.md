@@ -111,6 +111,7 @@
 | [0415-add-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0415-add-strings/) | Easy |
 | [0443-string-compression](https://github.com/yssgood/LeetCode-Premium/tree/main/0443-string-compression/) | Medium |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
+| [0752-open-the-lock](https://github.com/yssgood/LeetCode-Premium/tree/main/0752-open-the-lock/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [0925-long-pressed-name](https://github.com/yssgood/LeetCode-Premium/tree/main/0925-long-pressed-name/) | Easy |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
@@ -162,6 +163,7 @@
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 | [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
+| [0752-open-the-lock](https://github.com/yssgood/LeetCode-Premium/tree/main/0752-open-the-lock/) | Medium |
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1100-find-k-length-substrings-with-no-repeated-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/1100-find-k-length-substrings-with-no-repeated-characters/) | Medium |
@@ -262,6 +264,7 @@
 | [0724-find-pivot-index](https://github.com/yssgood/LeetCode-Premium/tree/main/0724-find-pivot-index/) | Easy |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [0735-asteroid-collision](https://github.com/yssgood/LeetCode-Premium/tree/main/0735-asteroid-collision/) | Medium |
+| [0752-open-the-lock](https://github.com/yssgood/LeetCode-Premium/tree/main/0752-open-the-lock/) | Medium |
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 | [0875-koko-eating-bananas](https://github.com/yssgood/LeetCode-Premium/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1036-rotting-oranges](https://github.com/yssgood/LeetCode-Premium/tree/master/1036-rotting-oranges) |
@@ -497,6 +500,7 @@
 | [0490-the-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/0490-the-maze) |
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/master/0547-number-of-provinces) |
 | [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
+| [0752-open-the-lock](https://github.com/yssgood/LeetCode-Premium/tree/main/0752-open-the-lock/) | Medium |
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
 | [1036-rotting-oranges](https://github.com/yssgood/LeetCode-Premium/tree/master/1036-rotting-oranges) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
@@ -697,4 +701,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
+## Bidirectional Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0752-open-the-lock](https://github.com/yssgood/LeetCode-Premium/tree/main/0752-open-the-lock/) | Medium |
 <!---LeetCode Topics End-->
