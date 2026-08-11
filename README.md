@@ -176,6 +176,7 @@
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
 | [2336-smallest-number-in-infinite-set](https://github.com/yssgood/LeetCode-Premium/tree/main/2336-smallest-number-in-infinite-set/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/yssgood/LeetCode-Premium/tree/main/2352-equal-row-and-column-pairs/) | Medium |
+| [3026-maximum-good-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/3026-maximum-good-subarray-sum/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -279,6 +280,7 @@
 | [2352-equal-row-and-column-pairs](https://github.com/yssgood/LeetCode-Premium/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2788-split-strings-by-separator](https://github.com/yssgood/LeetCode-Premium/tree/main/2788-split-strings-by-separator/) | Easy |
+| [3026-maximum-good-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/3026-maximum-good-subarray-sum/) | Medium |
 | [3632-button-with-longest-push-time](https://github.com/yssgood/LeetCode-Premium/tree/master/3632-button-with-longest-push-time) |
 ## Greedy
 | Problem Name | Difficulty |
@@ -599,6 +601,7 @@
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0253-meeting-rooms-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0724-find-pivot-index](https://github.com/yssgood/LeetCode-Premium/tree/main/0724-find-pivot-index/) | Easy |
+| [3026-maximum-good-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/3026-maximum-good-subarray-sum/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
