@@ -6,19 +6,18 @@ class Solution {
         long currSum = 0; 
         for(int n : nums){
             int target = n - k; 
+            hashMap.merge(n, currSum, Math::min); 
+            currSum += n; 
             if(hashMap.containsKey(target)){
                 //System.out.println(hashMap.get(target)); 
-                answer = Math.max(answer, (currSum + n) - hashMap.get(target)); 
+                answer = Math.max(answer, (currSum) - hashMap.get(target)); 
             }
 
             target = n + k; 
             if(hashMap.containsKey(target)){
                 //System.out.println(hashMap.get(target)); 
-                answer = Math.max(answer, (currSum + n) - hashMap.get(target)); 
+                answer = Math.max(answer, (currSum) - hashMap.get(target)); 
             }
-
-            hashMap.put(n, Math.min(hashMap.getOrDefault(n,Long.MAX_VALUE),currSum)); 
-            currSum += n; 
         }
         return answer == Long.MIN_VALUE ? 0 : answer; 
     }
