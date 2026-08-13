@@ -267,6 +267,7 @@
 | [0752-open-the-lock](https://github.com/yssgood/LeetCode-Premium/tree/main/0752-open-the-lock/) | Medium |
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 | [0875-koko-eating-bananas](https://github.com/yssgood/LeetCode-Premium/tree/main/0875-koko-eating-bananas/) | Medium |
+| [0934-shortest-bridge](https://github.com/yssgood/LeetCode-Premium/tree/main/0934-shortest-bridge/) | Medium |
 | [1036-rotting-oranges](https://github.com/yssgood/LeetCode-Premium/tree/master/1036-rotting-oranges) |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
@@ -396,6 +397,7 @@
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 | [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
+| [0934-shortest-bridge](https://github.com/yssgood/LeetCode-Premium/tree/main/0934-shortest-bridge/) | Medium |
 | [1036-rotting-oranges](https://github.com/yssgood/LeetCode-Premium/tree/master/1036-rotting-oranges) |
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/2038-nearest-exit-from-entrance-in-maze) |
@@ -478,6 +480,7 @@
 | [0547-number-of-provinces](https://github.com/yssgood/LeetCode-Premium/tree/master/0547-number-of-provinces) |
 | [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
+| [0934-shortest-bridge](https://github.com/yssgood/LeetCode-Premium/tree/main/0934-shortest-bridge/) | Medium |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -502,6 +505,7 @@
 | [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0752-open-the-lock](https://github.com/yssgood/LeetCode-Premium/tree/main/0752-open-the-lock/) | Medium |
 | [0871-keys-and-rooms](https://github.com/yssgood/LeetCode-Premium/tree/master/0871-keys-and-rooms) |
+| [0934-shortest-bridge](https://github.com/yssgood/LeetCode-Premium/tree/main/0934-shortest-bridge/) | Medium |
 | [1036-rotting-oranges](https://github.com/yssgood/LeetCode-Premium/tree/master/1036-rotting-oranges) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/yssgood/LeetCode-Premium/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/yssgood/LeetCode-Premium/tree/master/2038-nearest-exit-from-entrance-in-maze) |
