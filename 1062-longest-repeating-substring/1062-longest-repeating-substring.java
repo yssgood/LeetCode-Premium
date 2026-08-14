@@ -1,17 +1,25 @@
 class Solution {
     public int longestRepeatingSubstring(String s) {
-        Set<String> check = new HashSet<>(); 
-        int n = s.length(); 
-        int answer = 0; 
-        for(int i = 0; i < s.length(); i++){
-            int count = 0; 
-            for(int j = i + 1; j <= n; j++){
-                String substr = s.substring(i,j); 
-                if(check.contains(substr)) count++; 
-                check.add(substr); 
+        int left = 1, right = s.length(); 
+        int candidate = 0; 
+        while(left <= right){
+            int mid = left + (right - left) / 2; 
+            if(possible(s,mid)){
+                candidate = mid;
+                left = mid + 1; 
+            } else{
+                right = mid - 1; 
             }
-            answer = Math.max(answer, count); 
         }
-        return answer; 
+        return candidate;
+    }
+    public boolean possible(String s, int length){
+        Set<String> check = new HashSet<>(); 
+        for(int i = 0; i <= s.length() - length;i++){
+            String substr = s.substring(i, i + length); 
+            if(check.contains(substr)) return true; 
+            check.add(substr); 
+        }
+        return false; 
     }
 }
