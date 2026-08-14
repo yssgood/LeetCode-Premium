@@ -22,7 +22,7 @@ class Solution {
             return new TreeNode[]{left[0],root}; 
         } else{
             TreeNode[] right = splitBST(root.right, target); 
-            root.right = right[1]; 
+            root.right = right[0]; 
             return new TreeNode[]{root,right[1]}; 
         }
     }
