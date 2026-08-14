@@ -107,6 +107,7 @@
 | [0383-ransom-note](https://github.com/yssgood/LeetCode-Premium/tree/main/0383-ransom-note/) | Easy |
 | [0392-is-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0392-is-subsequence/) | Easy |
 | [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
+| [0402-remove-k-digits](https://github.com/yssgood/LeetCode-Premium/tree/main/0402-remove-k-digits/) | Medium |
 | [0412-fizz-buzz](https://github.com/yssgood/LeetCode-Premium/tree/main/0412-fizz-buzz/) | Easy |
 | [0415-add-strings](https://github.com/yssgood/LeetCode-Premium/tree/main/0415-add-strings/) | Easy |
 | [0443-string-compression](https://github.com/yssgood/LeetCode-Premium/tree/main/0443-string-compression/) | Medium |
@@ -299,6 +300,7 @@
 | [0253-meeting-rooms-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0280-wiggle-sort](https://github.com/yssgood/LeetCode-Premium/tree/main/0280-wiggle-sort/) | Medium |
 | [0334-increasing-triplet-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0334-increasing-triplet-subsequence/) | Medium |
+| [0402-remove-k-digits](https://github.com/yssgood/LeetCode-Premium/tree/main/0402-remove-k-digits/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
@@ -572,6 +574,7 @@
 | [0173-binary-search-tree-iterator](https://github.com/yssgood/LeetCode-Premium/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
 | [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
+| [0402-remove-k-digits](https://github.com/yssgood/LeetCode-Premium/tree/main/0402-remove-k-digits/) | Medium |
 | [0735-asteroid-collision](https://github.com/yssgood/LeetCode-Premium/tree/main/0735-asteroid-collision/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/1249-minimum-remove-to-make-valid-parentheses/) | Medium |
@@ -742,4 +745,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0402-remove-k-digits](https://github.com/yssgood/LeetCode-Premium/tree/main/0402-remove-k-digits/) | Medium |
 <!---LeetCode Topics End-->
