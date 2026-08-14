@@ -14,7 +14,7 @@ class Solution {
 
         List<Integer> answer = new ArrayList<>(); 
         for(int i = 0; i < k; i++) answer.add(lst.get(i)); 
-        Collections.sort(answer); 
+        answer.sort(Comparator.naturalOrder()); 
         return answer; 
     }
 }
