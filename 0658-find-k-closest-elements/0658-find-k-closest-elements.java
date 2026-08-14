@@ -1,30 +1,20 @@
 class Solution {
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
-        List<Integer> lst = new ArrayList<>();
-        
-        // Add all elements to list
-        for(int n : arr){
-            lst.add(n);
-        }
-        
-        // Sort by distance to x
-        Collections.sort(lst, (a, b) -> {
-            int diffA = Math.abs(a - x); 
-            int diffB = Math.abs(b - x);
-            
-            if(diffA == diffB) return a - b;  // tie: smaller value first
-            return diffA - diffB;  // closer value first
-        }); 
-        
-        // Take first k elements
-        List<Integer> answer = new ArrayList<>();
-        for(int i = 0; i < k; i++){
-            answer.add(lst.get(i));
-        }
-        
-        // Sort result in ascending order
-        Collections.sort(answer);
-        
+        List<Integer> lst = new ArrayList<>(); 
+        for(int n : arr) lst.add(n); 
+
+        lst.sort((a,b) -> {
+            int resA = Math.abs(a - x); 
+            int resB = Math.abs(b - x); 
+
+            if(resA == resB) return Integer.compare(a,b); 
+
+            return Integer.compare(resA,resB); 
+        });
+
+        List<Integer> answer = new ArrayList<>(); 
+        for(int i = 0; i < k; i++) answer.add(lst.get(i)); 
+        Collections.sort(answer); 
         return answer; 
     }
 }
