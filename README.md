@@ -633,6 +633,7 @@
 | [0002-add-two-numbers](https://github.com/yssgood/LeetCode-Premium/tree/main/0002-add-two-numbers/) | Medium |
 | [0224-basic-calculator](https://github.com/yssgood/LeetCode-Premium/tree/main/0224-basic-calculator/) | Hard |
 | [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
+| [0776-split-bst](https://github.com/yssgood/LeetCode-Premium/tree/main/0776-split-bst/) | Medium |
 ## Doubly-Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -653,6 +654,7 @@
 | [0222-count-complete-tree-nodes](https://github.com/yssgood/LeetCode-Premium/tree/main/0222-count-complete-tree-nodes/) | Easy |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0776-split-bst](https://github.com/yssgood/LeetCode-Premium/tree/main/0776-split-bst/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -669,10 +671,12 @@
 | [0222-count-complete-tree-nodes](https://github.com/yssgood/LeetCode-Premium/tree/main/0222-count-complete-tree-nodes/) | Easy |
 | [0226-invert-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0226-invert-binary-tree/) | Easy |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/yssgood/LeetCode-Premium/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0776-split-bst](https://github.com/yssgood/LeetCode-Premium/tree/main/0776-split-bst/) | Medium |
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/yssgood/LeetCode-Premium/tree/main/0173-binary-search-tree-iterator/) | Medium |
+| [0776-split-bst](https://github.com/yssgood/LeetCode-Premium/tree/main/0776-split-bst/) | Medium |
 ## Iterator
 | Problem Name | Difficulty |
 | ------- | ------- |
