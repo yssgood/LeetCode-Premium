@@ -214,6 +214,7 @@
 | [0068-text-justification](https://github.com/yssgood/LeetCode-Premium/tree/main/0068-text-justification/) | Hard |
 | [0073-set-matrix-zeroes](https://github.com/yssgood/LeetCode-Premium/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0074-search-a-2d-matrix](https://github.com/yssgood/LeetCode-Premium/tree/main/0074-search-a-2d-matrix/) | Medium |
+| [0078-subsets](https://github.com/yssgood/LeetCode-Premium/tree/main/0078-subsets/) | Medium |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0080-remove-duplicates-from-sorted-array-ii/) | Medium |
 | [0088-merge-sorted-array](https://github.com/yssgood/LeetCode-Premium/tree/main/0088-merge-sorted-array/) | Easy |
@@ -376,6 +377,7 @@
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0078-subsets](https://github.com/yssgood/LeetCode-Premium/tree/main/0078-subsets/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/yssgood/LeetCode-Premium/tree/main/0222-count-complete-tree-nodes/) | Easy |
 | [0266-palindrome-permutation](https://github.com/yssgood/LeetCode-Premium/tree/master/0266-palindrome-permutation) |
 | [0268-missing-number](https://github.com/yssgood/LeetCode-Premium/tree/main/0268-missing-number/) | Easy |
@@ -459,6 +461,7 @@
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0078-subsets](https://github.com/yssgood/LeetCode-Premium/tree/main/0078-subsets/) | Medium |
 | [0079-word-search](https://github.com/yssgood/LeetCode-Premium/tree/master/0079-word-search) |
 | [2107-find-unique-binary-string](https://github.com/yssgood/LeetCode-Premium/tree/master/2107-find-unique-binary-string) |
 ## Depth-First Search
