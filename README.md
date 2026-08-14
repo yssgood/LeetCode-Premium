@@ -115,6 +115,7 @@
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [0925-long-pressed-name](https://github.com/yssgood/LeetCode-Premium/tree/main/0925-long-pressed-name/) | Easy |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
+| [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
 | [1100-find-k-length-substrings-with-no-repeated-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/1100-find-k-length-substrings-with-no-repeated-characters/) | Medium |
 | [1123-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/master/1123-single-row-keyboard) |
 | [1165-single-row-keyboard](https://github.com/yssgood/LeetCode-Premium/tree/main/1165-single-row-keyboard/) | Easy |
@@ -373,6 +374,7 @@
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
+| [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/yssgood/LeetCode-Premium/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Bit Manipulation
 | Problem Name | Difficulty |
@@ -456,6 +458,7 @@
 | [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0658-find-k-closest-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0875-koko-eating-bananas](https://github.com/yssgood/LeetCode-Premium/tree/main/0875-koko-eating-bananas/) | Medium |
+| [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Backtracking
@@ -714,6 +717,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
+| [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -722,4 +726,20 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0752-open-the-lock](https://github.com/yssgood/LeetCode-Premium/tree/main/0752-open-the-lock/) | Medium |
+## Rolling Hash
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
+## Suffix Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
+## Suffix Automaton
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
+## Suffix Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
 <!---LeetCode Topics End-->
