@@ -190,6 +190,7 @@
 | [0219-contains-duplicate-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
+| [0658-find-k-closest-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/0658-find-k-closest-elements/) | Medium |
 | [1100-find-k-length-substrings-with-no-repeated-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/1100-find-k-length-substrings-with-no-repeated-characters/) | Medium |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/yssgood/LeetCode-Premium/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Array
@@ -259,6 +260,7 @@
 | [0531-lonely-pixel-i](https://github.com/yssgood/LeetCode-Premium/tree/master/0531-lonely-pixel-i) |
 | [0622-design-circular-queue](https://github.com/yssgood/LeetCode-Premium/tree/main/0622-design-circular-queue/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
+| [0658-find-k-closest-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
 | [0724-find-pivot-index](https://github.com/yssgood/LeetCode-Premium/tree/main/0724-find-pivot-index/) | Easy |
@@ -347,6 +349,7 @@
 | [0345-reverse-vowels-of-a-string](https://github.com/yssgood/LeetCode-Premium/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0392-is-subsequence/) | Easy |
 | [0443-string-compression](https://github.com/yssgood/LeetCode-Premium/tree/main/0443-string-compression/) | Medium |
+| [0658-find-k-closest-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0723-candy-crush](https://github.com/yssgood/LeetCode-Premium/tree/master/0723-candy-crush) |
 | [0925-long-pressed-name](https://github.com/yssgood/LeetCode-Premium/tree/main/0925-long-pressed-name/) | Easy |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
@@ -417,6 +420,7 @@
 | [0280-wiggle-sort](https://github.com/yssgood/LeetCode-Premium/tree/main/0280-wiggle-sort/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/yssgood/LeetCode-Premium/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
+| [0658-find-k-closest-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0694-number-of-distinct-islands](https://github.com/yssgood/LeetCode-Premium/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -448,6 +452,7 @@
 | [0240-search-a-2d-matrix-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0268-missing-number](https://github.com/yssgood/LeetCode-Premium/tree/main/0268-missing-number/) | Easy |
 | [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
+| [0658-find-k-closest-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0875-koko-eating-bananas](https://github.com/yssgood/LeetCode-Premium/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
@@ -598,6 +603,7 @@
 | ------- | ------- |
 | [0253-meeting-rooms-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0355-design-twitter](https://github.com/yssgood/LeetCode-Premium/tree/master/0355-design-twitter) |
+| [0658-find-k-closest-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/0658-find-k-closest-elements/) | Medium |
 | [2336-smallest-number-in-infinite-set](https://github.com/yssgood/LeetCode-Premium/tree/main/2336-smallest-number-in-infinite-set/) | Medium |
 ## String Matching
 | Problem Name | Difficulty |
