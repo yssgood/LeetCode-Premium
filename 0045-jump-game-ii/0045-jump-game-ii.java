@@ -1,17 +1,18 @@
 class Solution {
     public int jump(int[] nums) {
-        int maxJump = 0; 
+        if(nums.length == 1) return 0; 
+        int answer = 0; 
         int currJump = 0; 
-        int jump = 0; 
+        int currMax = 0; 
 
-        for(int i = 0; i < nums.length-1; i++){
-            maxJump = Math.max(maxJump, i + nums[i]); 
-            if(i == currJump){
-                currJump = maxJump; 
-                jump++; 
-                if(currJump >= nums.length-1) return jump; 
+        for(int i = 0; i < nums.length; i++){
+            currMax = Math.max(currMax, i + nums[i]); 
+            if(i >= currJump){
+                answer++;
+                currJump = currMax; 
+                if(currJump >= nums.length-1) return answer;  
             }
         }
-        return jump; 
+        return -1; 
     }
 }
