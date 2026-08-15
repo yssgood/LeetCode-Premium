@@ -278,6 +278,7 @@
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
 | [1272-remove-interval](https://github.com/yssgood/LeetCode-Premium/tree/main/1272-remove-interval/) | Medium |
+| [1326-minimum-number-of-taps-to-open-to-water-a-garden](https://github.com/yssgood/LeetCode-Premium/tree/main/1326-minimum-number-of-taps-to-open-to-water-a-garden/) | Hard |
 | [1331-rank-transform-of-an-array](https://github.com/yssgood/LeetCode-Premium/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1345-perform-string-shifts](https://github.com/yssgood/LeetCode-Premium/tree/master/1345-perform-string-shifts) |
 | [1366-rank-teams-by-votes](https://github.com/yssgood/LeetCode-Premium/tree/main/1366-rank-teams-by-votes/) | Medium |
@@ -307,6 +308,7 @@
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/yssgood/LeetCode-Premium/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/yssgood/LeetCode-Premium/tree/master/0624-maximum-distance-in-arrays) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
+| [1326-minimum-number-of-taps-to-open-to-water-a-garden](https://github.com/yssgood/LeetCode-Premium/tree/main/1326-minimum-number-of-taps-to-open-to-water-a-garden/) | Hard |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 ## Math
 | Problem Name | Difficulty |
@@ -380,6 +382,7 @@
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
+| [1326-minimum-number-of-taps-to-open-to-water-a-garden](https://github.com/yssgood/LeetCode-Premium/tree/main/1326-minimum-number-of-taps-to-open-to-water-a-garden/) | Hard |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/yssgood/LeetCode-Premium/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Bit Manipulation
 | Problem Name | Difficulty |
