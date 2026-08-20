@@ -193,6 +193,7 @@
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/yssgood/LeetCode-Premium/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 | [0487-max-consecutive-ones-ii](https://github.com/yssgood/LeetCode-Premium/tree/master/0487-max-consecutive-ones-ii) |
 | [0658-find-k-closest-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/0658-find-k-closest-elements/) | Medium |
+| [1004-max-consecutive-ones-iii](https://github.com/yssgood/LeetCode-Premium/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1100-find-k-length-substrings-with-no-repeated-characters](https://github.com/yssgood/LeetCode-Premium/tree/main/1100-find-k-length-substrings-with-no-repeated-characters/) | Medium |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/yssgood/LeetCode-Premium/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Array
@@ -274,6 +275,7 @@
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 | [0875-koko-eating-bananas](https://github.com/yssgood/LeetCode-Premium/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0934-shortest-bridge](https://github.com/yssgood/LeetCode-Premium/tree/main/0934-shortest-bridge/) | Medium |
+| [1004-max-consecutive-ones-iii](https://github.com/yssgood/LeetCode-Premium/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1036-rotting-oranges](https://github.com/yssgood/LeetCode-Premium/tree/master/1036-rotting-oranges) |
 | [1048-longest-string-chain](https://github.com/yssgood/LeetCode-Premium/tree/main/1048-longest-string-chain/) | Medium |
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
@@ -466,6 +468,7 @@
 | [0300-longest-increasing-subsequence](https://github.com/yssgood/LeetCode-Premium/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0658-find-k-closest-elements](https://github.com/yssgood/LeetCode-Premium/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0875-koko-eating-bananas](https://github.com/yssgood/LeetCode-Premium/tree/main/0875-koko-eating-bananas/) | Medium |
+| [1004-max-consecutive-ones-iii](https://github.com/yssgood/LeetCode-Premium/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1062-longest-repeating-substring](https://github.com/yssgood/LeetCode-Premium/tree/main/1062-longest-repeating-substring/) | Medium |
 | [1198-find-smallest-common-element-in-all-rows](https://github.com/yssgood/LeetCode-Premium/tree/main/1198-find-smallest-common-element-in-all-rows/) | Medium |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/yssgood/LeetCode-Premium/tree/master/2392-successful-pairs-of-spells-and-potions) |
@@ -630,6 +633,7 @@
 | [0209-minimum-size-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0253-meeting-rooms-ii](https://github.com/yssgood/LeetCode-Premium/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0724-find-pivot-index](https://github.com/yssgood/LeetCode-Premium/tree/main/0724-find-pivot-index/) | Easy |
+| [1004-max-consecutive-ones-iii](https://github.com/yssgood/LeetCode-Premium/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [3026-maximum-good-subarray-sum](https://github.com/yssgood/LeetCode-Premium/tree/main/3026-maximum-good-subarray-sum/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
