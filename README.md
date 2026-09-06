@@ -274,6 +274,7 @@
 | [0724-find-pivot-index](https://github.com/yssgood/LeetCode-Premium/tree/main/0724-find-pivot-index/) | Easy |
 | [0734-sentence-similarity](https://github.com/yssgood/LeetCode-Premium/tree/master/0734-sentence-similarity) |
 | [0735-asteroid-collision](https://github.com/yssgood/LeetCode-Premium/tree/main/0735-asteroid-collision/) | Medium |
+| [0739-daily-temperatures](https://github.com/yssgood/LeetCode-Premium/tree/main/0739-daily-temperatures/) | Medium |
 | [0752-open-the-lock](https://github.com/yssgood/LeetCode-Premium/tree/main/0752-open-the-lock/) | Medium |
 | [0762-find-anagram-mappings](https://github.com/yssgood/LeetCode-Premium/tree/master/0762-find-anagram-mappings) |
 | [0875-koko-eating-bananas](https://github.com/yssgood/LeetCode-Premium/tree/main/0875-koko-eating-bananas/) | Medium |
@@ -590,6 +591,7 @@
 | [0394-decode-string](https://github.com/yssgood/LeetCode-Premium/tree/main/0394-decode-string/) | Medium |
 | [0402-remove-k-digits](https://github.com/yssgood/LeetCode-Premium/tree/main/0402-remove-k-digits/) | Medium |
 | [0735-asteroid-collision](https://github.com/yssgood/LeetCode-Premium/tree/main/0735-asteroid-collision/) | Medium |
+| [0739-daily-temperatures](https://github.com/yssgood/LeetCode-Premium/tree/main/0739-daily-temperatures/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/yssgood/LeetCode-Premium/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/yssgood/LeetCode-Premium/tree/main/1249-minimum-remove-to-make-valid-parentheses/) | Medium |
 | [1381-design-a-stack-with-increment-operation](https://github.com/yssgood/LeetCode-Premium/tree/main/1381-design-a-stack-with-increment-operation/) | Medium |
@@ -764,4 +766,5 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0402-remove-k-digits](https://github.com/yssgood/LeetCode-Premium/tree/main/0402-remove-k-digits/) | Medium |
+| [0739-daily-temperatures](https://github.com/yssgood/LeetCode-Premium/tree/main/0739-daily-temperatures/) | Medium |
 <!---LeetCode Topics End-->
