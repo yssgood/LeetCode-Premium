@@ -5,17 +5,16 @@ class Solution {
         int answer = 0; 
         while(end < s.length()){
             char curr = s.charAt(end); 
-            hashMap.merge(curr, 1, Integer::sum); 
+            hashMap.merge(curr,1,Integer::sum); 
             while(hashMap.size() > 2){
-                char prev = s.charAt(start); 
-                hashMap.merge(prev, -1, Integer::sum); 
+                char left = s.charAt(start); 
+                hashMap.merge(left,-1,Integer::sum); 
+                if(hashMap.get(left) == 0) hashMap.remove(left); 
                 start++; 
-                if(hashMap.get(prev) <= 0) hashMap.remove(prev); 
             }
             answer = Math.max(answer, end - start + 1); 
             end++; 
         }
-
         return answer; 
     }
 }
